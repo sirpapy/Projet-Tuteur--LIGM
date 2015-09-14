@@ -1,0 +1,2950 @@
+Tables distribuées:
+aa,an01,an03,an05,an07,an09,andn,ansy,dr2,drc,f1a,f1c,f1r,f2a,f2b1,f2r,f31,f4,f6,f8,f91,fca,fcana,fcn,fcpna,fn,fnan,fnann,fnn,fnpna,fr1,fr3,fs2,is1
+
+lgextract sur toutes les tables:
+Après ajout des 5 tables de Pivaut + suppression des tables F2B1 et F31 car remplacées et annulées par Giry par FNDN et FNAN :
+14271 entries  have been processed in 81 tables, including 10138 entries TO COMPLETE and 157 entries TO ENCODE.
+-> dont 10112 entrées distinctes
+(19-09-11)
+12696 entries  have been processed in 78 tables, including 10240 entries TO COMPLETE and 157 entries TO ENCODE. (22-03-11)
+12696 entries  have been processed in 78 tables.
+
+lgextract sur les tables distribuées:
+5849 entries  have been processed in 40 tables.
+
+avec :
+N_psy et N_sym entrées vides
++java.io.FileNotFoundException: /home/tolone/workspace/tables/noms-predicatifs/.lgt.xls (No such file or directory)
+
+adjectifs-pred_nounassoc :
+12696 entries  have been processed in 78 tables, including 10240 entries TO COMPLETE and 157 entries TO ENCODE. (28-03-11)
+verbes_nounassoc :
+12696 entries  have been processed in 78 tables, including 10240 entries TO COMPLETE and 157 entries TO ENCODE. (28-03-11)
+
+Entrées des tables de Pivaut (19-09-11) :
+fd1 : 676
+fd2 : 420
+fd3a : 19
+fd3b : 47
+fd4 : 580
+-> tdt : 516 prop
+-> adjectifs-pred_nounassoc : 1477 entrées
+-> verbes_nounassoc : 3445 entrées
+
+Nombre de propriétés dans la table des classes (26-03-11): 496
+
+Nombre d'entrées par table (22-03-11):
+aa: 64
+ad: 74
+an01: 142
+an02: 154
+an03: 394
+an04: 157
+an05: 240
+an06: 276
+an07: 379
+an08: 617
+an09: 270
+an10: 489
+ana: 214
+andn: 60
+anm: 121
+anml: 261
+anmr: 69
+anp: 64
+anpr: 52
+ans: 257
+ansn: 49
+ansu: 142
+ansy: 24
+ape1: 49
+ape2: 68
+ape3: 158
+ape11: 33
+ape21: 45
+ape22: 56
+app1: 287
+app2: 65
+app3: 83
+dr1: 234
+dr2: 353
+dr3: 385
+drc: 106
+es: 90
+f1a: 30
+f1b: 57
+f1c: 96
+f1d: 3 (plus petit nombre d'entrées)
+f1r: 44
+f2a: 379
+f2b: 40
+f2b1: 65 -> table suppr
+f2c: 14
+f2r: 52
+f3: 83
+f4: 14
+f5: 237
+f6: 119
+f7: 52
+f8: 43
+f9: 127
+f21: 102
+f31: 102 -> table suppr
+f41: 11
+f91: 39
+fn: 373
+fna: 191
+fnan: 246
+fnana: 45
+fnann: 90
+fndn: 194
+fnn: 248
+fnpn: 414
+fnpna: 75
+fnpnn: 140
+fr1: 111
+fr2: 119
+fr3: 166
+fs1: 1295 (plus grand nombre d'entrées)
+fs2: 107
+fs3: 91
+is1: 44
+is2: 112
+psy: 165
+sym: 180
+
+-------------------------------------------------------------------------------------
+NOTES:
+Table f21:
+"Prép N1 =: que P" -> "Prép N1 =: Qu Pind"
+"Que P =: de V0-inf W" -> "Qu Pind = de V0-inf W"
+"Prép N1 =: de ce que P" -> "Prép N1 =: de ce Qu Pind"
+"Prép N1 =: que Psubj" -> "Prép N1 =: Qu Psubj"
+"Que Psubj =: de V0-inf W" -> "Qu Psubj = de V0-inf W"
+"Prép N1 =: que Psubj = V2-inf W" -> "Qu Psubj = de V2-inf W"
+Explications:
+"que P" signifie "complétive à l'indicatif" -> "Qu Pind"
+Pour "Qu Pind = de V0-inf W" par exemple, une 2ème notation est possible :
+"Prép N1 =: Qu Pind = de V0-inf W" mais un peu lourde et on sait que représente "Qu Pind" grâce à la colonne précédente.
+Elsa(16-06-08)
+-------------------------------------------------------------------------------------
+Dans les tables an01,f1a,f1b,f1c,f1d,f1r,f3,f31,f4,f41,f8 la colonne "Det =: E" a été remplacée par "Det =: <E>" pour être identique aux autres tables. De même pour "Det =: E-Modif" qui a été remplacée par "Det =: <E>-Modif" (ne concerne que la table f8).
+Elsa(21-07-08)
+-------------------------------------------------------------------------------------
+Les colonnes "Prép" ou "Prép =: ..." ont été remplacée par "Prép1" ou "Prép1 =: ..." lorsqu'il s'agissait de la préposition avant le N1.
+La Prép faisant partie du Nom composé, a gardé sa notation "<ENT>Prép" comme pour les tables fnann,fnn sans numérotation puisque cela n'est pas en rapport avec N1 ou N2.
+
+Table aa:
+Prép =: à l'égard de	Prép =: avec	Prép =: pour
+-> Prép1 =: à l'égard de	Prép1 =: avec	Prép1 =: pour
+
+Tables an01,an02,fnpn,fnpna:
+Prép -> Prép1
+
+Table an03:
+Prép =: (avec + envers) -> Prép1 =: (avec + envers)
+
+Table ansy:
+Prép (être Adj)	Prép -> Prép1 (être Adj)	Prép1
+
+Table es:
+Prép =: à l'égard de	Prép =: contre	Prép =: sur
+-> Prép1 =: à l'égard de	Prép1 =: contre	Prép1 =: sur
+
+Tables f3,f31:
+Prép =: à	Prép =: contre -> Prép1 =: à	Prép1 =: contre
+
+Table f5:
+Prép =: à	Prép =: sur	Prép =: dans	Prép =: contre
+-> Prép1 =: à	Prép1 =: sur	Prép1 =: dans	Prép1 =: contre
+
+Table fnpnn: (l'ancienne numérotation dépendait de l'ordre d'apparition, ce qui reste le cas pour "Det := ..." et "<ENT>Det2", "<ENT>N" et "<ENT>N2" -> peut-être à revoir)
+<ENT>Prép1 -> <ENT>Prép
+Prép2 -> Prép1
+
+Table fr1,fr2,fr3:
+Prép =: à	Prép =: de -> Prép1 =: à	Prép1 =: de
+
+table fs2,fs3:
+Prép =: à	Prép =: de	Prép =: contre	Prép =: sur
+-> Prép1 =: à	Prép1 =: de	Prép1 =: contre	Prép1 =: sur
+Elsa
+-------------------------------------------------------------------------------------
+Les colonnes "Prép" ou "Prép =: ..." ont été remplacée par "Prép2" ou "Prép2 =: ..." lorsqu'il s'agissait de la préposition avant le N2.
+
+Table f6:
+Prép =: à	Prép =: en	Prép =: par	Prép =: entre	Prép =: sur	Prép =: contre	Prép =: dans
+->
+Prép2 =: à	Prép2 =: en	Prép2 =: par	Prép2 =: entre	Prép2 =: sur	Prép2 =: contre	Prép2 =: dans
+Elsa
+-------------------------------------------------------------------------------------
+Par convention, on a établi que les propriétés n'ont pas besoin d'être numérotées dans les constructions puisqu'ensuite on sait reconnaître leur place grâce à leur numérotation. Dans la table 8, les prépositions sont bien numérotées, on a du juste enlevé la numérotation dans les constructions.
+
+Table f8:
+N0 faire un N Modif Prép1 N1	N0 faire un N Modif Prép2 N2
+N0 faire du N Prép1 N1	N0 faire du N Prép2 N2
+N0 faire N Modif Prép1 N1	N0 faire N Modif Prép2 N2
+->
+N0 faire un N Modif Prép N1	N0 faire un N Modif Prép N2
+N0 faire du N Prép N1	N0 faire du N Prép N2
+N0 faire N Modif Prép N1	N0 faire N Modif Prép N2
+Elsa
+-------------------------------------------------------------------------------------
+Tables an02:
+Colonne "N0 =: Nhum" changée en "N0 =: N-hum" car la "N0 =: Nhum" est constante + pour toute la table, il s'agit donc probablement d'une erreur de notation dans la table.
+Elsa(20-08-08)
+-------------------------------------------------------------------------------------
+Tables fr1,fr2,fr3:
+Contiennent des doublons des tables de Giry-Scheider
+Table aa:
+Contient des doublons des tables d'Annie Meunier
+-> A FAIRE: Il faudrait donc concaténer les 2 sorties.
+Elsa(25-08-08)
+-------------------------------------------------------------------------------------
+Table es:
+"<ENT>Divers" dédoublée en "<ENT>V" et "<OPT>Adj" en fonction de la nature du mot.
+A NOTER: Lorsque le nom ne vient pas d'un Adj ou d'un V cela est noté <E>, notation utilisée uniquement dans cette table. Il faut donc en tenir compte lors de la sortie, le nom ne vient pas obligatoirement d'un Adj ou d'un V.
+Elsa(26-08-08)
+-------------------------------------------------------------------------------------
+Correction de la notation "Qu P":
+Table an10:
+Que P être un N pour N0
+Que P donner Det N à N0
+->
+Qu P être un N pour N0
+Qu P donner Det N à N0
+
+Table andn:
+le N que P -> le N Qu P
+
+Table ansn:
+N0 a le N que P sur N1 -> N0 a le N Qu P sur N1
+Elsa
+-------------------------------------------------------------------------------------
+Correction de la notation "<ENT>V" par "<OPT>V" qui n'était faite que pour quelques tables, or dans les tables de nom, le verbe est juste à titre informatif lorsqu'il s'agit d'un V-n.
+Cela est cohérent avec la notation "<OPT>Adj" lorsqu'il s'agit d'un Adj-n.
+Elsa(27-08-08)
+-------------------------------------------------------------------------------------
+Correction du verbe avoir conjugué : "a" -> "avoir" dans les tables ansn,andn.
+Elsa
+-------------------------------------------------------------------------------------
+Table an02:
+Prép N1 =: Prép ce Qu P -> N1 =: ce Qu P (cohérrence avec an01)
+Elsa(28-08-08)
+-------------------------------------------------------------------------------------
+Table an03:
+N0hum être de Det N -> N0 être de Det N
+car N0 =: Nhum est deja constante + pour toute la table.
+Elsa
+-------------------------------------------------------------------------------------
+Tables an03,an04:
+N0 =: la manière de V-inf -> N0 =: la manière de V-inf W
+(cohérence avec N0 =: Qu P+le Ncomp Qu P+(le fait de+la manière de) V-inf W)
+Elsa
+-------------------------------------------------------------------------------------
+Table an07:
+N0 avoir le N de V0 W -> N0 avoir le N de V0-inf W
+qui est aussi construction constante de certaines tables de Annie Meunier.
+Elsa
+-------------------------------------------------------------------------------------
+A FAIRE: Dans lgetract, dédoubler toutes les sorties contenant des + pour avoir chaque construction une par une.
+A VERIFIER: Le + veut-il dire que tout est possible ou est-il juste un OU?
+Elsa
+-------------------------------------------------------------------------------------
+Table es:
+N être Adj Prép N1 -> N0 être Adj Prép N1
+Elsa(06-09-08)
+-------------------------------------------------------------------------------------
+Table f2r:
+N =: le N de N0 -> GN =: le N de N0
+Elsa
+-------------------------------------------------------------------------------------
+Table aa:
+Certaines cases dans la dernière colonne étaient codées '- ' (moins suivi d'un espace). Cela a été corrigé mais comment savoir qu'il n'y en a pas d'autre dans d'autre tables? -> SOLUTION: Etre plus permissif dans le programme et accepter '-' ou '- '.
+Elsa
+-------------------------------------------------------------------------------------
+Table ansy:
+Prép1 -> Prép1 (avoir Det N)
+comme dans les livres car sinon on peut croire que la Prép1 est aussi pour "être Adj" or il y a une colonne pour la préposition de cette construction:
+Prép1 (être Adj)
+Elsa
+-------------------------------------------------------------------------------------
+Table an09:
+La colonne N0 =: N-hum présente dans les livres ('+' partout sauf pour image) est en fait constante pour toute la table dc n'a pas besoin d'apparaître dans la table
+-> '+' dans la tdt (27-01-10)
+Elsa
+-------------------------------------------------------------------------------------
+Table ansy:
+Duplication des colonnes N0 =: Nhum et N0 =: N-hum en N1 =: Nhum et N1 =: N-hum puisque par définition, la nature du sujet est la même que celle du complément
+Elsa
+-------------------------------------------------------------------------------------
+Table an09:
+N0 et N2 être N -> N0 et N1 être N (il n'y a pas de N2)
+-> N1 et N0 être N (d'après la référence p.29) (09-02-10)
+Elsa
+-------------------------------------------------------------------------------------
+L'absence de N1 dans les constructions de base des tables suivantes a été repérée:
+fn,fna,fnn,f1a,f1b,f1c,f1d,f1r,an07,an08,an10
+(an09 ne compte pas car N0 et N1 être N est possible)
+-> Toutes les propriétés contenant N1,N2,Loc,Nmes ont été codées '-'
+(cela concerne tous les GN =:, N0 V N1, N0 Vsup Det N Prép N1, N1 =:, Prép N1 =:, Prép1 =:, Prép2 =:...)
+-> Il faudrait faire de même avec toutes les constructions n'ayant pas de N2!
+Elsa
+-------------------------------------------------------------------------------------
+Table aa:
+La colonne <OPT>Adj est rajoutée car il y a la construction "être Adj" mais il faut la remplir!!!
+Modif du 17-08-10:
+-> colonne supprimée et un "O" est mis dans la tdt pour noter qu'elle est à coder!
+Elsa
+-------------------------------------------------------------------------------------
+Tables fnpn,fnpna,fnpnn: 
+GN =: le N entre N1 et N2 -> GN =: le N entre N0 et N1
+Il n'y a pas de N2, et il s'agit bien du sujet et du premier argument N1.
+Elsa(05-11-08)
+-------------------------------------------------------------------------------------
+Tables fnn,fnann,fnpnn: 
+<ENT>Det2 -> <ENT>Detc ; <ENT>N2 -> <ENT>Nc
+Pour ne pas confondre avec Det2 N2 comme argument 2, mais ici complément du Det N.
+L'entrée de la table est donc faire + Det N Prép Detc Nc, et peut être suivie de Prép1 N1 Prép2 N2...
+IMPORTANT: La notation Det N dans les constructions se réfère à l'entrée complète cad Det N Prép Detc Nc ou Det N Adj...
+Elsa
+-------------------------------------------------------------------------------------
+Tables fnpn,fnpna,fnpnn:
+GN =: le N entre N1 et N2 -> GN =: le N entre N0 et N1
+Elsa(07-11-08)
+-------------------------------------------------------------------------------------
+Tables fnn,fnann,fnpnn:
+<ENT>Det2 -> <ENT>Detc
+<ENT>N2 -> <ENT>Nc
+Elsa
+-------------------------------------------------------------------------------------
+Ajout des exemples présents sur les fiches cartonnées avec Wankawee.
+Ex pour la table aa où 2 type d'exemples sont présents:
+-Exemple Base1:N0 avoir Det N Prep N1 -> exemple correspondant à la construction de base (la première s'il y en a plusieurs)
+-Exemple Autre1 :N0 avoir (de le+le) N (E+de N1)-> exemple correspondant à une autre construction qui n'est pas de base (la première s'il y en a plusieurs)
+On a gardé le nom complet de la construction pour mieux savoir ce que representent les exemples mais on peut le supprimer pour avoir tous les intitulés identiques entre les tables cad:
+Exemple Base1, Exemple Base2, etc... Exemple Autre1, Exemple Autre2, etc...
+
+Remarque: Les exemples qui sont en vert ne correspondent pas exactement à la construction correspondant à la colonne.
+En rouge, il s'agit certainement d'une erreur.
+
+Elsa(09-07-09)
+-------------------------------------------------------------------------------------
+Ajout des nouvelles 16 tables de noms scannées + ajouts nécessaires dans la tdt et lgextract:
+2 tables de D. de Négroni-Peyre : PSY et SYM (Revue LI)
+6 tables de R. Vivès : APE1 à APE22 (Thèse)
+8 tables de J. Labelle : ANA à ANSU (Thèse)
+
+*****************Entrées:
+
+Remarque: Les accents n'étant pas présents dans les tables (sauf PSY et SYM) ils ont tous été rajoutés manuellement (il peut donc y avoir des erreurs).
+
+Problème pour les tables PSY et SYM:
+Seulement l'entrée pour les verbes mais pas pour les noms:
+Pas de "<ENT>N" mais "suffixe -n" -> A FAIRE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Correction des entrées:
+ANP:
+jugeotte -> jugeote (à chercher dans le dico si les 2 exsitent)
+ANML:
+boufissure -> bouffissure
+chevrottement -> chevrotement
+echymose -> ecchymose (attention: décalage alphabétique)
+fragileté -> fragilité
+gibrosité -> gibbosité
+tache ou tâche -> tâche (supposition d'accent)
+IMPORTANT: cases ~ en rouge pour détraquement et déviation
+-> pas de codage dans la thèse
+ANM:
+broncho pneumonie -> broncho-pneumonie + dupplication de l'entrée:
+bronchopneumonie (= orthographe nouveau)
+ANS:
+camaderie -> camaraderie
+chassé croisé -> chassé-croisé
+cogestuon -> cogestion
+cohéritage ? (pas trouvé dans le dico)
+ostination ?
+parente ou parenté -> parenté (supposition d'accent) X 2
+rendez vous -> rendez-vous
+ANA: 
+assujetissement -> assujettissement
+ANMR: 
+istérectomie -> hystérectomie (attention: décalage alphabétique)
+APE2:
+acomodement -> acommodement
+PSY:
+recriminer -> récriminer (cette table contient déjà les accents)
+surexiter -> surexciter
+SYM: 
+interventir -> intervertir
+raccom-> raccommoder
+jumuler -> jumeler (30-11-10)
+
+*****************Conctructions de base:
+
+Tables PSY et SYM:
+Problème: Pas de construction de base décrite dans la revue LI.
+Définition (p.136):
+constructions "psychologiques" associées à la préposition devant
+constructions "symétriques" qui mettent en jeu la préposition avec
+Relations décrites (p.131-135):
+N0 V N1 = N0 être en V-n Prép N1
+N0 V Prép N1 = N0 être en V-n Prép N1
+N0 V N1 Prép N2 = N1 être en V-n Prép N2
+Remarque: le verbe peut être pronominalisé en "se V".
+
+Solution:
+Même construction de base pour les 2 tables: N0 être en N Prép N1
+Avec renommages des colonnes:
+PSY:
+N0 être en V-n contre N1 -> Prép1 =: contre
+N0 être en V-n après N1 -> Prép1 =: après
+N0 être en V-n devant N1 -> Prép1 =: devant
+SYM:
+N0 être en V-n avec N1 -> Prép1 =: avec
+N0 être en V-n contre N1 -> Prép1 =: contre
+N0 être en V-n à N1 -> Prép1 =: à
+
+Explications:
+Prép: puisque seule la préposition change entre les 3 colonnes de chaque table.
+V-n -> N: puisque le N est connu par la colonne "suffixe -n", qui sera bientôt renommée en "<ENT>N" comme dans toute les tables (une fois les noms complétés).
+
+AJOUT le 16-08-10:
+Pour la table SYM, il faut également définir "N0 et N1 être en N" comme définitoire pour rendre compte de la symétrie.
+
+*****************
+
+Tables ANA-ANS:
+Constructions de base (en spécifiant d'ou elles proviennent par rapport à la thèse, p.14 + citations):
+ANS: N0 avoir Det N avec N1 : vient de (1)
+ANA: N0 avoir Det N à ce Qu P : vient de (2) ; "complétive en à", "constructions où Prép =: à" (p.25)
+ANML: N0 avoir Det Nmal Loc Npc : vient de (3) N0 avoir Det N Loc Npc
+                                           (3c) N0 avoir (mal+une éraflure) Loc Npc (ANPC)-> n'existe pas = ANML aussi
+                                  -> les 2 bases sont identiques: N0 avoir Det Nmal Loc Npc (p.121) = PB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ANM: N0 avoir Det N : vient de (3a)
+ANMR: N0 avoir Det N (E+Loc Npc) : vient de (3b) N0 avoir en Det N (E+Loc Npc) -> Suppression du "en"
+ANSU: N0 avoir Det N sur N1 : vient de (4) par déduction ; "compléments en sur" (p.25), "table des Nsur" (p.168)
+ANP: N0 avoir Det N pour N1 : vient de (5) par déduction
+ANPR: N0 avoir Det N Prép N1 : vient de (6) par déduction ;  existence des 6 colonnes Prép =: en, contre... dans la table
+      Codées - : Prép1 =: avec, Prép1 =: à, Prép1 =: sur, Prép1 =: pour : vient de "avec Prép != avec+à+sur+pour" (p.177)
+
++ "N =: Nmal" définitoire pour ANML, ANM et ANMR (07-11-10)
+
+*****************
+
+Tables AP: (avec changements par rapport à la thèse, p.164-167 avec récapitulatif d'une seule contruction par table + cf. exemples de phrases pour chaque construction)
+AP: Tous les Prép N2 -> Prép N1 car il n'y a pas de complément 1 (Det N n'étant pas considéré comme un complément mais comme le prédicat)
+APE = avoir+perdre
+APP = avoir+prendre+perdre
+
+**AVANT (comme dans la thèse):**
+
+Constructions de base:
+APE1: N0 APE Det N
+APP1: N0 APP Det N
+APE2: N0 APE Det N Prép N1
+APP2: N0 APP Det N Prép N1
+
+AVANT:
+APE3: N0 APE Det N (E+Prép N1) -> Dans lgextract: dupliquée en "N0 APE Det N" et "N0 APE Det N Prép N1"
+APP3: N0 APP Det N (E+Prép N1) -> Dans lgextract: dupliquée en "N0 APE Det N" et "N0 APE Det N Prép N1"
+MODIF le 16-08-10:
+APE3: N0 APE Det N + N0 APE Det N Prép N1 (2 constructions de base)
+APP3: N0 APP Det N + N0 APP Det N Prép N1 (2 constructions de base)
+
+APE21: N0 APE Det N de N1
+       N1 APE Det N pour N0 -> N1 APE Det N Prép N0 (car la Prép0 est codée) = INVERSE
+       N1 =: Nhum
+APE22: N0 APE Det N de N1
+       Pas écrite -> N1 Vconv Det N à N0 (ex: Max donne son appui à Luc ; Max accorde un appui immense à Luc) = CONVERSE (pas Vsup2 le 29-12-10)
+       N1 =: Nhum
+APE11: N0 APE Det N (le N n'est pas gardé en tant que "psycho-physiologiques" comme dans le récapitulatif p.167)
+       N0 =: Nhum
+
+**CHANGEMENT DE APE et APP par avoir + Vsup correspondant le 10-09-10 (notation conforme aux autres tables sans ajout de nouvelles colonnes):**
+
+Constructions de base:
+APE1: N0 avoir Det N + Vsup =: perdre
+APP1: N0 avoir Det N + Vsup =: perdre + Vsup =: prendre
+APE2: N0 avoir Det N Prép N1 + Vsup =: perdre
+APP2: N0 avoir Det N Prép N1 + Vsup =: perdre + Vsup =: prendre
+APE3: N0 avoir Det N + N0 avoir Det N Prép N1 (2 constructions de base) + Vsup =: perdre
+APP3: N0 avoir Det N + N0 avoir Det N Prép N1 (2 constructions de base) + Vsup =: perdre + Vsup =: prendre
+
+APE21: N0 avoir Det N de N1 + Vsup =: perdre
+       N1 avoir Det N pour N0 -> N1 avoir Det N Prép N0 (car la Prép0 est codée) = INVERSE + Vconv =: perdre (pas Vsup2 le 29-12-10)
+IMPORTANT: La notation Vconv inclue les constructions converses et inverses (qui sont converses également mais qui de plus, ont le même verbe dans els 2 constructions).
+       N1 =: Nhum
+APE22: N0 avoir Det N de N1 + Vsup =: perdre
+       Pas écrite -> N1 Vconv Det N à N0 (ex: Max donne son appui à Luc ; Max accorde un appui immense à Luc) = CONVERSE (pas Vsup2 le 29-12-10)
+       N1 =: Nhum
+APE11: N0 avoir Det N (le N n'est pas gardé en tant que "psycho-physiologiques" comme dans le récapitulatif p.167) + Vsup =: perdre
+       N0 =: Nhum
+
+*****************Renommage des colonnes: (mises en vert dans les tables, sauf quand c'est du détail)
+
+Tables PSY et SYM:
+TABLE "PSY"/"SYM" -> <ENT> V
+N° de table du verbe -> classe du verbe
+
+Remarque: Colonne "suffixe -n" à renommer en "<ENT>N" quand les entrées seront corrigées.
+
+*****************
+
+Tables ANA-ANS:
+DETAILS pour ANA-ANS:
+Ajout de l'entrée <ENT>N.
+Toutes les majuscules en minuscules quand cela est nécessaire (avec les bons accents).
+Tous les "=" en "=:".
+Les espaces sont parfois supprimés (ex: N hum -> Nhum)
+Tous les "V Comp" en "V-inf W" ou "V0 Comp" en "V0-inf W".
+Tous les "Comp" en "W".
+Toutes les distrubutions de Prép sont des Prép1
+(ex: Prép =: dans -> Prép1 =: dans)
+Idem pour les Loc (ex: Loc =: à -> Loc1 =: à)
+Les verbes "a" et "est" sont "avoir" et "être"
+(ex: Vop =: a -> Vop =: avoir, N0hum est Adj -> N0hum être Adj)
+Tiret ente Det et Modfif dans les (ex: Det =: un Modif -> Det =: un-Modif)
+Dans les constructions, inversion du Modif et du N
+(ex: N0 avoir un Modif N -> N0 avoir un N Modif)
+Det =: E -> Det =: <E>
+Que P -> Qu P
+
+Colonnes dont il n'était pas précisé qu'il s'agissait d'une distribution du N1:
+ce(ci+la) -> N1 =: ce(ci+la)
+la dessus -> N1 =: la dessus
+Qu Psubj -> N1 =: Qu Psubj
+V0-inf W -> N1 =: V0-inf W
+
+Il reste des colonnes non comprises (en rouge dans la colonne Suppr de la tdt) qui sont encore à expliciter.
+ex: Prép N1 ? (N0 avoir Det N?)
+ex: Det =: en (lié à la colonne précédente?)
+
+Les colonnes avec V ne sont exploitable car on n'a pas de V:
+ex: N0 V son N pour N1
+
+Certaines colonnes dénotent une omission sous-entendue:
+N0 avoir Det N -> signifie N1 facultatif
+N0 avoir Det Nmal -> signifie Loc Npc facultatif
+
+VRAIS CHANGEMENTS:
+ANSU:
+Ajout du complément N2:
+N0 avoir Det N de N1 sur -> N0 avoir Det N de Nc sur N1 (cf. complément de nom "de Ni" p.163 + Nc notation déjà utilisé pour les noms de Giry)
+N0 V son N sur -> N0 V son N sur N1 (propriété citée p.162)
+-> MODIFIE LE 08-11-09 (les 2)
+
+ANP:
+Ajout du Det:
+N0 ne que Vop N Comp -> N0 ne Vop que Det N W (+inversion entre Vop et que)
+N0 éprouver N pour N1 -> N0 éprouver Det N pour N1
+N1 provoquer N Prép N0 -> N1 provoquer Det N Prép N0
+
+ANML:
+Ajout du Det:
+Npc de N0hum avoir N -> Npc de N0hum avoir Det N
+Npc de N0-hum avoir N -> Npc de N0-hum avoir Det N
+N0 soufrir de mal -> N0 soufrir de Det Nmal
+
+N0 avoir Det Nmal Loc Npc -> PB= construction codée o + de base!!!!!!!!!!!!!!!
+
+ANM:
+Ajout du nom N:
+N0 avoir Det attaqué de -> N0 avoir Det attaqué de N
+Ajout de la prép à:
+N0 affaire Det N -> N0 avoir affaire à Det N
+
+ANS:
+Ajout du ctrl 0:
+N0 avoir le N de V-inf W -> N0 avoir le N de V0-inf W
+Ajout de la coordination et:
+il y avoir Det N entre N1 N2 -> il y avoir Det N entre N1 et N2
+Remplacement de la virgule par un plus:
+(N0,N1) =: Nhum -> (N0+N1) =: Nhum
+(N0,N1) =: N-hum -> (N0+N1) =: N-hum
+(N0,N1) =: Nnr -> (N0+N1) =: Nnr
+Supposition: Concerne le N0 ET et N1...???
+Notation pour être conforme aux verbes:
+(N0+N1) =: Plur obl -> (N0+N1) =: Npl obl
+-> Attention: différence avec Nplur (cf. ancienne table ANSY)
+
+Nsym? Laissé car sous-classe de N!
+Vpp? Dérivé du nom ou pas? (A savoir pr mettre une croix si oui)
+
+ANMR:
+Ajout du sujet N0 :
+subir Det N Loc N2 -> N0 subir Det N Loc N2
+Ajout du sujet N1:
+faire Det N à N0 Loc Npc -> N1 faire Det N à N0 Loc Npc
+donner Det N à N0 Loc Npc -> N1 donner Det N à N0 Loc Npc
+Ajout de la prép à:
+N0 affaire Det N -> N0 affaire à Det N
+Ajout du Det:
+N0 être Prép Nmal -> N0 être Prép Det Nmal
+
+Loc Npc -> pas facultatif -> base + N0 avoir Det N1 uniquement?
+
+ANA:
+Interprétation différente du mode de la complétive:
+N1 =: Qu P -> N1 =: Qu Pind (car il y a la colonne Qu Psubj aussi et que Qu P tout seul sous-entend Qu Pind+subj)
+Notation conforme aux verbes + ajout de l'info que le pc z porte sur le N1:
+pc z -> N1:[pc z.] -> MODIFIE LE 27-10-09
+
+ANPR:
+Det =: son -> Det =: Poss0 -> MODIFIE LE 08-11-09
+= Notation table ES + cf. thèse p179 : "le déterminant possessif"
+Dans lgextract, cela implique l'acceptation de mon+ton+son+notre+votre+leur (+ les variantes au féminin et au pluriel) au lieu de uniquement son+sa+ses.
+*****************
+Tables AP:
+DETAILS pour tous les AP:
+Ajout <ENT>N
+V Comp -> V-inf W
+a -> avoir
+UN--Modif -> un-Modif
+UN--normal -> un-normal
+E -> <E>
+Prép -> Prép1
+Tous les N2 en N1 (pour être cohérent avec la construction de base)
+
+VRAIS CHANGEMENTS:
+pour tous les AP:
+Colonne N0 (supprimée pour les redistributions de N0):
+Dislocation -> N0 =: Dislocation (p.169 : "Le sujet est noté ainsi : N0 =: Nhum+Qu P+Dislocation.")
+Nommage des colonnes lors de la fusion des familles avec les intitulés de colonnes avec la notation "Famille:Intitulé" avec le nom de la famille abrégé:
+**CHANGEMENT DE APE et APP par avoir + Vsup correspondant le 10-09-10 (notation conforme aux autres tables sans ajout de nouvelles colonnes):**
+-> Nouvelle notation = propriété du déterminant, Vsup concerné
+Colonnes AVOIR -> A:Det =: un, etc. -> Det =: un, Vsup =: avoir
+Colonnes AVOIR en Vconv -> A Vconv:Det =: <E>, etc. -> Det =: <E>, Vconv =: avoir (pas Vsup2 le 29-12-10)
+Colonnes PERDRE -> PE:Det =: un, etc. -> Det =: un, Vsup =: perdre
+Colonnes PERDRE en Vconv-> PE Vconv:Det =: tout, etc. -> Det =: tout, Vconv =: perdre (pas Vsup2 le 29-12-10)
+Colonnes GARDER -> GARDER:Det =: <E>, etc. -> Det =: <E>, Vsup =: garder
+Colonnes RETROUVER -> RETROUVER:Det =: le, etc. -> Det =: le, Vsup =: retrouver
+Colonne AVOIR PRENDRE -> APR:Det =: le, etc. -> Det =: le, Vsup =: (avoir+prendre)
+Colonne Vconv -> Vconv:Det =: un, etc. -> Det =: un, Vsup =: (avoir+prendre) (pas Vsup2 le 29-12-10)
+Colonnes Vop supprimées (car y'a la construction complète + ADR mais pas compris)
+Notation conforme aux verbes + ajout de l'info que le pc z porte sur le N1:
+pc z -> N1:[pc z.] -> MODIFIE LE 27-10-09
+
+Notation conforme aux autres tables pour les déterminants:
+Det =: DE LE -> Det =: du (désigne les déterminants du, de la, de l')
+Det =: LE -> Det =: le (désigner les déterminants le, la, l')
+-> Attention: le ne désigne pas "les" comme c'est écrit dans p.VIII car il existe la colonne Det =: les dans APE22
+Ajout du crtl 0:
+N1 =: V-inf W -> N1 =: V0-inf W
+N0hum avoir le N de V-inf W -> N0hum avoir le N de V0-inf W
+
+APE1:
+Ajout du Det:
+il y avoir N Loc N0 -> il y avoir Det N Loc N0
+Ajout du crtl 0:
+N0hum avoir le N de V-inf W -> N0hum avoir le N de V0-inf W
+
+APE11:
+Det =: TOUS Poss0 -> Det =: tout Poss0
+Det =: Poss0 (<E>+TOUS) -> Det =: (<E>+tout) Poss0
+p.80: "Avec M.Gross 1977, nous noterons ce prédéterminant "TOUS"."
+"C'est un prédéterminant facultatif du possessif =: "Poss0"
+(c) Cette fête est en train de perdre (E+toute) son ambiance.
+"TOUT" négatif est parcontre, avec "Poss", l'autre élément de la distribution la plus courante des déterminants avec "perdre"."
+p.82: "Différences de sens que l'on observe entre "TOUT" et "TOUS Poss"":
+"(5) Luc a perdu tout son bon sens
+n'est pas tout à fait équivalent à :
+(6) Luc a perdu tout bon sens"
+-> on a bien différents intitulés:
+Det =: tout -> correspond au "TOUT" négatif
+Det =: tout Poss0, Det =: (<E>+tout) Poss0 -> correspond au prédéterminant "TOUS" qui n'est facultatif qu'avec la notation (<E>+tout) puisque cette différence de notation est présente dans la même table en fonction des verbes
+-> Dans tous les cas, "tout" fait parti du Det et doit s'accorder en genre et en nombre.
+
+APE21:
+Ajout du crtl 0:
+N1 avoir le N de V-inf W -> N1 avoir le N de V0-inf W
+
+Colonne N1 APE Det N Prép N0 -> APE Vconv:Det =: <E>, APE Vconv:Det =: un-Modif, APE Vconv:Det =: des, APE Vconv:Det =: du (pas Vsup2 le 29-12-10)
+
+APE22:
+Colonne N1 Vsup Det N à N0 -> Vconv =: accorder, Vconv =: adresser, Vconv =: prêter
+ET Vconv:Det =: un, Vconv:Det =: un-Modif, Vconv:Det =: des, Vconv:Det =: du, Vconv:Det =: Poss1 (pas Vsup2 le 29-12-10)
+
+APE2:
+Ajout du Det:
+il y avoir N entre N0 et N1 -> il y avoir Det N entre N0 et N1
+il y avoir N Loc N0 -> il y avoir Det N Loc N0
+
+**CHANGEMENT DE APE et APP par avoir + Vsup correspondant le 10-09-10 (notation conforme aux autres tables sans ajout de nouvelles colonnes):**
+
+N0 et N1 APE Det N -> N0 et N1 (avoir+perdre) Det N (tables APE2 et APP2)
+N0-hum APE le N de V0-inf W -> N0-hum (avoir+perdre) le N de V0-inf W (table APE3)
+
+Pourquoi "(avoir+perdre)" et pas "avoir"?
+1) car dans la table APP2 y'a le Vsup "prendre" mais qui ne concerne pas cette propriété d'après l'intitulé d'origine (vérifier que ce n'est pas une erreur)
+2) on a dans la table APP2 l'intitulé "N0hum avoir le N de V0-inf W" qui ne concerne que "avoir", alors qu'il concerne "(avoir+perdre)" dans la table APE3 (notation APE), à différencier des autres colonnes de la table APE3 différentes selon qu'il s'agit du verbe "avoir" ou "perdre" : "N0hum avoir le N de V0-inf W" et "N0hum perdre Det N de V0-inf W"
+
+Elsa(10-09-09)
+-------------------------------------------------------------------------------------
+Nouveaux changements de colonnes: Vsup et Vconv (pas Vsup2 le 29-12-10)
+ANA-ANS:
+Vop -> Vsup:
+Vsup =: avoir, Vsup =: avoir eu, Vsup =: donner, Vsup =: manifester
+N0 ne Vop que Det N W -> N0 ne Vsup que Det N W (ANP) -> MODIFIE LE 08-11-09
++ Vsup =: faire (AN08)
++ Vsup =: mettre (AN08)
+Explication:
+"L'expression verbale contient au moins deux éléments, c'est-à-dire un verbe opérateur (Vop) et un substantif (N) ; ce dernier est généralement précédé d'un déterminant (Det) [...]: Vop Det N"
+-> Même définition que verbe support
++Vsup =: donner (ANSN,ANDN) (pas Vsup2 le 29-12-10)
+
+Pas de changement, déjà Vsup:
+Vsup =: (émettre+formuler) (ANSN)
+Vsup =: acquérir (ANSN, ANDN)
+Vsup =: connaître (AN10)
+Vsup =: vivre dans (ANSN, ANDN)
+
+APE21: Notation APE Vconv (pas Vsup2 le 29-12-10)
+
+APE22: Notation Vconv (pas Vsup2 le 29-12-10)
+
+Elsa(15-09-09)
+-------------------------------------------------------------------------------------
+Cela a induit quelques modifs dans les anciennes tables tel que:
+a -> avoir:
+fndn:
+N1 a un N -> N1 avoir un N
+ansn:
+N0 a le N Qu P sur N1 -> N0 avoir le N Qu P sur N1
+N0 en a le N -> N0 en avoir le N
+
+f1d: un N Modif est faire par N0 -> un N Modif être fait par N0
+f8: Prép1 =: (sur + au sujet de) -> Prép1 =: (sur+au sujet de)
+
+Elsa(15-09-09)
+-------------------------------------------------------------------------------------
+Remarque quand au choix des propriétés à coder pour les nouvelles tables en cours
+de construction, en me basant sur une citation de la thèse de Robert Vivès (que je
+ne cite qu'à titre d'exemple car la même solution a été appliquée dans toutes les
+thèses) :
+"Dans les tables que nous avons établies, nous avons cherché à fournir les
+indications les plus significatives en essayant de limiter le nombre des
+colonnes. Lorsqu'une propriété est générale ou quasi-générale pour l'ensemble
+de la table, nous ne l'avons pas représentée, nous contentant de la signaler
+dans les commentaires consacrés à chaque table. Lorsqu'une propriété n'est
+vérifiée que par un nombre réduit d'éléments dans une table, nous avons adopté
+la même solution : cette propriété fait l'objet d'un commentaire."
+
+D'après mon travail et les conséquences que cette solution représente (ajout des
+propriétés manquantes et des informations implicites), je me permet d'indiquer
+une autre solution :
+-Toute propriété n'étant pas vérifiée par absolument tous les éléments d'une
+table doit figurer dans la table et être codée
+-Toute propriété étant constante "+" (ou "-")lorsque qu'elle est vérifiée (ou n'est pas vérifiée) par tous les éléments d'une table doit figurer clairement dans un
+tableur annexe aux tables : ce tableur liste l'ensemble de ces propriétés en
+lignes et l'ensemble des classe d'adjectifs en colonne et contient "-" ou "+"
+aux intersections correspondantes (les autres cases restent vides).
+-Faire un tableur qui rassemble en lignes l'ensemble des propriétés utilisées
+pour tous les adjectifs (présentes dans les tables ou dans les propriétés
+constantes) pour faire une documentation complète de ces propriétés : ce tableur précise les tables concernées par cette propriété, une explication en français de la signification de la propriété, un exemple illutrant cette propriété.
+Cela permet d'avoir une vue d'ensemble, ce qui permet une notation homogène
+entre les différentes propriétés.
+Le but étant que tout soit informatisé et qu'aucun support papier ne soit requis
+pour comprendre les informations contenues dans les tables.
+Elsa(16-10-09)
+-------------------------------------------------------------------------------------
+Remarques importantes sur les colonnes des tables AP:
+N0 =: Dislocation = "dislocation du groupe nominal (GN) complexe" (p.VIII).
++ p. 169: "La dislocation d'un GN complexe opère dans des sujets comme : la conduite de Paul avec Marie. La préposition avec est contrainte par le N tête de l'expression nominale conduite. Cette préposition varie donc avec N pouvant être la tête d'un GN complee de ce type.
+Dans les tables, nous avons noté l'une des prépositions possibles correspondant à l'un des Nap possibles. La colonne alpahbétique Prép est donc sous la dépendance de la colonne Dislocation et non pas fonction du nom constituant l'entrée dans la table. Le sujet est noté ainsi :
+N0 =: Nhum+Qu P+Dislocation."
++ p. 178(APE3): "Dislocation:
+L'attitude de Luc avec max a une certaine conviction
+Luc a une certaine conviction (E+dans son attitude) avec Max.
+Les prépositions:
+nous rappelons que lorsque la propriété de dislocation est vérifiée, la préposition indiquée n'est qu'une préposition parmi d'autre possibles en liaison avec les N appropriés."
++p. 184(APP3): "On rencontre quelques N dont les compléments prépositionnels sont liés à la dislocation d'un GN complexe. Ces sujets sont notés ainsi :
+N0 =: Nhum+Qu P+Dislocation. Ils correspondent aux exemples suivants :
+Luc (a+prend) une certaines assurance avec Max.
+Le comportement de Luc avec Max (a+prend) une certaine assurance.
+Luc (a+prend) un laisser-aller sympatique avec Eve.
+L'attitude de Luc avec Eve (a+prend) un certain laisser-aller."
+-> N0 APR Det N Prép N1 -> Le N2 de N0 Prép N1 APR Det N
+-> pas compris!!!!!!!!!!!!!
+
+A prendre en compte dans lgextract: !!!!!!!!!!!!!
+p.169
+Det =: tout -> Det =: tout ET/OU Det =: tout-Modif
+Det =: Poss0 -> Det =: Poss0 ET/OU Det =: Poss0-Modif
+Det =: des -> Det =: des (E+Modif)
+
+p.178
+Que P = (le fait Qu P+Qu P)
+
+Remarque importante qui conterdit le fait qu'une entrée = un sens :
+APE2: "Certains N font l'objet de deux ou trois entrées sur la base de compléments prépositionnels distincts, sans que l'on puisse dire que les sens sont différents :
+Luc a une certaines répugnance à (aller là-bas+le travail)
+Luc a une certaine répugnance pour (Max+la soupe+le travail)" p. 174
+APE22: "Les déterminants et les sujets distinguent parfois deux entrées :
+(Luc+*cette compagnie) a l'aide de Max
+(Luc+cette compagnie) a des aides du gouvernement
+C'est le cas de faveur également." p.177
+
+Remarque sur le fait qu'on pousse l'acceptavbilité :
+APE3: "Nous avons évalué de façon très large le caractère facultatif du complément. Si la forme courte, par exemple avec Det =: des-Modif était parfois douteurse, nous avons forcé l'acceptabilité." p.177
+APP1: "Comme la table APE1 elle est sans doute incomplète et pour les mêmes raisons, qui tiennent aux limites imprécises de l'entrée N concrets dans les phrases à support. En revanche, nous avons systématiquement "poussé" l'acceptabilité de l'extension aspectuelle prendre ; des jugements plus rigoureux  feraient passer dans la table APE1 beaucoup des N que nous avons classés ici." p. 180
++ APE1: "Elle rassemble des N variés et la liste telle qu'actuellement établie n'est pas définitive." p. 170
+-> cela montre aussi le fait que le travail n'est pas terminé.
+
+Table APE1:
+"Pour l'ensemble de la table, garder et conserver, extensions aspectuelles de avoir, sont acceptés." p.171
+-> Ajout dans la tdt de Vsup =: garder, Vsup =: conserver (codées "+")
++ Même distribution des déterminants que pour avoir (à ajouter dans lgextract) !!!!!!
+
+Table APE2:
+"On n'observe aucun sujet phrastique dans cette table" p. 172
+-> NO =: (Qu P+V-inf W+V-n) codée "-" dans la tdt
+-> A verif !!!!!!
+
+"Pour ne pas alourdir la table nous n'avons pas noté le Det =: <E> qui s'observe avec N =: accès, droit, idée, intérêt, juridiction, latitude, horreur. Pour latitude un modifieur est obligatoire." p. 173
+-> Ajout dans la table de la colonne "A:Det =: <E>" (codée "+" pour tous les noms indiqués sauf latitute) et dans la tdt de la colonne "A:Det =: <E>-Modif" (codée "+" uniquement pour latitude).
+Pb: 3 entrées droit -> toutes codées "+" pour Det =: <E>, mais c'est p-e faux...
+
+Table APE21:
+"Pour les phrases "N0 APE Det N de N1" la table indique pour avoir et pour perdre la nature du sujet N0" p. 175
+Colonnes déjà codées :
+N0hum avoir le N de N1
+N0-hum avoir le N de N1
+N0hum perdre le N de N1
+N0-hum perdre le N de N1
+-> Distribution du sujet N0 en fonction du verbe (avoir ou perdre)
+-> important dans lgextract !!!!!!
+
+"Pour chacune des phrases en avoir et perdre inverses, le possessif coéréférent à N1 est régulier :
+Luc a (l'admiration de Max¹+son¹ admiration)" p. 175
+-> Det =: le et Det =: Poss1 codées "+" (dans la tdt) pour avoir (A) et perdre (PE)
+
+"Les phrases en avoir support sont notées N1 avoir Det N Prép N0." p. 175
+-> 4 colonnes codent déjà les déterminants de avoir support (A Vconv et non APE Vconv comme précédemment) (pas Vsup2 le 29-12-10)
+
+"Les phrases en perdre correspondantes ne sont pas notées parce que totalement régulières et de forme =: N1 perd (tout+Poss1) N Prép N0
+=: Luc a perdu (toute+son) admiration pour Max" p. 176
+-> Ajout dans la tdt des colonnes Det =: tout et Det =: Poss1 (codées "+") pour perdre support (PE Vconv) (pas Vsup2 le 29-12-10)
+
+D'après la fiche du nom bienveillance :
+Exemple = "Max a une certaine bienveillance (pour+envers+à l'égard de) Luc"
+-> Si Prép0 est "pour" implique "pour+envers+à l'égard de"
+   Si Prép0 est "envers" implique "envers+à l'égard de"
+-> Important pour lgextract !!!!!!
+
+"L'opérateur de sens causatif valoir, correspond à la phrase :
+Nnr valoir à N0 le N de N1
+=: Sa précision vaut à Luc l'admiration de Max.
+est totalement régulier et n'est pas noté." p.176
+-> Ajout dans la tdt de la colonne "Nnr valoir à N0 Det N de N1" (codée "+") avec Nnr qui est un nouveau complément et Det N qui a la même distribution que pour avoir (A) et predre (PE)
+-> Important pour lgextract !!!!!!
+
+Table APE22:
+"Pour ce qui est des phrases "N1 Vconv Det N à N0" : (pas Vsup2 le 29-12-10)
+Avec les Vsup =: accorder+prêter, on observe le Det =: E qui n'est pas noté. c'est le cas de appui, assistance, attention, mandat." p. 177
+-> Ajout dans la tdt de la colonne "Vconv:Det =: <E>" (codée "+" pour ces 4 entrées) (pas Vsup2 le 29-12-10)
+Pb: Pas les bon Vsup pour 2 des entrées parmis les 4 :
+appui, mandat -> Vsup =: accorder+donner
+assistance -> Vsup =: accorder+donner+prêter
+attention -> Vsup =: accorder+prêter
+-> Solution prise: Vsup =: prêter codée "+" pour ces 2 entrées (appui et mandat)
+
+"L'opérateur de sens causatif valoir et les expressions espectuelles garder+conserver sont régulièrs et ne sont pas notés : 
+Sa précision vaut à (Luc+ce projet) l'accord de Max
+(Ce projet+Luc) (conserve+garde) mon accord" p. 177
+->"Nnr valoir à N0 Det N de N1" codée "+" dans la tdt
+   Vsup =: garder, Vsup =: conserver codées "+" dans la tdt
+   (+ Même distribution des déterminants que pour avoir)
+
+Table APE3:
+"Prép =: de+devant:
+Pour un certain nombre de N on note une alternance de, devant :
+Luc a une certaine angoisse (de partir+devant ce spectacle).
+Cette propriété est indiquée indirectement par la colonne des causatifs :
+"N1 causer Det N à N0"
+En effet les deu propriétés sont corrélées :
+(Partir+Ce spectacle) cause une certaines angoisse à Luc." p.179
+-> Traduction: "N1 causer Det N à N0" codée "+" avec la préposition "de" implique que "Prép =: de+devant", mais n'implique rien si la préposition vaut "devant, contre, avec..."
+-> Solution prise: Quand Prép1 vaut "de", remplacée par "de+devant"
+
+""N0hum perdre det N de V0-inf W" est vérifiée pour inconvénient, passion, ?sans gêne, talent." p. 179
+-> Ajout dans la tdt de cette colonne (codée "+" pour inconvénient, sans gêne et talent.
+Pb: l'entrée passion n'est pas dans la table...
+
+"On a aussi quelques exemples de forme =: "N0-hum APE le N de V0-inf W" :
+Cette lettre a le tact de ne pas mentionner ma dette.
+Entrent dans cette structure : inconvénient, injustcie, intérêt, justice." p. 180
+-> Ajout dans la table de cette colonne (codée "+" pour ces 4 de ces 5 entrées)
+Pb: l'entrée tact n'est pas présent dans la table...
+
+Table APP1:
+"Nous n'avons pas noté "Det =: <E>-Modif" comme dans : Luc a bonne allure et que l'on trouve avec : allure, apparence, appétit, contenance, caractère, esprit, mine." p. 181
+-> Ajout dans la tdt de la colonne "APR:Det =: <E>-Modif" (codée "+" pour toutes ces entrées)
+Pb: 2 entrées pour allure, contenance et caractère -> toutes codées "+", mais c'est p-e faux...
+
+"Avec perdre, le "Det =: du" est accepté par : abattage, accélération, accent, altitude, ambiance, amplitude, appétit, bouquet, goût, panache, portance, portée, prégnance, punch, luisance, mordant, onction, rendement, vitesse." p. 181
+-> Ajout dans la table de la colonne "PE:Det =: du" (codée "+" pour toutes ces entrées)
+Pb: 2 entrées pour accent et goût -> toutes codées "+", mais c'est p-e faux...
+
+Table APP2:
+"Figurent des constructions avec Prép =: sur où avoir a pour variante exercer :
+L'acide (a+prend) une action sur le métal au-dessus de 60°
+=L'acide exerce une action sur le métal au-dessus de 60°
+Sont dans ce cas : empire, emprise, domination, ascendant, hégémonie, souveraineté." p. 184
+-> Ajout dans la tdt de la colonne "Vsup =: exercer" (codée "+" pour ces 4 entrées)
+
+"Avec N =: intérêt, on observe une laternance des prépositions à et pour :
+Luc (a un grand intérêt+a perdu tout intérêt) pour (Marie+ce discours)
+Luc prend beaucoup d'intérêt à (Marie+ce discours)."
+-> Prép1 de l'entrée intérêt : "pour" changer en "pour+à"
+Pb: Ceci est faux en fonction du verbe mais aucun moyen de les différencier pour les Prép...
+
+Table APP3:
+"Avec Prép =: pour, on observe les constructions inverses en trouver :
+Cette plaisenterie (a+prend) un certain (sens+saveur+sel+signification) pour Luc.
+Luc trouve DU (sans+saveur+signification+sel) à cette plaisenterie.
+Présentent également cette propriété : intérêt, valeur, attrait, séduction, charme, prix." p. 185
+-> Ajout dans la tdt de la colonne "N1hum trouver du N à N0" (codée "+" pour ces 10 entrées)
+Suppostition: Le N1 est supposé toujours humain.
+
+Elsa(20-10-09)
+-------------------------------------------------------------------------------------
+PC Z:
+Adaptation du changement des propriétés des verbes pour les noms:
+N1:[pc z.] -> Prép N1 =: Prép ce Qu P = Qu P
+-> tables ana, ape2, ape3, app2 (avec modif dans lgextract)
+Elsa(27-10-09)
+-------------------------------------------------------------------------------------
+Changement dans lgextract:
+Toutes les constructions de base sont laissée telles quelles, cad avec les verbes faire, avoir, etc... et pas Vsup ou Vconv (pas Vsup2 le 29-12-10) car sinon ce sont des propriétés qui ne sont pas réutilisables pour des propriétés qui ne sont pas de base (et l'on n'a aucun moyen de savoir s'il s'agit du Vsup ou d'un autre verbe à ce niveau là).
+Cela se fera dans lglex2ilex puisque Vsup contient la liste des bons verbes et que la base est repérable (true:). Il suffit donc de remplacer le verbe dans la base (et dans toutes les propriétés ayant un verbe contenu dans Vsup) par Vsup.
+Elsa(27-10-09)
+-------------------------------------------------------------------------------------
+PB de contradictions: an01-06, ansy
+Base = N0 avoir Det N (E+Modif+Prép N1)
+       N0 être Adj (E+Modif+Prép N1)
+       N0 être de Det N (E+Modif+Prép N1)
+Colonnes an01-02 = N0 avoir Det N
+                   Det =: un-Modif
+                   Prép1
+-> N0 avoir Det N Prép N1
+Colonnes an03 = Prép1 =: (avec+envers)
+                N0 être de Det N
+-> N0 être de Det N (Modif+Prép N1)
+Colonnes an04 = N0 avoir Det N pour N1
+                N0 être Det N pour N1
+-> N0 avoir Det N (E+Modif)
+   N0 être de Det N (E+Modif)
+   (on suppose qu'une autre Prép n'est pas possible)
+Colonnes an05 = Det =: un-Modif
+                N0 être Adj de Dnum Nmes
+-> N0 être Adj (E+Prép N1)
+
+Colonnes an06 = N0 avoir Det N (pe etre faux alors que du N vrai... dc represente quel ens de Det?)
+                N0 avoir Det N Loc (N0pc+N0p0)
+                N0 avoir un N
+                N0 avoir un N Modif
+                N0 avoir du N
+                N0 avoir des N
+                N0 avoir le N
+-> N0 avoir Det N Prép N1
+Colonnes ansy = Prép1 (être Adj)
+                Prép1 (avoir Det N)
+-> tout ok
+
+Question: Les 3 bases se suivent-elles ou sont différentes?
+
+Elsa(27-10-09)
+-------------------------------------------------------------------------------------
+Mise à jour des intitulés des exemples dans les nouvelles tables scannées :
+cf. le résultat directement dans les tables (ou dans les extraits de tdt par thèse)
+Elsa(29-10-09)
+-------------------------------------------------------------------------------------
+AN08:
+Base = N0 (avoir+comporter+comprendre) Det N
+Changement fait dans lgextract : (avoir+comporter+comprendre) -> avoir 
+(pour pouvoir comparer avec les verbes contenus dans les constructions avec les verbes presents dans Vsup et pas avec la chaine (avoir+comporter+comprendre) comme c'est le cas actuellement dans lglex2ilex)
+-> A changer dans lglex2ilex (à la nouvelle génération du lexique)
+
+NOUVEAU CHANGEMENT :
+AN08:
+Base = N0 avoir Det N -> pour être conforme à la notation de l'article de Giry (p.17), éviter les +, et ne pas avoir un traitement spécifique dans lgextract
+Vsup =: comporter -> +
+Vsup =: comprendre -> +
+-> propriétés ajoutées dans lgextract (cette notation est très souvent utilisées donc pas besoin de faire un cas particulier ici)
+Suppression dans lgextract : define abs N0avoircomportercomprendreDetN {construction="@*N0 (avoir+comporter+comprendre) Det N@::N0 avoir Det N"}; #Vsup #simplification (base)
+-> aucun changement dans le lexique produit
+
+Elsa(08-11-09)(21-05-10)
+-------------------------------------------------------------------------------------
+Lecture Thèse ANA-ANS:
+ANPR+ANP:
+p.179 "On observe que le fait d'observer la préposition envers revient à observer toute une sous-classe de prépositions, et cela, dans la mesure où il y a reproduction du même phénomène pour tous les substantifs de la même sous-classe.
+(9) Pierre a une dette (envers+à l'égard de+vis-à-vis de+à l'endroit de+...) Marie"
+p. 174 "Il y a aussi une série de prépositions qui peuvent toujours remplacer envers : vis-à-vis de , à l'égard de, à l'endroit de, ... (cf. paragraphe 1)"
+-> A VOIR!!! (pour avoir la liste complète!)
+-> A rajouter dans la documentation et dans lgextract!!!
+(surtout que cette propriété n'est présente que dans ces 2 tables) 
+
+ANPR:
+p.180 "La préposition "en" a un rapport plus complexe avec "dans" ; en <-> dans Det [est vrai dans certains cas mais pas toujours, ex:]
+(10) b. Cette formalisation (a + trouve) sa base (en + dans les) mathématiques"
+-> FAIT: Renommage dans tdt + cette unique table concernée de l'intitulé :
+Det =: en -> Prép1 =: en (ce qui correspond à son emplacement à côté des Prép1 plutôt que des Det)
+-> A rajouter dans la documentation et dans lglex2ilex (si le Lefff n'en tient pas déjà compte)
+
+p.180 "La préposition entre [...] Nous avons des exemples comme intérim, oscillation [...]"
+-> FAIT: Changement dans la table : "+" pour intérim (qui était "-") pour la propriété Prép1 =: entre.
+
+p.180 "La propriété Prép1 =: Loc, en plus de représenter une sous-classe de prépositions (e.g. à, dans, sur, sous, ...) signifie ici que la question où ? fonctionne avec tous les substantifs ainsi marqué. On a :
+(13) a.Luc a un abri sûr auprès de ses parents
+et   b. Où Luc a-t-il un abri sûr? - Auprès de ses parents"
+-> A rajouter dans la documentation et dans lgextract!!!
+(surtout que cette propriété n'est présente que dans cette table)
+
+CHANGEMENT: le Vsup étant partagé entre "avoir" et "avoir eu" (2 colonnes codées '+' ou '-') on ne peut pas le faire figurer dans la construction de base, tous les "avoir" remplacés par "Vsup"
+Colonnes concernées:
+base = N0 avoir Det N Prép N1 -> N0 Vsup Det N Prép N1
+N0 avoir Det N -> N0 Vsup Det N
+
+ANP:
+p.169 "(2) a. Luc a de l'admiration pour Eva
+paraphrase de :
+b. Luc admire Eva"
+-> FAIT: Renommage dans la tdt et dans cette unique table concernée de l'intitulé : 
+N0 V (avec+sans) N -> N0 V (E+avec+sans) N
+car on voit parmis les noms que souvent on ne peut insérer ni avec ni sans.
+-> Idéalement il faudrait dédoubler en 3 colonnes...
+
+suite "et de la phrase avec Vsup =: être
+c. Luc est en admiration devant Eva
+Cette dernière faire apparaître, cependant, une autre préposition"
+-> Pas codé dans la table!!! Mais d'après les entrées, ceci n'a pas l'air correct pour tous les noms...
+
+p.172 "N0 est toujours Nhum, sauf aimant et magnétisme qui pourraient avoir un emploi analogue à attrait
+(10) Ce gateau a (de l'aimant+du magnétisme+de l'attrait) pour Eva"
+-> FAIT: Changement dans la table : "-" pour aimant et magnétisme (qui était "+") pour la propriété N0 = Nhum.
+
+p.174 "Les autres prépositions apparaissant dans la table n'indique pas un changement de sens, mais plutôt une précision de sens :
+1° "contre" indique que le N implique la possibilité de compléments disjonctifs, comme dans : un préjugé pour ou contre Paul ;
+2° "avec" implique la possibilité de symétrie entre N0 et N1 (affinité pour et avec) ;
+3° "en" ajoute l'idée de locatif (des aptitudes en musique) et indique la possibilité de poser la question où ? comme on l'observe en (19) :
+(19) Où Paul a-t-il des aptitudes ?
+Rép. (En+?Pour la) musique"
+-> A rajouter dans la documentation (mais peut-être uniquement pour cette table, donc peut-être à vérifier puis renommer...)
+
+CHANGEMENT: le Vsup étant partagé entre "avoir" et "avoir eu" (2 colonnes codées '+' ou '-', sauf pour "argument", "disponibilité" et "yeux" -> mis à '+' pour avoir) on ne peut pas le faire figurer dans la construction de base, tous les "avoir" remplacés par "Vsup"
+Colonnes concernées:
+base = N0 avoir Det N pour N1 -> N0 Vsup Det N pour N1
+N0 avoir Det N -> N0 Vsup Det N
+N0 avoir le N de V0-inf W -> N0 Vsup le N de V0-inf W
+
+Colonnes restant pas claires:
+N0 ne Vsup que Det N W -> ?
+
+ANSU:
+p.156 "Ils ont en commun la propriété de pronominaliser "sur N1", dans les conditions suivantes :
+i) sur N1 -> là-dessus, si : N1 = (N-hum+le fait Qu P)
+ii) sur N1 -> sur lui -> *Ppv =: lui, si : N1 =: Nhum
+Les phrases (2)
+"(2) a. (Paul+*faire ceci) a une autorité remarquable sur (Marie+*sa thèse)
+    b. (*Paul+faire ceci) a des conséquences+un effet direct) sur (Marie+cela+le fait que nous devons nous réunir)
+    c. (Paul+*faire ceci) a un intérêt (fort élevé+de 15%+E) sur (*Marie+cette hypothèque)"
+se réécrivent :
+(2') a. Paul (E+*lui) a une autorité remarquable (sur elle+E)
+     b. Faire ceci a un effet direct (sur (elle+cela)+là-dessus)
+     c. Paul a un intérêt de 15% là-dessus"
+p.159 "L'argument N1 peut être Nhum ; on a alors :
+sur lui, *sur cela, *là-dessus
+il peut être N-hum ou complétive introduite par Nq, et l'on obtient :
+*sur lui, sur cela, là-dessus"
+-> A rajouter dans la documentation et dans lgextract!!!
+Important: Les colonnes N1 =: ce(ci+la) et N1 =: la dessus sont codées!
+-> il ne reste donc que le cas où N1 =: Nhum à traiter : "sur lui -> *Ppv =: lui"
+-> N1 =: lui ? + mettre Ppv =: lui à "-"ou ceci généralise trop?
+Remarque: Exemples illustrant Nq :
+N1 =: le fait Qu P:
+"(12) Cette réunion aura peut-être des conséquences sur le fait que Paul doit partir"
+N1 =: la façon de V-inf W:
+"(13') Paul a eu un cours sur (l'hypothèse que l'homme est immortel + la façon de faire cuire un oeuf"
+
+p.156 "Le complément sur N1 n'est pas un locatif, ne répond pas à la question où ?, mais aux questions sur (qui+quoi) ? :
+(3) a. (*Où+sur qui) Paul a-t-il une autorité remqrquable ? -Sur elle
+    b. (*Où+sur quoi) faire ceci a-t-il un effet direct ? -Sur cela
+    c. (*Où+pourquoi) Paul a-t-il un intérêt de 15% ? -Sur cette hypothèque"
+(Ici le "pourquoi" devrait être "sur quoi")
+-> A rajouter dans la documentation et dans lgextract!!! (pour la table...)
+
+p.158 "On a Prép N1 -> *là-dessous"
+-> intéressant? (car cette propriété n'existe pas dans la tdt)
+
+p.159 "La colonne "N0 =: N1" signifie que N0 et N1 sont en interdépendance et que, dans une phrase, les deux arguments doivent être de la même classe distributionnelle (exception faite des glissements métaphoriques) :
+(10) a. Paul a un atout sur (Max+*la chaise)
+     b.Le vin rouge a un atout incontestable sur (*Max+la bière)"
+-> A rajouter dans la documentation et dans lgextract!!!
+-> Comment interpréter? Plutôt sémantique...
+
+p.163 "Les pluriel Det =: (des+les) nécessite parfois la présence d'un modifieur; mais Det =: (des-Modif+les-Modif) n'apparaissent pas dans cette table étant donné qu'ils sont prédictibles à partir de Det =: un-Modif. Par exemple, en (22), on observe que le modifieur est obligatoire pour le pluriel comme pour le sigulier.
+(22) Paul a (un+des) principe(s) (*E+directeur(r)) sur la façon de mener cette affaire."
+-> A rajouter dans la documentation et dans lgextract!!!
+-> ou rajouter les colonnes apropriées car difficile à déduire...
+
+CHANGEMENT: le Vsup étant partagé entre "avoir" et "avoir eu" (2 colonnes codées '+' ou '-', sauf pour (Det =: des) "conclusion", (Det =: un) option/perpective/pignon/philosophie/prérogative/vue, (N0 =: Nhum, Det =: un) postériorité-> mis à '+' pour avoir et (Det =: un-Modif) "vengeance" -> mis à '+' pour avoir eu) on ne peut pas le faire figurer dans la construction de base, tous les "avoir" remplacés par "Vsup"
+Colonnes concernées:
+base = N0 avoir Det N sur N1 -> N0 Vsup Det N sur N1
+N0 avoir Det N -> N0 Vsup Det N
+N0 avoir Det N de Nc sur N1 -> N0 Vsup Det N de Nc sur N1
+
+CHANGEMENT:
+Ajout d'un Det (à part ceux cités ci-dessus) pour qu'il y en ait pour chaque entrée:
+Det =: des : irradiation
+Det =: un-Modif : puissance
+Det =: un : vue (2ème)
+
+CHANGEMENT:
+Ajout d'une distribution du sujet (à part celui cité ci-dessus) quand il n'y en a pas:
+N0 =: Nhum : doute, verdict
+
+ANM-ANML-ANMR: (10-02-10)
+p.122-123: "les trois tables "avoir Nmal", "avoir Nmal Loc" et "avoir eu Nmal" représentent donc des sous-classes d'une même grande classe de substantifs, que nous avons appelée "Nmal".
+Les substantifs sans complément de cette classe se distinguent des autres substantifs en ce qu'ils comportent l'effacement, obligatoire ou non, d'un "Loc (Nc+Npc)""
+p.134 ""Nc" i.e. le corps entier plutôt qu'une de ses parties"
+Changement des constructions de base: (après lecture de ce qui suit également)
+ANM:
+N0 avoir Det N -> N0 avoir Det Nmal
+ANML:
+N0 avoir Det Nmal Loc Npc -> OK
+ANMR:
+N0 avoir Det N (E+Loc Npc) -> N0 avoir eu Det Nmal
+
+ANML: "avoir Nmal Loc"
+p.125 "La structure "Npc" suit les règles habituelles de transformation.
+"Loc Npc" implique toujours le déterminant défini, "Loc le Npc" :
+(à+dans+...) la (tête+cuisse+roue+...) ;
+et correspond à :
+"le Npc de N0" -> "son Npc"
+-> A PRENDRE EN COMPTE
+
+p.126 "La colonne "Sfx-Adj donne les correspondance morphologiques adjectivaux, et la colonne "N0 est Adj" indique une différence de construction quand elle est marquée "-" :
+(14)a. infirmité <-> infirme
+b. aigreur <-> aigre
+a'. Paul (a une infirmité+est infirme) (de+à) la lambe gauche
+b'. Paul (a une douleur+*est douloureux) (à+dans) la jambe jauche
+mais :
+b''. La jambe gauche de Paul est douloureuse"
+-> Colonne non trouvée dans ANML...
+
+p.127-128 "l'opérateur souffrir" : "N0 souffrir de Nmal"
+"Les cas marqués "+ souffrir de" nécessitent une détermination particulière, soit "un-Modif", soit "des" :
+(20)a. Max souffre (d'atrophie musculaire+d'une atrophie des muscles du ventre)
+b. Max souffre de (?E+nombrueuses) contusions+coupures+...)
+Ce n'est pas le cas de la sous-structure "avoir Nmal" :
+(21) Ce malade souffre d(e) (amnésie+aphasie+bronchite+constipation+indigestion+...)"
+-> Le Det spécifique à "souffrir" n'étant pas codé, il aura par défaut tous ceux de "avoir".
+""Souffrir" peut coocurrer avec "avoir Det Nmal Loc Npc" même s'il n'est pas propriété de "Nmal" : il devient alors une sorte d'infinitive d'opérateur "U" (Harris) suivi d'une infinitive :
+(22)a. Jean souffre d'avoir (une écharde dans le doigt+une affection de la peau+...)
+b. Jean souffre d'avoir une tumeur au cerveau
+où il y a obligatoirement ou facultativement, effacemement de "avoir"
+(22b -> 22c) :
+[avoir -> E] c. Jean souffre d'une tumeur au cerveau"
+-> A noter comme constructions liés à souffrir
+
+CHANGEMENT: Renommage de Loc Npc en N1 pour que ça corresponde à "Loc1" dans la table et dans la construction de base :
+N0 avoir Det Nmal Loc Npc -> N0 avoir Det Nmal Loc N1pc
+= problème car codée et base!
+
+CHANGEMENT: tous les "Nmal" renommé en "N" car cette information concerne les entrées de toutes cette table sans apporter une information supplémentaire que le numéro de la table.
+Colonnes concernées:
+base + colonne = N0 avoir Det Nmal Loc N1pc -> N0 avoir Det Nmal Loc N1pc
+N0 souffrir de Det Nmal -> N0 souffrir de Det N
+N0 avoir Det Nmal -> N0 avoir Det N
+
+CHANGEMENT: le Vsup est toujours '+' pour "avoir" (sauf pour "coup" (a déjà avoir eu), "fret", "goitre", "grain de beauté", "pâleur" -> mis à '+', on garde donc la colonne pour voir les ajouts faits)
+-> par conformité aux autres tables et pour que "avoir eu" soit également concerné par les autres colonnes, tous les "avoir" remplacés par "Vsup"
+Colonnes concernées:
+base + colonne = N0 avoir Det N Loc N1pc -> N0 Vsup Det N Loc N1pc
+Npc de N0hum avoir Det N -> Npc de N0hum Vsup Det N
+Npc de N0-hum avoir Det N -> Npc de N0-hum Vsup Det N
+N0 avoir le Npc (Adj+Vpp) -> N0 Vsup le Npc (Adj+Vpp) -> Dans lgextract: pas duppliqué car est soit l'un, soit l'autre (comme pour N0 être (Adj+Vpp) à N1 dans ANA)
+N0 avoir le N de V0-inf W -> N0 Vsup le N de V0-inf W
+N0 avoir Det N -> N0 Vsup Det N
+
+CHANGEMENT:
+Ajout d'une distribution du sujet quand il n'y en a pas:
+N0 =: Nhum : insuffisance, larmes, serrement
+
+ANM: "avoir Nmal"
+p.139 "Le verbe "attraper" marque un aspect incohatif et est compatible avec plus des trois quart du lexique. On a :
+(51)a. Max a attrapé (une amydalite+la jaunisse+le hoquet+...)"
+-> colonne "N0 avoir attrapé Det N"
+
+p.140-141 "Environ le quart du lexique ne figure pas dans la structure de base" (N0 avoir Det N Loc Npc) "parce que le complément locatif Npc se trouve morphologiquement inclus dans le subtsantif. Cette propriété apparaît sous l'intitulé :
+Npc "inclus dans" Nmal
+avec une sous-propriété intitulée :
+sfx =
+ou figure les suffixes -ite, -ose, -algie,... , qui sont en réalité les véritables noms de maladie :
+(57) *Paul a une -ite à l'oreille gauche"
+"ce qui nous conduit à poser :
+(59) *N0 avoir Det sfxmal Loc Npc
+[structure Npc] :
+-> N0 avoir le Npc sfxmal
+-> N0 avoir le N-ite
+Paul a l'appendicite"
+-> colonne "Nmal =: Npc Sfx" (binaire sans le suffixe) purement sémantique donc à ne pas tenir compte dans lgextract (en rouge dans la tdt)
+
+p.143 "être Adj"
+"Cette structure fonctionne à merveille avec les nmal, soit avec les adjectifs proprement dits (e.g. amnésique, anxieux) soit avec l'adjectif opérateur "sujet", dans :
+(65) Pau est sujet a l'(amnésie+anxiété+amygdalite+...),
+qui palie la lacune d'adjectif. les suffixes les plus usuels ici sont -ique et -eux ; mais on trouve également -if, -en, -é et le suffixe zéro :
+bronchite - bronchitique
+gale - galeux
+dépression - dépressif
+paludisme - paludéen
+constipation - constipé
+myopie - myope
+Tous ces adjectifs sont généralement de type 51 (Picabia), intransitifs, ce que l'on peut vérifier dans la colonne de dérivation où sont inscrits les numéros de table correspondant à Nmal."
+-> colonne "N0 être Adj" mais les suffixes ne sont pas codés, il faudrait rajouter une colonne...
+
+CHANGEMENT: tous les "Nmal" renommé en "N" car cette information concerne les entrées de toutes cette table sans apporter une information supplémentaire que le numéro de la table.
+Colonnes concernées:
+base = N0 avoir Det Nmal -> N0 avoir Det N
+
+CHANGEMENT: le Vsup est toujours '+' pour "avoir" (sauf pour "chaleurs"-> mis à '+', surtour pour fret qui n'avait pas "avoir eu", on garde donc la colonne pour voir les ajouts faits)
+-> par conformité aux autres tables, tous les "avoir" remplacés par "Vsup"
+Colonnes concernées:
+base = N0 avoir Det N -> N0 Vsup Det N
+N'ayant pas la possibilité "avoir eu" ni un autre Vsup dans la table, et les autres constructions n'étant utilisées que dans cette table, le verbe avoir est gardé (pour certains, ce sont des cas où ce n'est pas le verbe complet):
+N0 avoir attrapé Det N
+N0 avoir affaire à Det N
+N0 avoir Det attaque de N
+N0 avoir Det Npc
+
+CHANGEMENT:
+Ajout d'un Det pour qu'il y en ait pour chaque entrée:
+Det =: le : mal de mer, maladie du sommeil
+Det =: les : oreillons
+
+Colonnes restant pas claires:
+Prép N1 -> OK (cf. ANMR)
+Prép N0 W -> ?
+N0 avoir Det Npc -> ?
+
+ANMR: "avoir eu Nmal"
+p.143-144 "La structure "avoir eu Nmal est une sous-classe résiduelle, sémantiquement apparentée à "Nmal" et principalement définie par la propriété négative : "- avoir/PRESENT/.
+(66) Hélène (a+a eu) une (césarienne+caitérisation+...)"
+-> cf. changement de la construction de base vu plus haut
+-> interête de la colonne Vsup =: avoir eu codéé + tout le temps et déjà présente dans la construction de base???
+
+p.145-146 "Nous avons codé comme propriétés de Nmal les opérateurs "subir" (72), "faire" (73), "donner" (74) et "être" (75). "Choc", dans :
+(72) Pierre a (eu+subi) un choc à la tête
+est codé "+ N0 subir Det N Loc Npc""
+-> CHANGEMENT: colonne "N0 subir Det N Loc N2" renommée en "N0 subir Det N Loc Npc"
+
+"(73)b. Le médecin a fait un(e) (curetage+*cure) à Marie (E+Loc Npc)
+c. Marie fait une(e) (cure+*curetage) (E+de sommeil)
+On a ainsi les deux propriétés "faire" :
+1° "Ni faire Det N à N0 (E+Loc Npc)", qui est + pour curetage et - pour cure ;
+2° "N0 faire Det N", qui est - pour curetage et + pour cure."
+-> colonne "N1 faire Det N à N0 Loc Npc" (uniquement)
+-> Le E n'est pas présent
+
+"L'opérateur "donner" revient encore ici, très fréquemment, comme propriété de N :
+"Ni donner Det N à N0 (E+Loc Npc)"
+avec "Ni = Nhum" et/ou "Ni = Nnr" :" -> cf. p. 92 plus bas quand Nnr = Nhum
+"(74)a. (Le médecin+*cela) lui a donné une intraveineuse dans le bras
+b.(*Le médecin+boire trop de Brador) lui donne des gaz (E+à l'estomac)
+c. (Le medecin+boire quelques bouteilles de Brador) lui donne une excellente purgation"
+-> colonne "N1 donner Det N à N0 Loc Npc"
+-> Le E n'est pas présent
+-> colonnes N1 =: Nhum et N1 =: Nnr dépendent de cette colonne et au moins l'un des 2 est toujours vrai si "N1 donner Det N à N0 Loc Npc" est vraie (sauf pour pilule, CHANGEMENT: mise à '+' pour N1 =: Nhum)
+-> CHANGEMENT: SUPPRESSION de "N1 donner Det N à N0 Loc Npc" transformée en les 2 colonnes "N1hum donner Det N à N0 Loc Npc" et "N1nr donner Det N à N0 Loc Npc" qui remplacent " N1 =: Nhum" et "N1 =: Nnr" (car le N1 ne concerne pas la construction de base)
+
+"L'opérateur "être" peut être suivi de "Prép Nmal" ou de "Prép Det Nmal" :
+(75)a. Eva est (en+*Prép Det) analyse
+b. Eva est (sur les +*Prép) calmants"
+-> colonne "N0 être Prép Det Nmal" (uniquement)
+-> pas de distinction (+ pour analyse,- pour calmant)
+
+Colonne "sous l'effet de" -> sûrement dépendante de "N0 être Prép Det Nmal"
+-> CHANGEMENT: Renommage en "N0 être sous l'effet de Det Nmal"
+
+p.147 "Compléments"
+"Certains substantifs appellent un complément, autre que "Loc Npc" ; c'est le cas de Nmal = remède, traitement, vaccin,..., qui commandent un complément prépositionnel en "pour" ou "contre" :
+(76) Paul a un (remède+traitement+vaccin+...) (E+Loc Npc) (pour+contre) la rougeole
+Sauf emplois métaphoriques, le "N1" (e.g. "rougeole) sera un substantif de la classe Nmal."
+-> colonne "Prép N1" code la présence d'un complément supplémentaire et colonne "Prép1 =: (pour+contre)" code une Prép spécifique pour ce complément
+-> CHANGEMENT: "Prép N1" mis '+' pour "cachet" et "comprimé" car erreur puisqu'ensuite la Prép pour+contre est codée '+'
+-> CHANGEMENT: Dédoublement des colonnes en N1 et N2 selon qu'il y ait un Loc Npc (représentant la position N1) ou pas car si les 2 compléments s'appelent N1, ils ne pourront pas apparaître en même temps :
+Lorsque Loc Npc est '-': Prép N1 et éventuellement Prép1 =: (pour+contre)
+Lorsque Loc Npc est '+': Prép N2 et éventuellement Prép2 =: (pour+contre)
+-> AJOUT: Prép N1 et Prép N2 sont rajoutée dans lgextract en tant que constructions relatives puisqu'elles s'ajoutent aux autres constructions (de base et Loc Npc quand cela est vrai)
+
+"Quand à "Loc Npc", il y a les quatre possibilités :
+i) inclusion (morphologique) dans Nmal : fessée ;
+ii) implication (sémantique) dans Nmal : circoncision ;
+iii) présence explicite de "Loc Npc", généralement effaçable : curetage
+iv) impossibilité de locatif explicite, quand Npc = Nc : cure"
+-> colonne "Loc Npc"
+-> AJOUT: Loc Npc est ajoutée dans lgextract en tant que construction relative puisqu'elle s'ajoute à la construction de base
+-> SUPPRESSION de la colonne "Loc Npc =: <E>" puisque cette propriété est déjà représentée par la construction de base et est '+' pour toutes les entrées acceptant "Loc Npc" en plus de la base (sauf pour ablation, qui avait '+' pour Loc Npc et '-' pour Loc Npc =: <E>, ce qui est incompatible avec la base, et après vérification sur google, la facultativité de Loc Npc est possible)
+
+CHANGEMENT: Renommage de Loc Npc en N1 pour que ça corresponde à "Loc1" (et renommage des autres compléments dépendants) :
+N1 faire Det N à N0 Loc Npc -> N2 faire Det N à N0 Loc N1pc
+N1hum donner Det N à N0 Loc Npc -> N2hum donner Det N à N0 Loc N1pc
+N1nr donner Det N à N0 Loc Npc -> N2nr donner Det N à N0 Loc N1pc
+Loc Npc -> Loc N1pc
+Loc Npc =: <E> -> Loc N1pc =: <E>
+
+CHANGEMENT: tous les "Nmal" renommé en "N" car cette information concerne les entrées de toutes cette table sans apporter une information supplémentaire que le numéro de la table.
+Colonnes concernées:
+base = N0 avoir eu Det Nmal -> N0 avoir eu Det N
+N0 être sous l'effet de Det Nmal -> N0 être sous l'effet de Det N
+N0 être Prép Det Nmal -> N0 être Prép Det N
+
+CHANGEMENT: le Vsup est toujours '+' pour "avoir" (sans exception, on garde la colonne par conformité aux autres tables)
+-> par conformité aux autres tables, tous les "avoir eu" remplacés par "Vsup"
+Colonnes concernées:
+base = N0 avoir eu Det N -> N0 Vsup Det N
+Le verbe avoir est gardé pour les cas où ce n'est pas le verbe complet:
+N0 avoir affaire à Det N
+
+Colonnes restant pas claires:
+suffixe -> ?
+
+ANA: (12-02-10)
+p.87 "(7) Paul a un droit inconstesté à traviller librement alors que moi, je n'ai accès (qu'au travail commandé+?qu'à faire des travaux qui me déplaisent)
+Ces substantifs en "à" ont été codés sans complétive ("- Qu P", "- V-inf w"), mais "+ à cela"."
+-> Cela signifie qu'on ne peux pas mettre Qu P dans la construction de base
+-> CHANGEMENT de la construction de base:
+N0 avoir Det N à ce Qu P -> "N0 avoir Det N Prép N1" et "Prép1 =: à"
+Explications:
+1) N1 car la distribution du N1 est ensuite codée par les colonnes suivantes:
+N1 =: Qu Pind
+N1 =: Qu Psubj
+N1 =: ce(ci+la)
+N1 =: V0-inf W
+N1 =: Nhum
+N1 =: N-hum
+N1 =: le fait Qu P
+-> sauf pour les 2 entrées "coup de main" et "qualification" (qui n'ont que des '-')
+-> CHANGEMENT: + N1 =: V0-inf W pour ces 2 entrées
+(p.156 "(62)b. Luc a les qualifications (?à+pour) répondre à ces questions")
+
+2) "Prép" au lieu de "à" car ensuite plusieurs colonnes font référence à une la Prép qui peut en plus avoir d'autre valeur que "à":
+Prép N1 =: Prép ce Qu P = Qu P
+Prép1 =: pour
+Prép1 =: contre
+Prép1 =: avec
+Prép1 =: dans
+
+p.92 "[...] ne peuvent pas s'employer avec N =: Nhum, sauf, dans certain cas, quand il y a interprétation non active, c'est-à-dire quand Nhum = Nnr
+(22) Paul a (?trait+une certaine imperméabilité+...) à ce que Virginie fait du strip-tease"
+-> Cela explique la présence des 3 colonnes N0 =: Nhum, N0 =: N-hum, N0 =: Nnr en même temps sans qu'il y ait de contradiction (même si l'information sémantique de "actif/non actif" n'est pas gardée)
+
+p. "(28)a. Luc manifeste un(e) certain(e) (acharnement+aversion+complaisance+gêne+impatience+...) à embrasser Lucie"
+"Manifester recouvre une bonne moitié de notre lexique et se comporte comme avoir : même nombre d'arguments et mêmes contraintes."
+-> colonne Vsup =: manifester
+-> IMPORTANT: même construction qu'avoir
+
+p.95 "(28)b. Luc donne à Lucie un(e) (initiation+intérêt+prétexte+...) à faire du vélo"
+"Donner a aussi une dsitribution importante et il offr l'avantage de faire apparaître le troisième argument de la construction verbale correspondante."
+Voici "la paraphrase avec verbe simple de (28b) en (29) :
+(29) Luc (initie+intéresse+*prétexte+...) Lucie à faire du vélo"
+"(28b) peut avoir l'interprétation (29) (active) ou celle de (30) non active (N0 = Nr)
+(30) (Luc+Cela) lui donne un certain (intérêt+prétexte) à faire du vélo"
+-> CHANGEMENT: colonne "N1 donner à N0 Det à N1" renommée en "N2 donner à N0 Det N à N1"
+
+p.96 "Nous avons aussi noté les emplois de donner qui ne correspondent pas à la construction étudiée. Pour ce faire, nous avons fait deux colonnes :
+1° une colonne donner dans laquelle un signe + signifie qu'il existe i,e expression verbale donner N, quelles que soient ses constructions ;
+2° une sous-colonne "Ni donner à N0 Det N à N1" indiquant que cette expression vebale corespond à la structure étudiée. par rapport à ces deux propriétés, dans l'ordre, les exemples suivants sont codés ainsi :
+a. application : -, -
+b. avantage : +, -
+c. entraînement : +, +
+correspondant aux phrases :
+(32)a. *(Luc+Cela) donne à (Lucie+cela) une application à (faire ceci)
+b. (*Luc+Cela) donne à Lucie un avantage (sur Marie+*à faire ceci)
+c. (Luc+Cela) donne à Lucie un entraînement à faire ceci"
+-> colonnes Vsup =: donner et N2 donner à N0 Det N à N1
+-> IMPORTANT: Vsup =: donner est difficilement exploitable puisque n'a pas la construction qu'avoir
+
+p.98 "Les déterminants un, un-Modif, du, le, sont suivis d'une sous-colonne qui indique la possibilité d'une sous-structure "N0 avoir Dét N" laquelle est à corréler avec le type de détermination.
+(37)a. Paul a un(e) (achargement+application) incompréhensible (*E+à poursuivre Marie)
+b. Paul a l'(achargement+application) (E+à poursuivre Marie)
+En (37), on observe que un-Modif n'autorise pas l'effacement du complément alors que le "partitif" de la le permet."
+-> colonnes Det =: un, N0 avoir un N, Det =: un-Modif, N0 avoir un N Modif, Det =: le, N0 avoir le N, Det =: du, N0 avoir du N
+
+p.99-100 " Nous avons ajouté une propriété "Det =: son" pour permettre d'inclure dans la table un certain nombre de substantifs comme nomination, accession et abonnement, à titre d'exemples.
+(43)a. Paul a eu son abonnement au théâtre
+b. Paul a eu sa nomination au poste de directeur
+<-> a'. *Paul a eu l'abonnement de Ni au théâtre
+b'. *Paul a eu la nomination de Ni au poste de directeur
+où Ni = N0.
+Les phrases (44) sont analogues à (43) mais il n'y a pas coréférence entre N1 et N0 :
+(44)a. Paul a (son consentement+sa participation) à faire des photos
+b. Paul a (le consentement+la participation) de Ni à faire des photos
+où Ni != N0.
+C'est pourquoi nous avons fait la colonne Det =: son, Ni =: NO, signifiant que "son" renvoie à N0.
+-> CHANGEMENT: colonne "N1 =: N0 =: son" renommée en "Det =: son, Nc =: N0"
+car Ni est ici complément de nom et l'information importante est la valeur du Det
+-> IMPORTANT: Voici la signification de la colonne:
+N0 avoir Det N à N1 + Det =: son avec Nc =: N0 dans N0 avoir Det N de Nc à N1 + Det !=: son
+(qui sera perdue dans lgextract, à part le Det =: son, car sémantique)
+
+p.100-101 "Les phrases (43) renvoient toutes les deux à une forme réfléchie "se V" :
+(45)a. Ni a (abonné+nommé) N0 à N1
+[Ni = N0] -> b. N0 s'est (abonné+nommé) à N1
+ou bien la factive corresondante :
+c. N0 s'est fait (abonner+nommer) à N1 (E+par Ni)
+Cette propriété Det =: son est dépendante de "le N de Ni à N1", elle-même nécessitée par des phrases comme (44), où apparaît un troisième argument qui correspond habituellement à N0 de la construction verbale :
+(46)a. Pierre encourage Luc à revoir Eva
+b. Luc a l'encouragement de Pierre à revoir Eva
+La structure "le N de Ni à N1" n'est pas toujours attestée (e.g. aboutissement) ; le signe + signifie alors qu'elle est sous-jacente à "Det = son"."
+-> CHANGEMENT: colonne "le N de N1 avoir V-inf W" renommée en "N0 avoir le N de Nc à N1"
+car le N de N1 avoir V-inf W devait être le N de N1 à V-inf W (avec un oubli de l'accent sur le "a", ce qui a donné le verbe avoir, ce qui est une erreur car l'intitulé ne veut rien dire). De plus, V-inf W est une possibilité de N1 mais pas la seule et cela est codé (par exemple, pour abonnement, c'est N1 =: N-hum, ce que l'on peut voir dans l'exemple: théatre). "N0 avoir" permet d'avoir la phrase complète comme dans l'exemple.
+
+p.106 "Plusieurs prépositions peuvent commuter avec "pour" : "envers", "à l'égard de", "vis-à-vis", etc. Nous avons choisi la plus courante, "pour", comme dans les autres cas où il y a beaucoup de possibilités."
+-> colonne Prép1 =: pour
+
+p.110 "Le verbe avoir, en tant qu'opérateur permet une extension de possession. Ainsi :
+N0 avoir Det N à V-inf W
+-> le N à de N0 V-inf W
+-> son N à V-inf W
+a été vérifié dans toute la table (cf. colonne "Je (connais+comprends) son N à V-inf W") ; cette propriété recouvre la grande majorité des substantifs :
+(77) Je connais son (acharnement+encouragement+endurance+objection+malaise+penchant+...) à ce Qu P"
+-> CHANGEMENT: colonne "N0 V son N à V-inf W" renommée en "N0 (connaître+comprendre) son N à V-inf W"
+-> Dans lgextract, dupliquée en 2 constructions:
+"N0 connaître son N à V-inf W" et "N0 comprendre son N à V-inf W"
+
+(15-01-10) Signification et modification des colonnes "il y avoir N à V0-inf W", "de la part de N0", "(pour+à l'égard de) N0":
+p.117: "Il y a"
+"(101)a. Il y a (E+un) (intérêt+avantage+obligation+...) (E+pour Pierre) à disparaître
+b. Il y a (E+un) (acharnement+apprivoisement+complaisance+...) (?E+de la part de Pierre) à faire du théâtre"
+"deux prépositions directionnellement contraires :
+1° de la part de N0
+où N0 est le point d'origine (101b)
+2° (pour+a l'égard de) N0
+où N0 est le point d'aboutissement (101a)"
+-> La colonne "il y avoir N à V0-inf W" dépend des 2 colonnes "de la part de N0" et "(pour+à l'égard de) N0" qui permettent d'ajouter un argument supplémentaire, en supposant que l'effacement de cet argument est toujours possible, ce qui serait représenté par le '+' dans la colonne "il y avoir N à V0-inf W" (cela est un peu trop poussé vu que l'exemple précédent contient "?E" avec la préposition "de la part de N0")
+-> CHANGEMENT: Nouveaux intitulés complets et sans dépendance:
+"de la part de N0" -> "il y avoir N à V0-inf W de la part de N0"
+"(pour+à l'égard de) N0" -> "il y avoir N à V0-inf W (pour+à l'égard de) N0" avec le + ayant une signification de ET
+-> l'ordre n'est pas le même que dans l'exemple car on veut montrer qu'il s'agit d'un argument supplémentaire pouvant s'ajouter à la fin, ce qui est vrai, même s'il peut s'insérer aussi au milieu. Mais les arguments étant permutables dans la grammaire d'Eric de la Clergerie, cela ne pose pas de problème, et sera plus facil à reconnaitre dans le script de conversion au format Lefff.
+(15-02-10) CHANGEMENT: Ajout de la possibilité d'avoir le Det "(E+un)" (cf.exemples (101) précédents):
+il y avoir N à V0-inf W -> il y avoir (E+un) N à V0-inf W
+il y avoir N à V0-inf W de la part de N0 -> il y avoir (E+un) N à V0-inf W de la part de N0
+il y avoir N à V0-inf W (pour+à l'égard de) N0 -> il y avoir (E+un) N à V0-inf W (pour+à l'égard de) N0
+(en notant que la signification du + est ET)
+-> Dans lgextract:
+il y avoir (E+un) N à V0-inf W est dupliquée en "il y avoir N à V0-inf W" et il y avoir un N à V0-inf W"
+il y avoir (E+un) N à V0-inf W de la part de N0 est dupliquée en "il y avoir N à V0-inf W de la part de N0" et "il y avoir un N à V0-inf W de la part de N0"
+il y avoir (E+un) N à V0-inf W (pour+à l'égard de) N0 est dupliquée en "il y avoir N à V0-inf W pour N0", "il y avoir N à V0-inf W à l'égard de N0", "il y avoir un N à V0-inf W pour N0" et "il y avoir un N à V0-inf W à l'égard de N0" (4 constructions puiqu'il y a 2 '+')
+
+CHANGEMENT: le Vsup est toujours '+' pour "avoir" (sans exception, on garde la colonne par conformité aux autres tables)
+-> par conformité aux autres tables et pour que "avoir eu" et les autres Vsup (manifester, donner) soient également concernés par les autres colonnes, tous les "avoir" remplacés par "Vsup"
+Colonnes concernées:
+base = N0 avoir Det N Prép N1 -> N0 Vsup Det N Prép N1
+N0 avoir le N de V0-inf W -> N0 Vsup le N de V0-inf W
+N0 avoir le N de Nc à N1 -> N0 Vsup le N de Nc à N1
+Le verbe avoir est gardé pour les cas suivants car montre la facultativité (et colonnes utilisée déjà pour an0...) et n'apporterait rien de plus (n'étant pas commun aux autres tables):
+N0 avoir un N
+N0 avoir un N Modif
+N0 avoir le N
+N0 avoir du N
+il y avoir (E+un) N à V0-inf W
+il y avoir (E+un) N à V0-inf W de la part de N0
+il y avoir (E+un) N à V0-inf W (pour+à l'égard de) N0
+
+CHANGEMENT:
+Ajout d'un Det pour qu'il y en ait pour chaque entrée ("N0 avoir le N de Nc à N1"  est accepté comme seul Det):
+Det =: un : contre indication, qualification
+Det =: du : obstination
+
+CHANGEMENT:
+Ajout d'une distribution du sujet quand il n'y en a pas:
+N0 =: Nhum : intoxication, jouissance
+
+ANS: (16-02-10)
+p.37 "La structure symétrique "N0 V avec N1" doit toujours être mise en relation, en dernière analyse, avec "N0 et N1 V". C'est cette structure symétrique que nous avons utilisée comme phrase de référence minimale. Elle peut être représentée ainsi :
+(6) NO avoir Det (V-n+N) avec N1"
+-> base = "N0 avoir Det N avec N1"
+-> CHANGEMENT: "N0 et N1 avoir Det N" ajouté comme base également
+
+(14-01-10) Signification des colonnes "(N0+N1) =: Nhum", "(N0+N1) =: N-hum", "(N0+N1) =: Nnr", "(N0+N1) =: Npl obl":
+p.39 thèse Jacques Labelle:
+"La définition de symétrie repose sur le fait qu'il y a obligatoirement deux arguments. Ces arguments sont notés, arbitrairement, N0 et N1 dans la phrase de référence (ceci, pour faciliter la discussion) et son reprsentés dans la table (N0,N1) ce qui signifie qu'ils sont permutables (Borillo, 1971) et qu'ils ont les mêmes propriétés distributionneles (N0 = N1)."
+-> OK pour lgextract, la distribution concerne bien les 2 arguments N0 et N1
+(15-02-10) CHANGEMEMT: colonnes (N0+N1) =: Nhum", "(N0+N1) =: N-hum", "(N0+N1) =: Nnr" dédoublées en N0 =: Nhum", "N0 =: N-hum", "N0 =: Nnr" ET en N1 =: Nhum", "N1 =: N-hum", "N1 =: Nnr" avec le même codage (la propriété "(N0+N1) =: Npl obl" n'est pas changée car elle a une signification particulière cf. plus bas). Cela permet de ne pas ajouter des colonnes très peu réutilisables (que pour les symétriques, dans le même cas, table f7) et de pas confondre avec les colonnes (N1+N2) des verbes qui indiquent soit le N1 source, soit le N1 destination en fonction des arguments présents. Désavantage: La colonne est dupliquée.
+
+p.42 "N0 avoir Nsym avec N1"
+-> On ne rajoute pas Nsym car on va le supprimer ensuite
+
+p.44-45 "Tous les Nsym peuvent s'insérer dans la structure :
+Il y a (E+Det) Nsym entre N0 et N1
+cependant que les cas jugées douteux sont refusés.
+Il y a (E+un(e)) (lien+bataille+ressemblance+...) entre N0 et N1
+*Il y a (E+un) (enfant+orgasme+ennui+...) entre N0 et N1"
+-> CHANGEMENT: colonne "il y avoir Det N entre N1 et N2" renommée en "il y avoir (E+Det) N entre N0 et N1" (en sachant que le + est un ET)
+-> On ne rajoute pas Nsym car on va le supprimer ensuite
+
+p.46 "Certaines des propriétés, que nous avons vérifiées, se trouvent éliminées des tables parcequ'elles étaient toujours marquées "+" (ex: N0 == N1) ou toujours marquées "-" (ex: Que P en position N1)."
+-> CHANGEMENT: N1 =: N0 codée '+' dans la tdt (mais colonne inexploitable)
+-> CHANGEMENT: N1 =: Qu Pind, N1 =: Qu Psubj et N1 =: ce Qu P codées '-' dans la tdt
+
+p.47 "Les arguements (N0, N1)" Explication Nnr:
+"Nous avons vérifié, dans nos listes, en plus des trois propriétés nhum, N-hum , Nnr, les complétives "le fait Qu P", "Qu Psubj", "le fait de V-inf W" et "V-inf W". Pour toute la classe Nsym, ces quatre dernières constructions sont acceptables lorsqu'au moins l'une d'entre elles est permise et, de plus, elles coîncident toujours avec N =: Nr, c'est-à-dire avec des N sans aucune restriction sur le sujet ou le complément, comme dans les exemples suivants :
+le fait (Qu P+de V-inf W)		analogie
+Qu Psubj			a une	relation	avec le fait (Qu P+de V-inf W)
+V-inf W					ressemblance
+Dans tous les cas de ce genre, on peut faire comuter les complétives avec des N comme "la table" : volà ce que signifie ici N non restreint.
+Nous avons relevé une trentaine de substantifs ayant la propriété N =: Nnr. Ce sont des symétriques qui ont une valeur abstraite, c'est-à-dire qu'ils mettent particulièrement en relief la relation logique entre les arguments."
+-> CHANGEMENT: Ajout des colonnes mentionnées ayant le même codage que (N0+N1) =: Nnr:
+pour N0: "N0 =: le fait Qu P", "N0 =: Qu Psubj", "N0 =: le fait de V-inf W" et "N0 =: V-inf W"
+et pour N1: "N1 =: le fait Qu P", "N1 =: le fait de V-inf W"
+
+(suite explication Nnr) p.47-48 "Une autre observation ressort de la distribution de ces propriétés : l'opposition actif/non actif.
+(24) Pierre a une conversation avec Marie
+(25)a. Pierre a une certaine (parenté+incomptabilité) avec Marie
+b. (Pierre+ceci) a une certaine parenté avec (Marie+cela)
+(26) (?Pierrre+ceci) a une certaine analogie avec (?Marie+cela)
+En (24), N0 et N1 sont Nhum et l'interprétation est active? En (25a), les No et N1 sont aussi Nhum mais la phrase est non active ; comme Pierre peut commuter avec n'importe que N (25b), il n'a pas été marqué + Nhum, de façon à garder la distinction actif/non actif.
+En (26), Pierre ne peut être acceptable que si Nhum =: Nnr. En (25b), il y a les deux possibilitées Nhum et Nnr et nous maintenons deux entrées distinctes au lexique, ce qui d'ailleurs se trouve justifié par d'autres propriété, comme on peut l'observer dans la table."
+
+p.48 Interprétation du modifieur:
+"détermination par modifieur ("Modif") : "Adj", "de N"."
+"modifieur quelconque : adjectif, complément de nom ou relative."
+
+p.57-58 "Parmi les substantifs acceptant le pluriel" (Det =: des), "nous avons observé que certains entraînent le pluriel d'un des arguments (N0, N1), sorte d'accord en nombre.
+(57)a. Paul a eu des (histoires+querelles+...) avec Eva
+b. Paul a eu des (histoires+querelles+...) avec Eva, Marie et Lucie
+(58)a. Paul a eu (une+*des) idylle(s) avec Eva
+b. Paul a eu (?ne+des) idylle(s) avec Eva, Marie et Lucie
+c. Paul a eu (?une+des) idylle(s) avec plusieurs femmes
+Il s'agit là d'une contrainte lexicale. Le pluriel de Nsym = histoire, querelle, conversation,... n'entraîne pas le pluriel des arguments (57), alors que le pluriel de Nsym = idylle, amourrette, alliance,... rend nécessaire le pluriel d'un des arguments (58c) (quelle que soit sa position) ou la conjonction d'arguments (58c)."
+"Cette propriété d'accord en nombre a été notée dans la table dans une colonne dépendante de Det =: des, qui s'intitule "(N0+N1) =: PLURIEL"
+->  colonne "(N0+N1) =: Npl obl" indique un pluriel pour l'un des 2 arguments mais on ne sait pas lequel
+-> dans lgextract, possibilité de pluriel pour N0 et N1 sans être obligatoire:
+define plur plur {plur="true"};
+define notplur notplur {plur="false"};
+
+p.63 "L'opérateur"
+"Temps, aspect et acceptabilité"
+L'observation des combinaison opérateur-nom nous a obligé à utiliser systématiquement le passé composé pour améliorer l'acceptabilité des phrases.
+(72)a. Paul a un rendez-vous avec Luc" -> résultatif (aspect)
+"b. ?Paul a un accident avec Luc
+c. Ceci a une analogie avec cela" -> non ponctuel, duratif
+"(73)a. Paul a eu un rendez-vous avec Luc" -> résultatif
+"b. Paul a eu un accident avec Luc" -> ponctuel
+"c. ?Ceci a eu une analogie avec cela
+Les phrase (72b) étant douteuse avec Vop =: avoir est parfaite avec Vop =: avoir eu (73b), alors que (72a) et (73a) son également acceptables. Ce qui est le plus intéressant, c'est d'observer que (73c), bien que grammaticale, provoque un effet de surprise."
+-> CHANGEMENT: le Vsup étant partagé entre "avoir" et "avoir eu" (2 colonnes codées '+' ou '-', sauf pour solidarité, lien (2ème), (Det =: un) concubinage, (N0/N1 =: N-hum, Det =: un-Modif, à vérifier...) identité, (N0/N1 =: N-hum) incorporation -> mis à '+' pour avoir et camaderie, (Det =: un) fraternité mi à '+' pour avoir et avoir eu) on ne peut pas le faire figurer dans la construction de base, tous les "avoir" remplacés par "Vsup"
+Colonnes concernées:
+* base = N0 avoir Det N avec N1 -> N0 Vsup Det N avec N1 (cela est confirmé par p.78 "importance de la préposition "avec" dans "Vop Det N avec")
+* base = N0 et N1 avoir Det N -> N0 et N1 Vsup Det N
+* N0 avoir le N de V0-inf W -> N0 Vsup le N de V0-inf W
+* N0 avoir du N pour N1 -> N0 Vsup du N pour N1
+* N0 avoir Det Nsym (cela est confirmé par p.61 "(63) Paul a un rendez-vous (E+avec Eva)"
+"Nous avons codé comme sous-structure ("+ N0 (a+a eu) Det Nsym") les phrases qui prises isolément, paraissent naturelles et qui conservent l'interprétation symétrique comme le montre (63). Nous avons voulu éliminer un problème d'aspect en testant l'acceptabilité des phrases avec "a" ou "a eu". Les substantifs accident, accrochage, cohésion, contrat, engagement, intrigue, rendez-vous (64) ont tous cette propriété et les contraintes quis'exerce sur la sous-structure ne diffèrent pas de celle de la phrase complète.
+(64)a. Paul (a+a eu) (un rendez-vous+un contrat+une intrigue)
+b. Paul (a+*a eu) un engagement
+b'. Ceci (a+*a eu) une cohésion parfaite
+c. Paul (*a+a eu) un (accident+un accrochage)
+Les contraintes sur N0 (64b, b'), les contraintes de détermination (64b'), les contraintes de temps (64a-c) sont les mêmes que si on ajoutait "avec N1", et il n'y a pas de changement de sens important.")
+* il y avoir (E+Det) N entre N0 et N1 -> il y Vsup (E+Det) N entre N0 et N1
+-> Dans lgextract: duppliquée en "il y Vsup N entre N0 et N1" et "il y Vsup Det N entre N0 et N1"
+* il y avoir Det N entre N1 -> il y Vsup Det N entre N1 (cela est confirmé par p.62 "L'infinitive"
+"Le substantif symétrique refuse généralement la structure suivante :
+N0 (a+a eu) (le+la) N de V0-inf W
+(67) *Paul a eu la (ressemblance+combat+discussion+...) de faire cela")
+
+CHANGEMENT:
+Ajout d'un Det (à part ceux cités ci-dessus) pour qu'il y en ait pour chaque entrée:
+Det =: un : compatibilité
+Det =: un-Modif : harmonie
+
+CHANGEMENT:
+Ajout d'une distribution pour le sujet (à part celles cités ci-dessus) quand il n'y en a pas:
+N0 =: Nhum : consultation, contacts, conversation, coopération, corps à corps, cousinage, débat, délibération, démêlés, désengagement, dialogue
+N0 =: N-hum : controverse, convention, copropriété, décrochage, désaffiliation
+
+p.67 "Autres opérateurs" : "Faire"
+"La colonne "Faire Det Nsym" ne chapeaute que les constructions directement apparentées à "avoir", soit :
+(81) N0 faire Det Nsym avec N1
+où Nsym = alliance, arrangement, compreomis, concours, guerre, tournoi,...
+Ont été marquées "-" les constructions où interviennent un actant supplémentaire, soit :
+(82) N0 faire Det Nsym entre N1 et N2
+où Nsym = disjonction, rapport, rapprochement, relation,...
+Parce que les propriétés de (N0, N1) /non restreint/ et /non actif/, applicable à "avoir" se reportent sur N1 et N2 avec Vop =: faire.
+Cette relation par opérateur est prédictible à partir des propriétés de (N0, N1) dans la table Nsym, et peut être obtenue non seulement par "faire" mais pas "établir", et de nombreux autres verbes comme "voir", "concevoir", "apercevoir"..."
+-> IMPORTANT: colonne "N0 faire Det Nsym" correspond à 2 constructions différentes possibles, il n'y a aucun moyen moyen de connaîte la construction complète sans dédoubler la colonne (donc laissée telle quelle)
+
+p.68-70 "Donner"
+"L'opérateur donner se combine avec un certain nombre de Nsym (20% de la liste environ) dans trois constructions apparemment distinctes.
+i) N0 donner Nsym à N1 (avec+et) N2
+(où Nsym = ressemblance+cohéritage+...)
+ii) N0 donner Nsym à N1
+(où Nsym = rendez-vous+entrevue+...)
+iii) N0 donner son Nsym à N1
+(où Nsym = collaboration+engagement+...)
+La structure (i) est illustrée par (84) et (85).
+(84)a. (Ce chapeau+marcher en sautillant) donne à Paul une ressemblance avec Luc
+b. (Ce chapeau+marcher en sautillant) donne une ressemblance à Paul et Luc
+(85)a. Le grand-père a donné un cohéritage à Eva (et+?avec) Paul
+b. Le grand-père a donné un cohéritage à Eva (et+?avec) (son+ses) frères(s)
+[...]
+La construction (ii) (88) s'aparente à (i) à cause de (89).
+(88)a. Paul a donné rendez-vous à Eva (E+?avec lui-même)
+b. Paul lui a donné rendez-vous (E+?avec lui-même)
+(89)a. ?La secrétaire a donné rendez-vous à Eva avec M. Tremblay
+b. La secrétaire lui a donné rendez-vous avec M. Tremblay
+La coréférence est seule responsable de l'effacement de "avec N": nous avons donc affaire à la même structure.
+La construction (iii) pose un problème de coréférence qui déborde le cadre de notre étude.
+(90)a. Paul donne (sa+*ta) collaboration à Luc
+b. *Paul lui donne la collaboration (de+avec) Luc
+c. ?*Paul lui donne la collaboration (de+avec) lui-même
+[...]
+(iii) se ramène donc à (ii).
+[...]"
+-> IMPORTANT: colonne "N0 donner Det Nsym" correspond à 3 constructions différentes possibles, il n'y a aucun moyen moyen de connaîte la construction complète sans dédoubler la colonne (donc laissée telle quelle)
+
+p.74 "La colonne "être Prép Nsym avec" révèle une intersection très importante entre le présent travail et celui de D. De Negroni. La colonne "être (Adj+Nsym) avec" recoupe de même travail et celui de L. Picabia. Toutes ces constructions ains que la très grande majorité des constructions avec verbe, privilégient une préposition, "avec", qui se distingue très clairement des autres prépositions "avec: "instrument, "manière", etc ; on pourrait appeler la première préposition symétrique ou "avec-sym".
+-> CHANGEMENT: colonnes "N0 être Prép Det Nsym", "N0 être Vpp", "N0 être Adj" s'alignent sur les 2 constructions de base en avoir ("N0 avoir Det N avec N1" et "N0 et N1 avoir Det N", mais à la différence de faire et donner, un '+' signifie que les 2 constructions sont valables, d'où la dupplication de chaque colonne en 2 pour avoir toutes les constructions complètent, ce qui correspondent à :
+N0 être Prép Det Nsym avec N1
+N0 et N1 être Prép Det Nsym (même codage)
+N0 être Vpp avec N1
+N0 et N1 être Vpp (même codage)
+N0 être Adj avec N1
+N0 et N1 être Adj (même codage)
+(en sachant que Adj et Vpp sont inexploitables puisqu'aucune colonne <OPT>Adj et <OPT>V n'est codée, le Vpp étant déduisible du V)
+
+p. 74-78 "Nous avons noté dans la table les "V" qui sont relié morphologiquement au Nsym, et nous renvoyons, par le numéro de table du verbe, (Gros1969, Boons, Guillet, Leclère, 1972) à l'emploi qui correspond syntaxiquement au Nsym. Plusieurs substantifs sont ainsi à rapprocher du verbe, e.g., bagarre, brouille, combat, conversation, dispute, enchaînement, relation, etc.
+Les structures observées sont :
+i) N0 V N1 (et N1 V N0)
+ii) N0 V avec N1
+iii) N0 V N1 (et+avec+à) N2
+iv) N0 se V avec N1 (non réfléchi)
+[...]" (i):
+'Si NO (égale+affronte+contacte+rencontre) N1, alors :
+N1 (égale+?affronte+contacte+rencontre) N0
+[...]" autres cas de type (i):
+"(103)a. Paul (bat+engueule+entretient+...) (*E+Virginie)
+b. Paul se (bat+engueule+entretient+...) avec (E+Virginie)
+c. Paul (a+a eu) un(e) (bataille+engueulade+entretien) (E+avec Virginie)
+[...]" N0 V à N1:
+"La structure "N0 V à N1" n'est représentée que par quatre verbes, dans la table Nsym : correspondre à, converger (vers+de+à), équivaloir à et ressembler à."
+(ii):
+Près du quart des Nsym correspondent à de sverbes ayant la structure "N0 V avec N1" avec ou sans deuxième complément. La plupart figurent dans la table 15 des verbes à complétives (Gross (1969)) ou dans 35S des verbes sans complétives (Boons, Gillet, Leclère, 1973).
+(104)a. Paul (converse+cause) de ce que P avec Luc
+b. Paul a eu une (coversation+causette) (E+*de ce que P) avec Luc
+(105)a. (*Paul+Ceci) concorde avec (*Marie+cela)
+(Paul+Cette maison) communique avec (Marie+ce garage)
+b. (*Paul+Ceci) a une concordance parfaite avec (*Marie+cela)
+(Paul+Cette maison) a une communication avec (Marie+ce garage)
+[...]" (iii):
+"Un autre quart correspond à "NO V N1 (avec+et) N2", représenté dans la table 36S (verbes transitifs symétriques).
+(106)a. Pierre brouille Marie (avec+et) Eve
+b. (Marie+Eve) a une (brouille+brouillerie) avec (Eve+Marie)
+[...]" (iv):
+"La dernière colonne des verbes correspond à "N0 se V avec N1" non réfléxif, au sens classique du terme, ce qui aurait l'avantage d'expliquer la productivité du mécanisme en "se-V" de manière uniforme.
+(107)a. *Paul (bat+dispute) (N0, N1) (*et+avec) Luc
+(analogue à : Paul bat Pierre avec Luc,
+et : Paul et Luc battent Pierre)
+[REFL.] b. Paul se (bat+dispute) avec Luc
+c. Paul et Luc se (battent+disputtent)
+d. Paul et Luc (battent+disputent) eux-mêmes
+(108)a. *Paul (associe+marie) (N0, N1) (*et+avec) Eva
+[REFL.] b. Paul se (associe+marie) avec Eva
+c. Paul et Eva se (associent+marient)
+d. Paul et Eva (associent+marient) eux-mêmes"
+-> CHANGEMENT: "N0 V N1 (avec+et) N2" renommée en "N0 V N1 (à+avec+et) N2" comme pour f7 (cf. iii)
+-> IMPORTANT: colonnes "N0 V N1", "N0 V avec N1", "N0 V N1 (à+avec+et) N2", "N0 se V avec N1" inutilisables puisqu'il manque la colonne "<OPT>V" associée ('O' à coder dans la tdt) mais sont quand même présentes dans lglex.
+
+p.78 "importance de la préposition "avec" dans "Vop Det N avec"
+-> CHANGEMENT: tous les "Nsym" renommé en "N" car cette information concerne les entrées de toutes cette table sans apporter une information supplémentaire que le numéro de la table.
+Colonnes concernées:
+N0 donner Det Nsym -> N0 donner Det N
+N0 Vsup Det Nsym -> N0 Vsup Det N
+N0 faire Det Nsym -> N0 faire Det N
+N0 être Prép Det Nsym avec N1 -> N0 être Prép Det N avec N1
+N0 et N1 être Prép Det Nsym -> N0 et N1 être Prép Det N
+
+Tables ANA-ANS: (17-02-10)
+Propriétés distributionnelles ajoutée dans lgextract car pas prises en compte:
+N0 =: le fait de V-inf W
+N1 =: le fait de V-inf W
+N1 =: la façon de V-inf W
+N1 =: ce(ci+la) -> ajoutée aussi pour les verbes
+N1 =: la dessus
+Cela est noté:
+define comp leFaitDeInf [cat="leFaitDeInf"];
+define comp laFaconDeInf [cat="laFaçonDeInf"];
+define comp cecicela [cat="ceci+cela"];
+define comp laDessus [cat="laDessus"];
+-> Reste à voir comment cela peut être interprété dans le format Lefff:
+A FAIRE!!!
+
+Elsa(08-11-09) -> Fin (17-02-10)
+-------------------------------------------------------------------------------------
+Extraits de la thèse de Annie Meunier:
+
+AN01-06+ANSY:
+p.182 "Pour les paires que par Commodité nous appelons "d'humeur" à savoir {gai,gaieté} {morose,morosité} etc...", "la construction à sujet non humain prendun complément en "pour" que ne prend pas celle à sujet humain"
+ex: "Ce paysage a une certaine mélancolie pour Pierre"
+"!= ?Pierre a une certaine mélancolie pour Paul"
+-> cela ne figure pas dans les tables mais la liste n'est pas complète
+
+AN01:
+p.185 "Il arrive que ces paires soient, obligatoirement ou non, suivies d'un complément prépositionnel ; l'obligation de ce complément dans les formes nominales est signalée par le signe "-" dans la colonne "N0 avoir Det N". Ainsi :
+Pierre a une certaine force
+ne correspond pas à l'emploi :
+Pierre a une certaine force en mathématiques"
+-> "NO avoir Det Prép N1" est construction de base, puis si "Prép N1" est facultatif, la colonnne "N0 avoir Det N" est codée '+'.
+
+AN01:
+p.186 "Il n'y a pas parallèlisme entre les formes "être Adj" et les formes "avoir Det N" en ce qui concerne l'obligation de complément. Ainsi on a :
+Pierre est soigneux (E+de ses affaires)
+mais on a obligatoirement :
+Pierre a (E+grand+un grand+le) soin de ses affaires
+*Pierre a (E+grand+un grand+le) soin"
+-> "N0 est Adj Prép N1" et "N0 est Adj" sont constructions de base.
+
+AN03: modification d'intitulé de colonne (ajout du "de" devant le N0)
+Qu P être de Det N de la part N0 -> Qu P être de Det N de la part de N0
+
+AN04: nouvelle propriété (qui est définitoire)
+N0 avoir le N de Npsy de V0-inf W
+p.198: "formes N de Npsy obtenues par restructuration" :
+"Pierre a une certaine (ampleur de vues"+"cohérence de raisonnement"+"vivacité de caractère")
+p.199: "elles entrent dans la structure N0 avoir le N de Npsy de V0-inf W:
+Pierre a l'ampleur de vues de discerner immédiatement les corollaire d'un problème"
+
+--> a coder - pr les autres tables???
+
+AN04: remarques sur les intitules de 4 colonnes qui sont peut-être à changer
+p.199-200: "compléments (à+pour)N1" (le à n'apparait pas dans les intitulés!)
+"Les colonnes :
+N0 avoir Det N pour N1
+N1 avoir Det N V-inf W" -> N1 avoir Det N Prép N0 (laissé comme codé dans la table car fonctionne aussi avec N0=:Qu P et la Prép dépend du Det)
+"représentent les formes :
+=: Faire ce problème a une certaine difficulté pour Pierre
+=: Pierre a une certaine difficulté à faire ce problème
+Les colonnes :
+N0 être Det N pour N1
+N1 avoir le N de V0-inf W" (ici ne fonctionne qu'avec les infinitives)
+"représentent les formes :
+=: Faire cette promenade est une habitude pour Paul
+=: Paul a l'habitude de faire cette promenade"
+
+AN05: remarques sur les intitulés de 2 colonnes qui sont peut-être à changer
+p.201: "Le complément de Nmes"
+-"la colonne N0 avoir Det N de Dnum Nmes" (colonne correspondant à "Det =: un-de Dnum Nmes"???) :
+Ce lit a une longueur de 2 mètres
+"Ce courant a une intensité de dix ampères"
+-"la colonne N0 être Adj de Dnum Nmes" (colonne présente) :
+Ce lit est d'une longueur de 2 mètres
+"*Ce courant est d'une intensité de dix ampères"
+
+AN06: remarque sur les 2 colonnes "N0 avoir Det N" et "N0 avoir Det N Loc (N0pc+N0p0)" (signification de cette notation?)
+p.207 "Le complément Loc N1" (avec coréférence à l'argument 0)
+Il caractérise la relation être Adj = avoir Det N.
+C'est dans cette table que se trouve les entrées pour lesquelles son apparition est obligatoire.
+Il fait donc, dans cette table, l'objet d'une colonne. Le caractère obligatoire, facultatif ou impossible de son apparition est obtenue par la lecture liée des deux colonnes "N0 avoir Det N" et "N0 avoir Det N Loc N1""
+ex de caractère obligatoire:
+"Ce minerai est cuprifèvre
+= Ce minerai a du cuivre dedans
+= Il y a du cuivre dans ce minerai"
+ex de caractère facultatif:
+"Cet arbre est feuillu
+= Cet arbre a des feuilles (E+sur ses branches)
+= Il y a des feuilles sur (E+les branches de) cet arbre"
+ex de caractère interdit:
+"Pierre est joufflu
+=Pierre a de grosses joues (E+?*sur le visage)"
+-> renommage de (N0pc+N0p0) en N1:
+"N0 avoir Det N Loc (N0pc+N0p0)" -> "N0 avoir Det N Loc N1" (car notation beaucoup plus claire dans la thèse)
+
+AN06: remarque sur l'intitulé "Adj = comme du N"
+p.209 "Certaines formes "être Adj" sont ambiguës :
+Ce lait est crémeux
+= Ce lait a de la crème dedans
+= Il y a de la crème dans ce lait
+Cette emulsion est crémeurse
+= Cette émulsion est comme de la crème"
+
+AN06: remarque sur l'intitulé "Adj =: Aug"
+p.210 "Certains adjectifs ont un caractère augmentitaif qui se traduit dans la forme nominale par une distribution particulière des déterminants et du modifieur :
+Ce fruit est juteux
+= Ce fruit a beaucoup de jus"
+
+ANSY:
+p.202-205 Aucune indication à propos de la construction avec 'être de'
+-> laissée constante '+' car n'est pas non plus * dans les exemples
+"Cet objet (est identique à+a une certaine identité avec) cet autre"
++est d'une certaine identité avec
+-> fonctionne aussi
+Elsa(13-01-10)
+-------------------------------------------------------------------------------------
+Tables AN01-06+ANSY:
+Suppression de la colonne "N0 =: Qu P+le Ncomp Qu P+(le fait de+la manière de) V-inf W" (car le + veut dire OU et cela n'est pas interprétable)
+-> Remplacement par les 3 colonnes "N0 =: la manière de V-inf W", "N0 =: Qu P" et "N0 =: le fait Qu P" (déjà existantes) concernant uniquement la construction de base avec 'avoir'
+et par la colonne "Qu P être Adj" concernant la 2 constructions de base avec 'être Adj'
+(A quoi rattacher la construction avec 'être de'???)
+AN01:
+N0 =: Qu P+le Ncomp Qu P+(le fait de+la manière de) V-inf W anciennement codée '-' pour 'avoir' mais '+' pour 'être' -> codage '-' pour les 3 colonnes et '+' pour "Qu P être Adj"
+AN02:
+N0 =: Qu P+le Ncomp Qu P+(le fait de+la manière de) V-inf W anciennement codée '-' pour 'avoir' et "Qu P être Adj" codée 'o' pour 'être'
+-> codage '-' pour les 3 colonnes
+AN03:
+N0 =: Qu P+le Ncomp Qu P+(le fait de+la manière de) V-inf W anciennement codée '+' autant pour 'être' que pour 'avoir' et les 2 colonnes "N0 =: la manière de V-inf W" et "N0 =: le fait Qu P" codées 'o' -> codage '+' pour "N0 =: Qu P" et "Qu P être Adj"
+AN04:
+N0 =: Qu P+le Ncomp Qu P+(le fait de+la manière de) V-inf W anciennement codée '+' car les 3 colonnes sont codées 'o' et au moins l'une des 3 est '+' -> codage '?' pour "Qu P être Adj" (p.198 les exemples sont avec 'être' et 'avoir' sans indication particulière pour 'être', donc on peut supposer qu'ils ont le même codage, mais comment l'indiquer???)
+AN05:
+N0 =: Qu P+le Ncomp Qu P+(le fait de+la manière de) V-inf W anciennement codée '-' autant pour 'être' que pour 'avoir' -> codage '-' pour les 3 colonnes et "Qu P être Adj"
+Elsa
+-------------------------------------------------------------------------------------
+Tables AN01-06+ANSY:
+Modification des constructions de base pour supprimer "(E+Modif+Prép N1)" qui n'est pas exploitable -> Remplacé par aucun complément ou Prép N1
+Avant:
+N0 avoir Det N	,aucune
+N0 avoir Det N (E+Modif+Prép N1)	,an01,an02,an03,an04,an05,an06,ansy
+N0 avoir Det N Prép N1	, ansy
+->
+Après:
+N0 avoir Det N	,an03,an04,an05
+N0 avoir Det N Prép N1	,an01,an02,an03,an04,an05,an06,ansy
+
+Avant:
+N0 être Adj (E+Modif+Prép N1)	,an01,an02,an03,an04,an05,an06,ansy
+N0 être Adj Prép N1	,ansy
+->
+Après:
+N0 être Adj	, an01,an02,an03,an04,an05,an06
+N0 être Adj Prép N1	,an01,an02,an03,an04,an05,an06,ansy
+
+Avant:
+N0 être de Det N (E+Modif+Prép N1)		,an01,an02,an03,an04,an05,an06(codée '-'),ansy
+->
+Après:
+N0 être de Det N		,an01,an02,an04,an05,an06(codée '-')
+N0 être de Det N Prép N1	,an01,an02,an03,an04,an05,an06(codée '-'),ansy
+
+-> Cela ajoute p-e l'acceptébilité de certaines constructions qui sont fausses...
+
+IMPORTANT: N0 avoir Det N Modif serait a ajouter également + mm chose pr les 2 être!!
+Elsa
+-------------------------------------------------------------------------------------
+Tables AN01-06+ANSY:
+Explicitations des colonnes:
+AN01:
+-Det =: un-de Dnum Nmes
+ex: Luc a une ancienneté (E+de 5 ans dans (son entreprise+cet échelon))
+-> Det = un + un complément de nom ("de Nc") avec un Det numérique et un nom de mesure
+-N0 avoir Det N
+-> facultativité de "Prép N1"
+-Que déduire lorsque Prép1=<E>??
+Léa a de l'apathie pour (ce genre de travail+Luc)
+saleté: Prép obligatoire ms = <E>
+
+Pour les Prép1, elles sont valables pour 'avoir' et 'être'
+Elsa
+-------------------------------------------------------------------------------------
+ANSN-ANDN:
+Changement des constructions de base, anciennement:
+N0 avoir Det N (de N1+Qu P)	,andn
+N0 avoir Det N (E+Qu P) sur N1	,ansn
+Lingvisticae Investigationes Tome XXVII Fascicule 2 pp. 219-238 (2004, Giry-Schneider)
+ANSN:
+p.221: "Propriété (1): une complétive à l'indicatif, compatible avec "sur N1" dans la même phrase, et possible si le déterminant de N est défini singulier; elle n'est ni régulière ni obligatoire, éventuellement réductible à l'infinitif aux conditions habituelles:
+Max a sur ce point (le préjugé+la croyance) Qu P
+Max a l'illusion (qu'il est le plus fort+d'être le plus fort)"
+-> cela correspond à la colonne "N0 avoir le N Qu P sur N1" codée dans la table
+-> la construction de base est donc "N0 avoir Det N sur N1"
+ANDN:
+p.223: "propriété (1): la complétive à l'indicatif (Il a conscience Que P) pour la moitié environ des N en jeu; mais cette complétive ne se surajoute pas au complément nominal, elle s'y substitue, d'où la nécessité d'étudier plus finement qu'ici la possible relation transformationnelle entre ces deux éléments, le nom pouvant parfois s'analyser comme une réduction de complétive (Jean a conscience de la présence de Marie = Jean a conscience que marie est présente)."
+-> cela ne concernant que la moitié, la construction de base est "N0 avoir Det N de N1"
+-> la colonne "N0 avoir Det N Qu P" n'est pas présente dans la table et devrait être codée...
+Les constructions de base deviennent:
+N0 avoir Det N de N1	,andn
+N0 avoir Det N sur N1	,ansn
+Elsa(15-01-10)
+-------------------------------------------------------------------------------------
+ANSN:
+Remarques sur des colonnes:
+p.221: "Propriété (2): dans certains cas, le Vsup avoir a les variantes lexicales "émettre, formuler" (Max émet l'opinion Qu P), qui s'appliquent en principe aux noms dérivés de verbes de paroles comme "promesse" ou "aveu", comme quoi un nom "de jugement" peut aussi bien être un nom "de parole", donc d'évènement."
+-> colonne "Vsup =: (émettre+formuler)"
+p.221: "Propriété (3): le Vsup "avoir" peut aussi avoir des variantes aspectuelles, comme "acquerir" (Max a acquis l'opinion Que P)"
+-> colonne "Vsup =: acquérir"
+p.221: "Propriété (4): certains noms ont une forme plurielle obligatoire dans cette construction:
+Max a des connaissances, des notions, des lumières, des intuitions sur tout
+Ce pluriel leur donne un sens plus "concret", comme l'indique l'opposition entre les deux énoncés:
+Max note (ses croyances+ses connaissances+*sa croyance Qu P) sur ce sujet
+-> colonne "Det =: des"
+p.222-223: "Propriété (7): les opérateurs causatifs "donner, apporter" (pour cette notion voir M. Gross 1981); seul un petit nombre de ces noms admettent ces opérateurs:
+Cette expérience lui a donné un nouveau regard sur cette affaire
+?*Cette expérience lui a donné (des croyances+des intuitions) sur cette affaire
+ce qui suggère que ces noms dans leur majorité désignent une réalité qui relève strictement de la vie intérieure autonome du sujet sans intervention d'une cause extérieure."
+-> colonne "Vsup =: donner" (pas Vsup2 le 29-12-10)
+
+ANSN-ANDN
+Renommage de colonne:
+p.222:"Propriété (6): la possibilité de modifieurs "logiques" spécifiques comme "juste, exact/faux, erroné", ou bien "clair, net/confus, vague, flou", ou encore "large/étroit":
+Jo a (un point de vue juste+des conceptions fausses+une position juste) sur l'art"
+-> colonne "Modif =: (juste+faux)" qui spécifie le modifieur avec le Det "un" puisque c'est le modifieur n'apparait que dans "Det =: un-Modif"
+Remarque: parfois "Det =: un-Modif" est codée '-' alors que "Modif =: (juste+faux)" '+', ce qui n'est pas logique s'il n'y a pas de modifieur.
+-> pour ne pas avoir de dépendance et pouvoir relier le modifieur au Det "un" (sinon on pert cette information), il faut renommer la colonne :
+"Modif =: (juste+faux)" -> "Det =: un-(juste+faux)"
+-> Dans lgextract, la liste complète de l'article est présente :
+juste+exact+faux+clair+net+confus+vague+flou+large+étroit
+Elsa
+-------------------------------------------------------------------------------------
+ANDN:
+Remarques sur des colonnes:
+p.223: "la propriété (3): les variantes aspectuelles "acquérir, garder" (?Il a acquis une certaines connaissance du monde)"
+-> colonne Vsup =: acquérir
+p.224: "la propriété (6): les modifieurs adjectivaux spécifiques (Il a une image (juste+claire) du monde)."
+-> colonne "Det =: un-(juste+faux)" (anciennement "Modif =: (juste+faux)")
+p.224: "la propriété (7): ces expressions sont plus nombreuses à accepter les opérateurs causatifs:
+Cette éducation a donné à Max une conscience aiguë de ses obligations"
+-> colonne "Vsup =: donner" (pas Vsup2 le 29-12-10)
+p.224: "propriété (8): les déterminants de N sont plus variés, indéfinis ou définis:
+Jean a eu l'intuition du dénouement, le pressentiment d'une catastrophe"
+-> colonnes "Det =: un" et "Det =: le" (exemples uniquement pour "Det =: le")
+p.224: "propriété (9): avec l'indéfini, il faut généralement un modifieur obligatoire
+Jean a (*une image du monde+une image positive du monde)
+Ce modifieur, qui constitue un deuxième prédicat, peut désigner un jugement comme dans cet exemple, mais aussi la "manière de", ce qui apparaît de façon évidente avec les noms dérivés de verbes à adverbe obligatoire, comme "conception" en relation avec "concevoir Adv":
+Max conçoit le mariage de manière archaïque (*Max conçoit le mariage)
+Max a une conception archaïque du mariage (*Max a une conception du mariage)"
+-> colonne "Det =: un-Modif"
+p.224: Ces noms" (avec "Det =: un-Modif"), "qui n'admettent pas les variantes lexicales "émettre, formuler, énoncer", désigneraient des phénomènes mentaux considérés comme antérieurs à la parole, ou du moins ne donnant pas lieu à échange:
+*Jean émet une image positive du monde, formule une vision biaisée de ce texte"
+-> la colonne "Vsup =: (émettre+formuler)" n'est pas codée mais elle est possible avec les autres déterminants, c'est juste avec "Det =: un-Modif" qu'elle est fausse, donc elle serait à coder mais avec des dépendances...
+
+ANSN-ANDN:
+Remarque sur une colonne:
+p.225-226: la variante espectuelle durative "vivre dans""
+-> colonne "Vsup =: vivre dans"
+
+ANDN:
+Renommage de colonne:
+p.232: "un complément à préposition "sur" ou "de", à l'occasion "en"."
+-> la base étant "N0 avoir Det N de N1", on peut renommer la colonne :
+"en" -> "N0 avoir Det N en N1"
+Elsa(18-01-10)
+-------------------------------------------------------------------------------------
+Modif des intitulés de colonnes avec avoir et contenant le Det codé dans la construction
+-> car on a plein de constructions différentes qui diffèrent que par le déterminant
+-> sinon les infos de distributions dans "args" (qui sont pour la construction de base) sont ignorés
+-> AN09 et AN10 vont pouvoir avoir une construction de base, ce qui n'était pas le cas!
+
+AN07:
+N0 avoir Det N Modif -> N0 avoir Det N + Det =: un-Modif (BASE)
+N0 avoir un certain N -> Det =: un-certain (BASE)
+N0 avoir un N -> Det := un (BASE '-')
+N0 avoir de le N -> Det =: du
+N0 avoir un N de combien -> Det =: un-de Dnum Nmes
+N0 avoir le N de V0-inf W
+-> cette colonne spécifie un nouvel argument, elle doit rester comme construction (à noter q'elle code aussi un Det particuler)
+N0 être d'un certain N
+N0 être de Det N Modif
+N0 être de N Modif
+-> ces colonnes spécifie la construction avec "être" qui n'est pas celle de base, donc on laisse les Det codés dans les constructions
+
+AN08:
+N0 avoir un N de combien -> Det =: un-de Dnum Nmes
+
+ANO9:
+N0 avoir un N -> Det =: un
+N0 avoir un certain N -> Det =: un-certain
+N0 avoir des N -> Det =: des
+-> Base: N0 avoir Det N
+
+AN10:
+N0 avoir des N -> Det =: des
+N0 avoir un N -> Det =: un
+N0 avoir un N Modif -> Det =: un-Modif
+N0 avoir de le N -> Det =: du
+N0 avoir le N -> Det =: le
+-> Base: N0 avoir Det N
+
+lgextract: nouveau trait "valeur" pour le modifieur du det correspondant à la nouvelle colonne "Det =: un-certain"
+mais aussi pour "Det =: le-normal", "Det =: un-normal" (table APE11) et "Det =: un-(juste+faux)" (tables ANSN-ANDN)
+ex: detN=[list-det-modif=(det-modif=[det="un+une",value-modif="certain",modif="true"])
+-> Ajouté dans le README (OK)
+
+ANSU:
+Det N de combien? -> Det =: un-de Dnum Nmes
+
+AN06:
+N0 avoir un N -> Det =: un
+N0 avoir un N Modif -> Det =: un-Modif
+N0 avoir du N -> Det =: du
+N0 avoir des N -> Det =: des
+N0 avoir le N -> Det =: le
+-> ces constructions spécifient le déterminant de la construction de base N0 avoir Det N Prép N1
+Remarque: N0 avoir Det N -> colonne rendant facultatif "Prép N1" avec les même Det
+
+ANDN:
+N0 avoir un N
+N0 avoir des N
+N0 avoir du N
+-> ces constructions indiquent que le complément en "de N1" est facultatif tout en spécifiant le déterminant (qui n'est pas celui de la construction de base -> codé par Det =: un, Det =: un-Modif, Det =: le, Det =: <E>, Det =: un-(juste+faux))
+-> aucune modif à faire
+
+F21:
+N0 faire un N
+N0 faire des N
+N0 faire du N
+-> ces constructions indiquent que le complément en "de N1" est facultatif tout en spécifiant le déterminant (qui n'est pas celui de la construction de base -> codés par Det =: le, Det =: un, Det =: des)
+-> aucune modif à faire
+
+ANA:
+N0 avoir un N
+N0 avoir un N Modif
+N0 avoir le N
+N0 avoir du N
+-> ces constructions indiquent que le complément en "avec N1" est facultatif tout en spécifiant le déterminant (qui n'est pas celui de la construction de base -> codés par Det =: un, Det =: un-Modif, Det =: des, Det =: le, Det =: du)
+-> aucune modif à faire
+
+Elsa(20-01-10)
+-------------------------------------------------------------------------------------
+PB: Certaines entrées n'ont aucun Det de codé...
+
+AN06:
+Seulement pour "peste" -> Det =: le codé '+'
+(même signalisation que pour la table an05 ci-dessous)
+
+AN03:
+Uniquement Det =: du codé
+-> constante '+' pour Det =: un-Modif même si cela est p-e une généralisation abusive... mais est justifié par le fait qu'avant la base était :
+N0 avoir Det N (E+Modif+Prép N1), or dans les tables ou Modif n'est pas codé, cela doit être '+'
++cf. exemples thèse p.194-195: 
+"Cette manière de se comporter a une certaine austérité
+Pierre a une certaine austérité
+Le fait que Pierre ne soit pas venu a une certaine bizarrerie
+Pierre a une certaine bizarrerie"
+
+AN04:
+idem
+p.197: "Que Marie soit malade a une certaine évidence"
+
+AN05: (03-02-10)
+Det =: du
+Det =: des
+Det =: un-Modif -> codé + (du coup tout est +)
+Det =: un-de Dnum Nmes
+-> tous codé - pour acuité, bassesse, platitude
+-> Det =: un-Modif codé +
+-> Du coup toute la colonne est + mais on la garde pour montrer que j'ai forcé 3 entrées
+(le pb est signalé en rouge par tous les '-' présents, et la case que j'ai changé en '+' est en vert pour que l'on sache que c'est moi qui est modifié
+-> ça peut être une erreur ou être incomplet)
+Elsa(21-01-10)
+-------------------------------------------------------------------------------------
+Renommage de colonnes (tdt, constante tables Gaston Gross):
+N1 recevoir Det N de (E+la part de) N0 -> N1 recevoir Det N (de+de la part de) N0
+N1 recevoir un coup de N de (E+la part de) N0 -> N1 recevoir un coup de N (de+de la part de) N0
+N1 subir Det N de (E+la part de) N0 -> N1 subir Det N (de+de la part de) N0
+-> car la Prép est "de" ou "de la part de"
+-> Dans lgextract: Pas de duplication car il s'agit seulement de 2 prépositions différentes
+
+DR2: (idem pour DR1 et DR3) -> interprétations des colonnes de Det
+Les constructions converses du français, Gaston Gross
+p.137: "Les Déterminants
+Nous avons codé en colonne des différents determinants qui accompagnent les substantifs de cette table. Nous avons noté les déterminants suivants :
+a) Les déterminants figés" (Det figé)
+"Un certain nombre de substantifs ne permettent pas de variation sur leur détermination."
+"Le figement n'affecte pas seulement un type de déterminants. Nous trouvons :
+- Det =: le générique
+L'oiseau a donné la becquée à ses petits
+Max a donné l'estocade à son ennemi
+Le corsaire a donné le fouet à son matelot
+Le conseil de classe a donné les félicitations à cet élève
+- Det =: Poss0
+Max a donné sa confianc à Luc
+Max a donné sa (parole+foi) à Léa
+- Det =: Poss1
+Max a donné (son-1+*un+*ton) compte à Luc-1
+- Det =: <E>
+Max a donné à Luc (E+*une+*cette) connaissance de cette rumeur
+L'assemblée a donné quitus à Luc de sa gestion
+Max a donné satisfaction à la demande de Luc
+b) Det =: un
+Cette colonne note les substantifs qui n'ont pas de restrictions sur leur déterminants."
+Avec ce déterminant, un modifieur est possible :
+"Max a donné une grande claque à Luc"
+c) "Det =: du
+Luc a donné du bâton à ce garnement
+Max a donné de l'affection à cet enfant
+d) Autres déterminants" (autre Det)
+"Nous signalons, dans cette colonne, certains déterminants particuliers qui sont possibles en même temps que le déterminants "un". Cette information n'est pas codée de façon binaire mais signalée par des abréviations :
+Max a donné (un+E) asile à Léa
+Max a donné à Luc (la+E) liberté de faire ce qu'il veut
+Max a donné à Luc (la+E) mission de s'occuper de cette affaire
+Luc a donné (un+son) épilogue à cette affaire
+La France a donné (la+son) indépendance à ce pays
+Max a donné (une+sa) chance à son adversaire"
+-> Voici les colonnes codées :
+Det figé, autre Det, Det =: un, Det =: un-Modif, Det =: du, Det =: des, Det =: le-Modif
+Correction: Pour les 2 colonnes "Det figé" et "autre Det", le codage a été remis comme il l'est originellement dans les tables (tous les '-' avait été remplacé par "<E>", ce qui avait fait disparaître le codage réél "<E>") :
+soit c'est codé '-', soit c'est codé lexicalement par "<E>", "le", "la", "les", "des", "Poss0", "Poss1", "Poss2"
+-> Fait aussi pour FR1-3, FS2, IS1-2 (autre Det)
+-> fait aussi pour FN, FNA, FNN, FNPN, FNPNA, FNPNN, FNAN, FNANA, FNANN (autre Det)
+
+Cela ne pose aucun problème de notation puisque si la résolution de @autre Det@ vaut "-", le déterminant n'est pas ajouté à la liste et quand il a une valeur (ex: Poss0), le déterminant se confond dans la liste des déterminant sans aucune distinction.
+ex: ID=N_fn_3
+lexical-info=[cat="noun",Vsup=[cat="verb",list=(value="faire")],detN=[list-det-modif=(det-modif=[det="Poss0",modif="false"],det-modif=[det="des",modif="false"]),noun=[notperm=[complete="ablutions"],noun1="ablutions"]],prepositions=()]
+args=...
+all-constructions=...
+
+FNPNN: pattes de mouche
+-> Prép1 codée "-" (la saule entrée) et autre Det codé "Lo" (qu'on peut supposer être Loc) alors qu'il y a un N1-hum
+-> CHANGEMENT: Prép1 codée "Loc" et autre Det "-"
+
+DR1: p.74
+"Le déterminant générique "le":
+Autrefois on fouettait les écoliers
+= Autrefois on donnait (le+*un) fouet aux écoliers"
+-> l'information "générique" est perdue car pas exploitable (c'est le cas aussi avec la colonne "Det =: Artg =: le" l'information "générique" est perdue)
+
+Remarque:
+Perte du det figé comme etant le seul...
+Elsa
+-------------------------------------------------------------------------------------
+Mail d'Annie Meunier:
+> > N0 avoir Det N ,an03,an04,an05
+> > N0 avoir Det N Prép N1 ,an01,an02,an03,an04,an05,an06,ansy
+> > N0 être Adj , an01,an02,an03,an04,an05,an06
+> > N0 être Adj Prép N1 ,an01,an02,an03,an04,an05,an06,ansy
+> > N0 être de Det N ,an01,an02,an04,an05,an06(codée '-')
+> > N0 être de Det N Prép N1 ,an01,an02,an03,an04,an05,an06(codée '-'),ansy
+
+Réponse :
+N0 avoir Dét N est définitionnel de toutes les tables à l'exception de AN06.
+Donc cette propriété n'est pas codée en tant que telle mais les différents
+déterminants oui
+-> définitionnelle que pour les tables an03,an04,an05 car codée pour les tables an01,an02, ainsi que pour an06 (pas codée pour ansy)
+-> codage '-' dans an01: fécondité, force, gêne, hostilité, idolâtrie, intolérance, jalousie, malpropreté, opulence, prééminence, présence, prestige, prospérité, saleté, soin, validité
++ codage '-' dans an02: hystérie
+alors que les exemples prouvent le contraire (ex: Léa a une grande fécondité)
+-> Mais p.185 déjà cité plus haut explique que cette colonne code l'obligation d'avoir un complément et que "Pierre a une certaine force" ne correspond pas à l'emploi : Pierre a une certaine force en mathématique"
+-> Contradiction, donc aucun changement (car est presque + partout donc ne change rien et permet de garder cette colonne qui n'a pas dû être codée inutilement)
+> > N0 avoir Det N ,an03,an04,an05
+!!!CHANGEMENT le 26-05-10:
+N0 avoir Det N = base également pour an01 et an02 comme indiqué par Annie dans son mail (mais contrairement à p.185)
+-> colonne gardée dans les tables mais en rouge car le codage n'est pas récupéré (en rouge également dans la tdt car codage forcé)
++ N0 avoir Det N Prép N1 = o dans la tdt et colonne rajoutée dans les tables avec + lorsque la colonne Prép1 est codée lexicalement et - lorsque la colonne Prép1 est codée - (double emploi mais nécessaire)
+> > N0 avoir Det N ,an01,an02,an03,an04,an05
+
+N0 avoir Dét N Prép N1 ne concerne que les tables AN01 et AN02  (dans ma
+thèse, par la suite j'avais des idées de remaniement)
+-> définitionnelle pour toutes les tables:
+Tables an01,an02: car contient la colonne "Prép1"
+-> quand "Prép1" vaut "<E>" cela veut dire que la construction avec Prép N1 n'est finalement pas accepté et non que la Prép1 est vide
+-> CHANGEMENT: codage <E> transformé en '-'
+-> Mais comment interpréter dans le lexique au format Lefff quand "prepositions=(preposition=[id="1",list=()])" est présent dans lglex?
+Table ansy: car contient la colonne "Prép1 (avoir Det N)"
+-> même CHANGEMENT de <E> en '-' effectué uniquement pour le nom réciprocité et pour les 2 colonnes "Prép1 (être Adj)" et "Prép1 (avoir Det N)"
+Table an04: aucune raison et contient la colonne "N0 avoir Det N pour N1"
+-> CHANGEMENT: pas définitionnelle
+Table an03: car contient la colonne "Prép1 =: (avec+envers)" mais le codage devrait être identique à la table an04
+-> CHANGEMENT: Renommage de la colonne "Prép1 =: (avec+envers)" -> "N0 avoir Det N (avec+envers) N1" et plus définitionnelle puisque vrai que lorque cette colonne est "+"
+-> Dans lgextract: Pas de duplication car il s'agit seulement de 2 prépositions différentes
++ !!!CHANGEMENT le 15-08-10:
+cette colonne renommée en "N0 avoir Det N (avec+envers) N1" est duppliqué pour "N0 être de Det N (avec+envers) N1" et "N0 être Adj (avec+envers) N1" car Prép1 était une notation générale pour la préposition des 3 constructions!
+Table an06: aucune raison et contient la colonne "N0 avoir Det N Loc (N0pc+N0p0)"
+-> CHANGEMENT: pas définitionnelle
+Table an05: D'après les exemples, une prép peut être possible parfois mais cela n'est pas codé
+-> CHANGEMENT: pas définitionnelle
+> > N0 avoir Det N Prép N1 ,an01,an02,ansy
+!!!CHANGEMENT le 26-05-10:
+cf. préc. : la colonne est maintenant codée dans les tables an01 et an02
+> > N0 avoir Det N Prép N1 ,ansy
+
+N0 être Adj est le sujet même de ma thèse (nominalisation d'adjectifs par
+verbes-supports) donc ne figure dans aucune des tables
+-> définitionnelle de toutes les tables avec raison sauf pour la table ansy car la Prép est obligatoire (donc pas codée)
+> > N0 être Adj , an01,an02,an03,an04,an05,an06
+
+N0 être Adj Prép N1 ne figure pas explicitement, ce qui est noté c'est
+uniquement la préposition qui introduit le complément de la paire {Adj,
+Adj-n}. C'est un défaut que je n'ai pas corrigé pensant inclure cette
+correction dans des remaniements plus importants. Par exemple la
+conservation du compléments pose souvent qqs problèmes. De toute manière les
+paires à compléments sont regroupées en AN01 et AN02 et bien entendu ANSY qui
+par définition à un complément symétrique du sujet.
+-> définitionnelle pour toutes les tables (en sachant que pour les tables an01,an02, la Prép est valable pour "avoir", "être de " et "être Adj")
+-> CHANGEMENT: plus définitionelle pour an03,an04,an05,an06 pour les même raison qu'avec "avoir", sauf que dans ces tables la Prép ne concerne que les constructions avec "avoir" (l'info n'est pas répercuté pour "être Adj")
+> > N0 être Adj Prép N1 ,an01,an02,ansy
+!!!CHANGEMENT le 26-05-10:
+La colonne N0 avoir Det N Prép N1 de an01 et an02 doit donc être duppliquée en N0 être Adj Prép N1 et N0 être de Det N Prép N1 en mettant un o dans la tdt pour ne pas accepeter ces constructions sans préposition codée
+> > N0 être Adj Prép N1 ,ansy
+
+*N0 être de Dét N n'existe pas. Il y a obligatoirement un modifieur : N0
+être de Dét N Modif : *Luc est d'une bonté vs Luc est d'une bonté rare.
+Normalement est positive       sauf  dans AN06 qui est en fait une table de
+paires {N, N-a} i.e. adjectivations de substantifs concrets. J'ai refait
+cette table, elles est enfouie au fond de mon ordinateur de Marne
+c'est-à-dire qu'elle est perdue. Cette table de paires {N, N-a} exclut la
+nominalisation N0 être de Dét N Modif qui n'est compatible qu'avec un N de
+caractère non comptable. Ne pas confondre : "ce climat est d'une sècheresse
+redoutable" cette statue est de marbre = est en marbre.
+-> N0 être de Det N définitionelle pour an01,an02,an04,an05 et constante '-' pour an06 ce qui est correct si on ajoute le modifieur (pas codée pour ansy)
+-> De plus, cela donne un sens à la colonne "N0 être de Det N" qui est codée dans an03 et qui est la seule qui accepte parfois la conctruction sans le modifieur
+-> CHANGEMENT: Construction de base "N0 être de Det N" changée en "N0 être de Det N Modif" (qui existe déjà)
+> > N0 être de Det N Modif,an01,an02,an04,an05,an06(codée '-')
+
+N0 être de Dét N Prép N1 est // à N0 avoir Dét N prép N1 et à N0 est Adj
+Prép N1 et ne concerne que les tables an01 et AN02.
+-> définitionnelle pour toutes les tables sauf pour an06 où elle est constante '+' (en sachant que pour les tables an01,an02, la Prép est valable pour "avoir", "être de " et "être Adj")
+-> CHANGEMENT: plus définitionelle pour an03,an04,an05,an06 pour les même raison qu'avec "avoir", sauf que dans ces tables la Prép ne concerne que les constructions avec "avoir" (l'info n'est pas répercuté pour "être de")
+> > N0 être de Det N Prép N1 ,an01,an02,ansy
+!!!CHANGEMENT le 26-05-10:
+cf. préc. : le colonne N0 être de Det N Prép N1 est maintenant codée dans an01 et an02
+> > N0 être de Det N Prép N1 ,ansy
+
+> > IMPORTANT: Dans lgextract, être n'est pas Vsup2 mais simplement dans la liste des autres constructions possibles puisqu'aucune colonne ne lui ait attribuée spécifiquement (donc on perd l'info que la Prép est aussi valable avec être...)
+
+REMARQUE: ANSY a en plus les 2 constructions définitoires suivantes puisque les entrées sont symétriques :
+N0 et N1 avoir Det N
+N0 et N1 être Adj
+
+Je regrette bien que vous soyez tenue de travailler sur des tables aussi imparfaites.
+Cordialement
+Annie Meunier (27-01-10) -> OK (03-02-10)
+-------------------------------------------------------------------------------------
+JACQUELINE GIRY-SCHNEIDER (1978):
+PB: Parfois le sujet n'a pas de distribution...
+-> On veut vérifier que les colonnes (N0 =: Nhum et N0 =: N-hum) OU (N0 =: Nnr) sont codées (encore mieux constantes).
+Table F6:
+Ne contient que la colonne N0 =: N-hum codée.
+p.241 "Les verbes représentés dans F6 ont avec faire la structure
+N0 faire Det N de Det N1 Prép N2
+Leurs propriéts sont les mêmes que celles des verbes de F2 (N0 faire Det N de Det N1) ; ce sont surtout les sous-structures qui diffèrent ; elles sont plus variées, à cause du complément Prép N2, et son soumises à plus de contraintes."
+p.184 (F2) "le sujet Nhum est régulier, donc non représenté dans les tables"
+-> CHANGEMENT: Cela implique que le sujet de F6 est aussi constante '+' pour N0 =: Nhum, comme pour toutes les tables F2.
+
+Lecture du livre de Giry pour les constantes dans la tdt:
+Tables F4, F41:
+D'après p.28 et p.222 "Nnr faire Det N à N1" et p.223 "Toutes ces expressions admettent un sujet de type non restreint", comme pour les tables F9, mais est codé dans la table (toujours '+')
+-> CHANGEMENT: colonnes N0 =: Nnr supprimées et constante '+' dans la tdt
+avec constante '-' pour N0 =: N-hum et N0 =: Qu P comme pour F9, devrait aussi pour N0 =: Nhum mais la colonne est codée... (PK?)
+
+Verif systématique pour toutes les tables "Fchiffre":
+Table F21:
+Colonne N0 =: Nhum et N0 =: N-hum codées
+-> souvent '-' dans les 2
+-> pas d'explication trouvée...
+-> CHANGEMENT: D'après les exemples des fiches, on peut supposer qu'on peut mettre Nhum partout:
+Max fait un espionnage sérieux des allés et revus de Léa
+Max fait l'essai de ce produit
+Max fait l'étude de cette langue
+Max fait l'évaluation de la distance
+Max fait un examen de ce tissu
+-> Cela est justifié d'apres p.206 "Jean fait l'étude de ce phénomène",
+-> De plus, p. 211-212, "Le verbe annoncer admet un sujet Nuhum et N-hum. Seul le sujet Nhum peut figurer dans la construction faire N:
+Paul fait l'annonce (d'une fête+que la paix est signée)
+*Les nuages fnt l'annonce de la pluie
+Paul fait à Marie la promesse (d'in tourne-disque+que Jean sera là)
+*Ceci nous fait la promesse de beaux lendemains
+Mêmes remarques pour répondre, résumer, suggérer, révéler, offrir, prédire, présuposer, évoquer."
+-> Cela justifie le même codage pour présupposer qui avait '-' partout.
+-> AUTRE CHANGEMENT: Pour TOUS LES AUTRES VERBES cités ci-dessus, le codage était faux, donc je l'ai inversé.
+
+Table F8:
+N0 =: Nhum constante '+' et N0 =: N-hum resté "?"
+-> p.252 "Les classes lexicales des sujets et des compléments sont régulières:"
+"le sujet est un substantif Nhum; aussi n'a-t-il pas été représenté dans la table"
+-> CHANGEMENT: N0 =: N-hum constante '-' ajouté en plus
+
+Table F4, F41,F9:
+Comme on vient de le dire, N0 =: Nnr constante '+' et les 3 autres constante '-' (ou 'o' pour F4)
+
+Table F7:
+Colonne N0 =: Nhum codée mais toujours '+' (et parfois Nnr)
+-> le fait que N0 =: N-hum soit ? ne pose pas de pb.
+Supposition: Nnr n'aurait-il pas été confondu avec N-hum?
+
+Tables F2... (sauf F21), F6:
+N0 =: Nhum constante '+'
+-> le fait que N0 =: N-hum ne soit pas toujours '+' ne pose pas de pb.
+
+Table F1A, F1D, F3, F31:
+Colonne N0 =: Nhum codée mais toujours '+'
+-> le fait que N0 =: N-hum ne soit pas toujours '+' ne pose pas de pb.
+
+Table F1B:
+Colonne N0 =: N-hum codée mais toujours '+'
+-> le fait que N0 =: Nhum ne soit pas toujours '+' ne pose pas de pb.
+
+Table F1C, F1R, F5:
+Colonnes N0 =: Nhum et N0 =: N-hum codées
+-> l'une des deux est toujours '+'
+Elsa(05-02-10)
+-------------------------------------------------------------------------------------
+Lecture du livre de Giry pour les constantes dans la tdt pour le N1:
+Tables F4:
+D'apres p.222 " N1 est exclusivement Nhum", mais il est codé dans la table (toujours '+' pour F4, mais pas pour F41)
+-> AUCUN CHANGEMENT
+
+Vérification de la présence du N1hum ou N1-hum codé:
+Table F21:
+Colonne N1 =: Nhum et N1 =: N-hum codées
+-> souvent '-' dans les 2, cela ne pose pas de problème s'il y a un '+' dans les complétive car cela signifie que les groupes nominaux ne sont pas acceptés et "Qu P" fait partie des contruction de base
+-> cela signifie que les 4 constructions de base ne sont pas forcément toutes acceptées... (cf. plus bas)
+-> CHANGEMENT: Lorsque toutes les complétives sont '-', d'après un exemple des fiches, on peut supposer qu'on peut mettre N1-hum partout:
+Max fait un espionnage sérieux des allés et revus de Léa
+-> Cela est justifié d'apres p. 208 "Les verbes espionner [...] voter, [...] admettent cependant l'opératuer faire, mais seulemenr avec des compléments nominaux, avec la construction N0 faire Det N de N1 (f2) :
+Jean fait lespionnage de ce groupe industriel"
+
+Table F2R:
+Colonne N1 =: Nhum et N1 =: N-hum codées
+-> seule l'entrée "enterrement" est '-' dans les 2
+-> CHANGEMENT: '+' pour N1 =: Nhum ET N1 =: N-hum comme pour l'entrée exhumation (ex: Max fait l'exhumation (du corps+du trésor))
+
+Table F21:
+Colonne N1 =: Nhum et N1 =: N-hum codées
+-> seule l'entrée "charpente" est '-' dans les 2
+-> CHANGEMENT: '+' pour N1 =: N-hum (ex: Max a fait la charpente du toit)
+
+Table F5:
+Colonne N1 =: Nhum et N1 =: N-hum codées
+-> seule l'entrée "sous-titre" est '-' dans les 2
+-> CHANGEMENT: '+' pour N1 =: N-hum (ex: Max fait un sous-titre dans ce film)
+
+Tables F3, F31:
+N1 =: Nhum constante '+'
+-> le fait que N1 =: N-hum ne soit pas toujours '+' ne pose pas de pb.
+
+Tables F4, F7:
+Colonne N1 =: Nhum codée mais toujours '+'
+-> le fait que N1 =: N-hum ne soit pas toujours '+' ne pose pas de pb.
+
+Tables F2C:
+Colonne N1 =: N-hum codée mais toujours '+'
+-> le fait que N1 =: Nhum ne soit pas toujours '+' ne pose pas de pb.
+
+Tables F2B1, F41, F6 F8, F9, F91:
+Colonnes N1 =: Nhum et N1 =: N-hum codées
+-> l'une des deux est toujours '+'
+
+Tables F1...: Les distributions avec N1 sont constantes '-' car n'ont pas de N1.
+
+Elsa
+-------------------------------------------------------------------------------------
+Lecture du livre de Giry pour les constantes dans la tdt pour le N1 + vérification systématique:
+
+Tables F2...:
+p.193 "Le complément à Nhum"
+p.210: "les verbes de F21 à construction "N0 faire Det N à Nhum Qu P"."
+-> CHANGEMENT: N2 =: Nhum constante '+' et N2 =: N-hum constante '-' (colonnes ajoutée)
+
+Table F8:
+p.250 "constructions qui désignent acte de paroles entre deux personnes. Dans toutes ces constructions peut d'ailleurs figurer un complément prépositionnel de la forme (avec+auprès de) Nhum."
+p.252 "Les classes lexicales des sujets et des compléments sont régulières:"
+"le complément Prép N2 est régulièrement un Nhum"
+-> CHANGEMENT: N2 =: Nhum constante '+' et N2 =: N-hum constante '-'
+
+Table F7:
+p.245 "On appelle ces verbes "Symétriques parce que leurs deux compléments peuvent êrmuter l'un avec l'autre sans changement de sens ("comparer A et B" est équivalent à "comparer B et A)"
+-> N2 a la même distribution que N1
+-> CHANGEMENT: colonnes N2 =: N(-)hum ajoutées dans la table avec le même codage
+
+Tables F5/F6:
+Ont un N2 mais rien n'indique sa distribution...
+-> A FAIRE: Il faudrait coder les colonnes N2 =: N(-)hum (car selon les exemples les 2 sont possibles)
+
+Tables F1/F3/F4/F9:
+N'ont pas de N2
+-> CHANGEMENT: N2 =: N(-)hum constantes '-'
+
+-> A FAIRE: Même vérification systématique à faire pour toutes les tables (pour le N0, le N1 et le N2).
+
+Elsa(08-02-10)
+-------------------------------------------------------------------------------------
+Table F21: Modification des constructions de base :
+p.207-208: "Les complétives Qu P, par contre, s'analysent comme des syntagmes nominaux dans les constructions verbales ; et dans les constructions faire N, elles sont régulièrement parallèles à (ou permutables avec) un complément nominal de N. On a vu dans l'étude des propriétés que la structure Qu P peut être interprétée comme le résultat de l'effacement de la préposition "de":
+Paul constate (ce fait+Qu P)
+Paul fait la constatation (de ce fait+de ce Qu P+Qu P)
+et que la pronominalisation par "en" de Qu P met en évidence ce "de" sous-jacent:
+Paul fait la constatation Qu P
+Paul en fait la constatation"
+
+Avant:
+N0 faire Det N de N1
+N0 faire Det N de N1 à N2
+N0 faire Det N Qu P
+N0 faire Det N Qu P à N2
+
+Après:
+N0 faire Det N Prép N1
+N0 faire Det N Prép N1 à N2
+Prép1 =: de
+
+Car les 4 constructions de base ne sont pas forcément toutes acceptées (on a "de N1" , qui peut être "Qu P")
+-> cela dépend des colonnes codées :
+N1 =: Nhum
+N1 =: N-hum
+Prép N1 =: Qu Pind (+ Qu Pind = de V0-inf W)
+Prép N1 =: de ce Qu Pind
+Prép N1 =: Qu Psubj (+ Qu Psubj = de V0-inf W, Qu Psubj = de V2-inf W)
+
+La construction de base "N0 faire Det N de N1" n'a pas été gardée pour pouvoir remplacer le "Prép N1" pas "Qu P" grâce aux colonnes présentes.
+Le "à N2" n'est d'après p. 28 "N0 faire Det N (de N1+Qu P) (E+à N2)" pas toujours présent mais cette colonne n'étant pas codée, on l'a poussé comme construction de base.
+
+Remarque: Le mot "Prép" présent dans les constructions que lorsque différentes Prép sont possibles (ici "de" et <E> avec "Qu P"), sinon pour simplfifier on met directement la préposition.
+Elsa(08-02-10)
+-------------------------------------------------------------------------------------
+Table F7:
+PB: Pas de construction de base
+p. 28, c'est "N0 faire Det N entre N1 et N2" qui est indiqué mais n'est qu'un intitulé de la table
+p.246-247 "Les constructions faire N correspondantes peuvent avoir des formes variées selon les verbes considérés, parfois plusieurs formes pour un même verbe:
+Jean mélange le beurre (à+avec) la farine
+<-> Jean fait le mélange du beurre avec la farine
+<-> Jean fait le mélange du beurre et de la farine
+On peut ainsi dénombrercinq constructions:
+N0 faire Det N de N1 avec N2
+N0faire Det N de N1 et de N2
+N0 faire Det N entre N1 et N2
+N0 faire Det N de N1plur entre eux
+N0 faire Det N de N1 à N2"
+p.248 "La construction N0 faire Det N entre N1 et N2" "est quasiment propre à la construction faire N ; en effet on ne trouve que deux exemples où elle apparaît dans la construction du verbe simple"
+
+Donc la base la plus appropriée serait "N0 faire Det N entre N1 et N2" même si elle est déjà codée dans la table et n'est pas toujours '+'
+-> séparation de la table impossible car trop de disparités
+-> forçage de la colonne à "+" en rouge dans la tdt (tout en gardant le codage dans la table)
+Elsa
+-------------------------------------------------------------------------------------
+Table de Giry: p.28
+De plus, on a des constructions verbales:
+N0 V 	,F1
+N0 V N1	,F1
+N0 V N1	(E+à N2)	,F2 -> séparé en 2 constructions (comme pour faire)
+N0 V (N1+Qu P) (E+à N2)	,F21 -> séparé en 4 constructions (on suppose que les 4 sont acceptées contrairement à faire puisqu'aucune colonne code les constrcuctions verbales dans la table)
+N0 V N1	,F3
+Nnr V N1	,F4 -> sans le Nnr (on suppose que le sujet reste le même qu'avec la construction avec faire)
+N0 V N1	(E+de N2)	,F5 -> séparé en 2 constructions (comme pour faire)
+N0 V N1 Prép N2	,F6
+N0 V N1 (à+avec+et) N2	,F7 -> pas séparé en 3 constructions (car représent avant tout le symétrique, comme pour la table ANS et sa colonne "N0 V N1 (avec+et) N2" qu'il ne faudrait pas dupliquer inutilement, cf. traitement spécial dans lgextract ci-dessous)
+N0 V Prép N1 Prép N2	,F8
+Nnr V N1	,F9 -> sans le Nnr (on suppose que le sujet reste le même qu'avec la construction avec faire)
+
+ATTENTION (07-05-10):
+Ces tables ne sont pas concernées par les constructions verbales puisqu'elles n'ont pas de <OPT>V :
+f2b1,f31,f41,f91 -> codage -
+
+Ce qui nous donne après simplification:
+N0 V	,f1a,f1b,f1c,f1d,f1r
+N0 V N1	,f1a,f1b,f1c,f1d,f1r,f2a,f2b,f2c,f21,f3,f4,f5,f9
+N0 V N1 (à+avec+et) N2	,f7
+N0 V N1 Prép N2	,f6
+N0 V N1 de N2	,f5
+N0 V N1 à N2	,f2a,f2b,f2c,f21
+N0 V Prép N1 Prép N2	,f8
+N0 V Qu P	,f21
+N0 V Qu P à N2	,f21
+-> rajouté dans la tdt
+-> toutes les constructions verbales ajoutées dans lgextract (code CV dans la tdt) sous le nom de "verbales" :
+ex: ID=N_ad_1
+lexical-info=[cat="noun",Vsup=[cat="verb",list=(value="donner")],detN=[list-det-modif=...
+,noun=[notperm=[complete="affliction"],noun1="affliction",vbassoc="affliger"]]...]
+args=...
+all-constructions=[absolute=(construction="o::N1 éprouver Det N",construction="o::N1 avoir Det N",construction="o::N0 causer Det N à N1",construction="true::N0 donner Det N à N1",construction="o::N0 provoquer Det N chez N1",construction="o::il y avoir Det N chez N0"),verbales=(construction="o::N0 V N1"),reductionsGN=(),relative=()]
+-> dans lglex, ces constructions sont relier au verbe "<OPT>V" : ici vbassoc="affliger"
+-> A RAJOUTER dans le format Lefff
+Elsa(09-02-10)
+-------------------------------------------------------------------------------------
+Lecture du RAPPORT TECHNIQUE N°42 (1993, Giry-Schneider):
+AN07-10:
+p.3 "Ces noms ont aussi en commun de pouvoir figurer dans un groupe nominal associé, de même sens :
+Le N de N0
+= Le N que N0 a =:
+Les antécédents de Jean (sont connus)
+L'architecture de ce monument (date du 17ème)
+Les cas de cette langue (sont faciles à retenir)
+L'accent de Paul (est très élégant)
+L'altération de cette mesure (a été oubliée par le pianiste)"
+-> Le Dét est forcément "les" (par ex, pour capacités)
+-> GN =: le N de N0 -> constante + dans la tdt
+
+A CHERCHER: Labelle, Jacques. 1983. “Verbes supports et opérateurs dans les constructions en avoir à un ou deux compléments”. Lingvisticæ Investigationes 7:2, 237 ff, Amsterdam, J. Benjamins B.V.
+
+p.4 "On a ainsi établi une liste de noms qui, outre la construction en avoir et le groupe nominal associé, ont une ou plusieurs propriétés suivantes :
+(1) N0 est de Det N" -> colonne N0 est de Det N Modif (codée dans AN07)
+"Ce monument est d'une architecture classique
+(2) Il y avoir Det N (à+Loc) N0" -> colonnes Il y avoir Det N Loc N0 et Il y avoir Det N à N0(codées dans ANO8)
+"Il y a une altération dans cette mesure
+(3) N0 (a+connaît) Det N Modif" -> colonne Vsup =: connaître (codée dans AN10)
+"Jean (a connaît) une enfance choyée
+(4) Un modifieur obligatoire avec l'article indéfini (ou encore le déterminant "un certain")" -> Det =: un-Modif (codée dans AN10), Det =: un-certain (codée dans AN09)
+"Ce pays a un climat (*E+tempéré)
+Ce pays a un certain climat
+(5) Possibilité d'une conctruction à verbe opérateur causatif :
+Qu P donner Det N à N0 (donner =: Vop causatif)" -> Qu P donner Det N à N0 (codée dans AN10)
+"Vivre à Nice a donné un accent à Jean
+(6) Un propriété de symétrie définie pat les constructions suivantes :
+N0 avoir Det N
+N1 est Det N de N0
+N1 et N0 sont (E+des) N" -> N1 et N0 être N (codée dans AN09)
+"Le mot A a un contraire
+Le mot B est le contraire du mot A
+Le mot B et le mot A sont des contraires"
+
+p.8 exemples de "sens différent" d'un même mot:
+"Aspect :
+1) Ce meuble a un aspect inhabituel (AN07)
+Ce meuble est d'un aspect inhabituel
+2) Cette question (a+comporte) plusieurs aspects (AN08)
+Il y a plusieurs aspects dans cette question
+Ecriture :
+1) (Ce texte+Jean) a une écriture raffinée (AN07)
+Ce texte est d'une écriture raffinée
+2) Cette langue (a+comporte) une écriture (AN08)
+? Il y a une écriture dans cette langue
+? Il y a une écriture de cette langue
+3) Jean a une écriture régulière (AN10)
+Matière :
+1) Ce vêtement a une matière luxueuse (AN07)
+Ce vêtement est d'une matière luxueuse
+2) Ce programme (a+comporte) deux matières (AN08)
+Il y a deux matières dans ce programme
+Relief :
+1) Ce discours a un relief étonnant (AN07)
+Ce discours est d'un relief étonnant
+2) Ce paysage (a+comporte) un relief (AN08)
+Il y a un relief dans ce paysage (=une hauteur)
+3) Ce pays a un certain relief (=un certain type de relief) (AN09)"
+
+AN07:
+- Tous les exemples p.10 ("Ce monument a une architecture (*E+simple)") contenant un modifieur, la construction de base reliée à "N0 avoir Det N" est "Det =: un-Modif"
+- Tous les exemples p.10 ("Ce monument est d'une architecture simple") accepte aussi la construction "N0 être d'un certain N", mais cette contruction est codée car il existe quelques exceptions expliquées p.11-12:
+"expression de sens différent :
+Jean a un certain caractère
+!= Jean a du caractère"
+"Les noms ayant ces deux sortes d'emplois ont été dédoublés dans la liste AN07 bien que l'emploi à déterminant "du" ne soit pas associé à une forme en "être de".
+- p.10 "N a pour déterminant "un certain"" -> "Det =: un certain" est constante +
+- p. 14 "Ce livre a un prix (elevé+de 100F)
+Ce livre est d'un prix (élevé+? de 100F)"
+-> colonne "Det =: un-de Dnum Nmes"
+- p.15 "Ce chien est d'(une+E)race indéterminée"
+-> colonne N0 être de N Modif
+
+AN10:
+p.30-31 "(N1+Qu P) être un N pour N0 =:
+Jean a une bible
+Ce livre est une bible pour Jean" -> codé -
+"Jean a une drogue
+(Le jeu+Jouer) est une drogue pour Jean" -> absent
+Il s'agit d'emplois métaphoriques quasi lexicalisés, mais certains N ne sont pas des métaphores, par exemple dogme :
+Jean a un dogme
+L'idée d'égalité est un dogme pour Jean" -> codé +
+-> Colonne "Qu P être un N pour N0" qui n'est souvent pas codée + alors qu'un exemple figure en "Autre6"
+-> Rajouter N1?
+
+p31 "(N1+Qu P) donner Det N à n0
+Jean a un égo solide
+Cette expérience a donné à Jean un ego solide" -> codé +
+"Jean a une petite notoriété
+Ce résultat a donné à Jean une petite notoriété" -> absent
+-> Colonne "Qu P donner Det N à N0"
+-> Rajouter N1?
+Elsa
+-------------------------------------------------------------------------------------
+Propriétés de symétrie: (changements dans lgextract)
+ANS:
+N0 V N1 (avec+et) N2 dans lgextract correspond à:
+N0 V N1 avec N2
+N0 V N1 et N2
+-> car et n'es pas une préposition, ce sont donc 2 constructions différentes
+
+F7:
+N0 V N1 (à+avec+et) N2 dans lgextract correspond à:
+N0 V N1 (à+avec) N2 (Pas de duplication car il s'agit seulement de 2 prépositions différentes)
+N0 V N1 et N2
+
+AN09:
+p.29 "Propriété de symétrie, qui met en jeu deux constructions en être avec un argument de plus (N1) et qui concerne quelques noms comme synonyme ou antonyme :
+Ce mot a un synonyme
+N1 est Det N de N0
+=N1 et N0 sont (E+des) N
+Le terme eau est un synonyme de ce mot
+=Le terme eau et ce mot sont des synonymes"
+-> Il y a en effet la colonne "N1 et N0 être N" qui est codée, et l'autre construction est sous-entendue.
+-> N1 et N0 être N dans lgextract correspond à:
+N1 et N0 être N
+N1 être Det N de N0
+Elsa
+-------------------------------------------------------------------------------------
+Modif pour supprimer les espaces entre les + et autres modif nécessaires:
+F4,41:
+N0 faire (E + Modif) N -> N0 faire (E+Modif) N
+-> Dans lgextract: duppliquée en "N0 faire N" et "N0 faire Modif N"
+F3,31: 
+N0 faire (bon + mauvais) N Prép N1 -> N0 faire (bon+mauvais) N Prép N1
+-> pourrait-elle se généraliser à N0 faire N Modif Prép N1 (qui est une colonne qui existe déjà)?
+F2a-r,21,6:
+N0 faire un N Modif de (le + ce + son) N1 -> N0 faire un N Modif de (le+ce+son) N1
+-> Dans lgextract: Pas de duplucation car il s'agit seulement de plusieurs déterminants différents
+F5:
+N0 faire un N Prép N1 de (le + ce + son) N2 -> N0 faire un N Prép N1 de (le+ce+son) N2
+AA:
+avoir = (être + faire) l'objet de -> avoir = (être+faire) l'objet de
+FS1-3,IS1-2:
+subir = (être + faire) l'objet de -> subir = (être+faire) l'objet de
+Elsa(17-02-10)
+-------------------------------------------------------------------------------------
+Correction des entrées contenant un caractère non latin-1: œ
+an07_218: mœurs -> moeurs
+an07_329: tape-à-l'œil -> tape-à-l'oeil
+an10_76: cœur -> coeur
+f31_20: clin d'œil -> clin d'oeil
+fnn_33: coup de maŒtre -> coup de maître
+Elsa(19-02-10)
+-------------------------------------------------------------------------------------
+f21: N être fait par N0 W -> Det N être fait W par N0 (inversion du W + ajout du Det)
+pour être conforme aux autres tables f1a-r et parce que la propriété a djé été changée dans la tdt
+Elsa(25-05-10)
+-------------------------------------------------------------------------------------
+WARNING: some entries had non-coded 'prép'. Corresponding syntactic functions have been removed
+	Table aa	souvenir,regrets
+-> seules entrées qui n'ont aucune des 3 Prép possibles (Prép1 =: à l'égard de, Prép1 =: avec, Prép1 =: pour) alors que la base est N0 avoir Det N Prép N1 et aucune autre construction possible
+-> CHANGEMENT: codage "+" pour Prép1 =: à l'égard de
+ATTENTION: pas de Det codé pour regrets
+
+	Table an01	jeunesse,vigueur,malpropreté,validité,rachitisme,maigreur,éloquence,veine,légitimité,incontinence,respectabilité,immaturité,âge,omniscience,hâle,tristesse,corpulence,gravité,vieillesse,volupté,morosité,joie,anémie,saleté,renom,tyrannie,prospérité,prééminence,célébrité,paganisme,culpabilité,hygiène,sveltesse,illégitimité,apathie,gaieté,désoeuvrement,bilinguisme,invalidité,routine,impotence,souci,impuissance,fébrilité,perplexité,prostration,omnipotence,cafard,renommée,prestige,suspicion,inactivité,innocence,opulence,richesse,athéisme,sérieux,nudité,virginité,béatitude,difformité,mélancolie,pâleur,frigidité,sédentarité,oisiveté,pauvreté,précocité,fécondité,solvabilité,agoraphobie,toute-puissance,activité,notabilité,télégénie,immortalité,omniprésence,photogénie,aboulie,présence,euphorie,chance,cabotinage,turbulence,infirmité,obésité
+	Table an02	sociabilité,indécision,jusqu'au-boutisme,poltronnerie,maniaquerie,génie,curiosité,talent,mégalomanie,débrouillardise,couardise,maussaderie,sainteté,paillardise,gourderie,fierté,calme,susceptibilité,clairvoyance,irrésolution,mauvaiseté,présomption,laïcité,distraction,gâtisme,modestie,ascétisme,bougonnerie,prudence,morosité,obstination,purisme,conscience,cagoterie,impavidité,vanité,radinerie,maturité,intolérance,fourberie,résistance,mérite,boulimie,nymphomanie,scepticisme,bêtise,ténacité,ridicule,imagination,folie,étourderie,irascibilité,impudeur,égoïsme,insatiabilité,pingrerie,gloutonnerie,prodigalité,propreté,persévérance,imprudence,rétivité,philanthropie,loquacité,ambition,cupidité,docilité,balourdise,xénophilie,diligence,zèle,dinguerie,vice,sottise,artifice,détermination,courage,arrivisme,vantardise,hystérie,roublardise,émotivité,insociabilité,vertu,superstition,sobriété,voracité,jeunesse d'esprit,démence,xénophobie,feignantise,bigoterie,gourmandise,avarice,assurance,prestesse,réserve,continence,incrédulité,orgueil,érudition,irresponsabilité,culot,irritabilité,sagesse,misanthropie,robustesse,bellicisme,affabilité,force,intégrité,négligence,anxiété,vaillance,connerie,crânerie,crédulité,ouverture d'esprit
+-> PB: base = N0 avoir Det N Prép N1 + colonne Prép1 qui est codée soit lexicalement soit "-" + colonne N0 avoir Det N qui est parfois "-" alors qu'il n'y a pas de prep de codée donc aucune construction n'est admise...
+-> cf. !!!CHANGEMENT le 26-05-10 (après le mail de Annie Meunier)
+
+	Table an04	difficulté,antipathie,familiarité,simplicité,facilité,indifférence,agrément,sympathie,volupté
+-> base = N0 avoir Det N donc ok
+-> PB: colonne N1 avoir Det N Prép N0 avec aucune Prép0 de codée (sinon cette colonne pas prise en compte donc pas trop grave)
+
+	Table anp	répulsion,haine,mouvement,aversion,inimitié,fascination,admiration,magnétisme,déconsidération,appétit,désintérêt,désenchantement,inspiration,convoitise,déférence,flamme,sympathie,coup de foudre,considération,dépit,gratitude
+-> base = N0 Vsup Det N pour N1 + colonnes Prép1 =: envers, Prép1 =: en faveur de, Prép1 =: contre codées mais qui peuvent être - puisque la base contient déjà la préposition pour (ce ne sont que des prép supplémentaires) donc ok
+-> PB: colonne N1 provoquer Det N Prép N0 avec aucune Prép0 de codée (sinon cette colonne pas prise en compte donc pas trop grave)
+
+	Table anpr	présomptions,recours
+-> seules entrées qui n'ont aucune des 7 Prép (Prép1 =: en, Prép1 =: envers, Prép1 =: contre, Prép1 =: auprès de, Prép1 =: entre, Prép1 =: devant, Prép1 =: Loc) alors que la base est N0 Vsup Det N Prép N1 avec Vsup =: avoir codé +
+-> CHANGEMENT: codage + pour Prép1 =: contre
+
+	Table ansy	réciprocité
+-> seule entrée qui n'a pas de Prép codée (dans les colonnes Prép1 (être Adj) et Prép1 (avoir Det N)) alors que la base est N0 avoir Det N Prép N1 et aucune autre construction possible
+-> CHANGEMENT: codage "avec" pour Prép1 (être Adj) et Prép1 (avoir Det N)
+
+	Table ape21	dévotion,compréhension,haine,attachement,prédilection,hostilité,aversion,inimitié,complicité,sollicitude,dégoût,bienveillance,amitié,mépris,dédain,ferveur,soins,tendresse,miséricorde,affection,confiance,pitié,fidélité,commisération,égards,admiration,compassion,méfiance,complaisance,attention,animosité,reconnaissance,antipathie,estime,amour,déférence,vénération,respect,clémence,mansuétude,sympathie,dilection,considération,préférence,dévouement
+-> 2 colonnes N1 être de Det N Prép N0 et N1 être sans Det N Prép N0 faisant référence à la colonne Prép0 codée pour toutes les entrées (base = N0 APE Det N de N1 donc prép codée dans la construction)
+-> A FAIRE: colonne Prép0 à prendre en compte dans lglex2ilex
+
+	Table f6	remorquage
+-> seule entrée qui n'a aucune des 7 Prép possibles (Prép2 =: à, Prép2 =: en, Prép2 =: par, Prép2 =: entre, Prép2 =: sur, Prép2 =: contre, Prép2 =: dans) alors que la base est N0 faire Det N de N1 Prép N2
+-> CHANGEMENT: codage + pour Prép1 =: par et Prép2 =: sur (ex: remorquer une voiture par une autre voiture / sur 10 km)
+
+	Table fr2	imprécations
+-> seule entrée qui n'a aucune des 2 Prép possibles (Prép1 =: à, Prép1 =: de) alors que la base est N0 faire Det N Prép N1 et aucune autre construction possible
+-> CHANGEMENT: codage + pour Prép1 =: à (imprécations = souhaits de malheurs contre qq'un)
+
+	Table fs1
+réimplantation,lestage,raccordement,bradage,pontage,homogénéisation,aurification,épongeage,arbitrage,pulvérisation,dessalage,décimation,égouttage,réajustement,mensuration,calage,rangement,décrottage,focalisation,robage,retordement,câblage,examen,encartage,rapiéçage,dépannage,profanation,nucléarisation,dextrinisation,brossage,rafistolage,annulation,ralentissement,morcellement,dessablage,havage,cordage,macadamisage,émoulage,rouissage,récurage,sérançage,carbonatation,normalisation,évaluation,soutirage,saccage,graduation,embellissement,édulcoration,maltage,abattage,essuyage,cadrage,bizutage,zonage,dépeçage,émaillage,rasage,chloroformisation,bertillonnage,élévation,masquage,écimage,démobilisation,égermage,déstalinisation,lustrage,actualisation,déshumidification,incurvation,encrage,torréfaction,remballage,réexamen,expertise,bobinage,rodage,truquage,motorisation,assemblage,amidonnage,démoustication,scolarisation,démolition,culottage,émasculation,clivage,sulfatage,réexportation,excitation,minutage,éthérisation,démembrement,regonflement,laïcisation,découpage,équilibrage,mercerisage,dépistage,réchampissage,expurgation,magnétisation,époussetage,saignée,inversion,réfrigération,raccourcissement,abrogation,retouche,effeuillage,démaillage,badigeonnage,occultation,enclouage,ridage,affilage,dénickelage,tubage,réglementation,incinération,radioscopie,désenclavement,remorquage,programmation,repiquage,transbordement,dégauchissage,croisement,ébauchage,ballastage,ravivage,brasage,agrandissement,trempage,tissage,fanage,caviardage,laquage,réimportation,foliotage,vapocraquage,boudinage,fiscalisation,dératisation,interlignage,broyage,aciérage,sondage,désherbage,électrisation,purge,satellisation,calorisation,moulinage,démoulage,bandage,rembourrage,révision,déroulage,réarmement,formatage,dissection,dévitrification,dépiautement,montage,épandage,bottelage,rentoilage,insertion,captage,pilonnage,assainissement,cloisonnage,mutage,neutralisation,sulfurage,dégoudronnage,reprisage,repérage,démasticage,orpaillage,castration,transcodage,robelage,fendage,budgétisation,dénonciation,accusation,bornage,brochage,surestimation,rusticage,descellement,décapement,guidage,planage,décrépissage,confiscation,lainage,résiliation,rééquilibrage,épamprage,entonnage,désengorgement,décarrelage,vitriolage,acclimatation,axiomatisation,galvanisation,décuvage,domestication,renforcement,consolidation,finissage,décantation,raclage,cerclage,fardage,surmoulage,moletage,brassage,tamisage,razzia,transfert,insensibilisation,défonçage,creusement,ajournement,ajustement,atténuation,maculage,déionisation,imperméabilisation,ignifugeage,ébarbage,oblitération,épouillage,liquéfaction,dépliage,bistournage,déplantage,dégivrage,profilage,désintégration,télédictage,bitumage,immersion,dorage,extirpation,parquetage,codification,ourdissage,tillage,palissage,suspension,décapsulage,cautérisation,ligature,enfumage,regonflage,recrépissage,millerandage,stockage,patinage,élision,transformation,lubrification,allègement,limonage,affûtage,coulage,arrangement,travestissement,démystification,déboulonnement,remblayage,réimperméabilisation,décalaminage,décrêpage,défrichage,nappage,arrimage,restructuration,cintrage,cloutage,délavage,palpation,radiographie,simplification,poinçonnage,renflouement,remilitarisation,salpêtrage,frisage,tordage,délustrage,ébourgeonnage,lessivage,coloration,grenage,uniformisation,formage,criblage,occupation,dévitalisation,cylindrage,panification,élargissement,reconduction,débardage,vernalisation,captation,ratinage,vaporisation,taillage,foulage,écossage,alignement,vissage,tondage,démêlage,obturation,décoffrage,fraisage,effilage,pressage,rehaussement,amplification,décatissage,accouvage,cailloutage,frottage,dépilage,éborgnage,marcottage,décliquetage,perquisition,goudronnage,cambrage,réapprovisionnement,glaçage,transgression,épilation,brouillage,appointage,bosselage,carrelage,chemisage,aluminiage,remouillage,largage,réquisition,anodisation,nivelage,adoucissement,crochetage,moirage,débudgétisation,rectification,pattinsonage,archivage,substitution,torsion,recensement,vieillissement,évincement,dépigeonnage,tuteurage,pompage,arrachement,plissage,sabordage,confrontation,éclusage,recépage,défibrage,vaporisage,gazage,coupage,reboisement,ponçage,jumelage,rapprochement,scellement,démolissage,étincelage,dressage,listage,rallongement,nivellement,nettoyage,dépavage,éradication,tararage,débitage,ancrage,débureaucratisation,grésage,craquage,provignage,encuvage,blocage,sulfitage,licenciement,contestation,convertissage,harponnage,déshuilage,thermisation,nitruration,tannisage,désassemblage,destruction,pavage,faufilage,placage,recollage,dévernissage,remodelage,pastillage,vitrage,déminage,anesthésie,exportation,serfouissage,séchage,tri,apprêtage,congédiement,chaînage,perforage,soufrage,avivage,marquage,caprification,secrétage,groupage,colonisation,remuage,empotement,réduction,déplâtrage,contrôle,détaxation,escamotage,grenadage,crénage,plastification,enlèvement,calfeutrage,champagnisation,dépuration,sucrage,compilation,emboutissage,schlittage,écouvillonnage,métissage,sténosage,bariolage,bouillissage,repeuplement,langueyage,repolissage,éreintage,paillage,dégraissage,teillage,changement,damasquinage,boucanage,braquage,dédouanage,infibulation,polissage,sertissage,empiètement,dégagement,ponctuation,virolage,clouage,titrage,déchaumage,dopage,miniaturisation,paraffinage,arraisonnement,conteneurisation,remaniement,filtrage,déchaussage,dépigeonnisation,paillassonnage,dégorgeage,essorage,prélavage,cuvelage,oxygénation,frittage,cuivrage,cocaïnisation,glanage,épilage,raffinage,chariotage,saumurage,ressemelage,arrestation,fichage,ensemencement,bocardage,importation,lisage,recoupage,nattage,pacification,ringardage,chromage,doucissage,fouille,façonnage,percement,murage,hongroyage,réglage,sevrage,rattachement,extraction,limogeage,encodage,dragage,débarbouillage,tanisage,déblocage,dénaturation,rempaillage,refonte,compartimentation,assouplissement,délaitage,assaut,scarification,ravalement,blanchissage,étampage,lattage,opération,cannage,capsulage,défeutrage,ébouillantage,embrigadement,reverdissage,mixage,codage,bousillage,délestage,permutation,défanage,désatellisation,défalcation,réforme,racinage,intubation,hydrogénation,agression,upérisation,déparaffinage,carrossage,privatisation,intronisation,amélioration,hydratation,délardement,détartrage,chiffrage,facturation,autopsie,terreautage,oxycoupage,pliage,écorçage,aération,pilage,arrondissage,drainage,plafonnage,décryptage,éviction,colmatage,numérotage,sectorisation,climatisation,crépissage,éviscération,nutrition,encaustiquage,décrispation,réengagement,pressurage,lambrissage,compilage,recouvrage,dépiquage,cartonnage,extermination,emboîtage,sélection,émottage,curage,striation,nitrification,défournage,décolletage,fluidification,domptage,embattage,moulage,fixage,fléchage,dessuintage,démocratisation,revalorisation,égrenage,dépolitisation,classification,arrosage,éreintement,peignage,répudiation,orientation,impaludation,ferrage,découplage,nitratation,accolage,dessablement,faisandage,dénicotinisation,surgélation,emmaillotement,lisérage,pétrissage,indexation,opalisation,décortication,perçage,présélection,branchement,décrassage,rognage,similisage,labourage,régularisation,engluage,insonorisation,cardage,métallisation,tuberculinisation,plumage,contraction,matage,dénivellation,extorsion,réactivation,alésage,embaumement,massacre,satinage,pacquage,désintoxication,segmentation,brûlage,incision,gaufrage,prélèvement,bourrage,délissage,évasement,mesurage,offense,débenzolage,saurissage,exfoliation,rature,désulfuration,agencement,pelletage,levage,réparation,bondérisation,zingage,dégazolinage,épointage,nickelage,surfilage,décloisonnement,préchauffage,aseptisation,ozonisation,pourrissage,gaulage,dépaquetage,fourbissage,huilage,robotisation,millage,burinage,fumigation,délitage,acidification,déboulonnage,emblavage,rétablissement,étêtage,fonçage,pistage,estompage,balayage,coloriage,provocation,tournage,repopulation,fumage,échelonnement,meulage,salage,railleries,écrêtement,amendement,écharnage,dramatisation,ravaudage,intercalation,dépoussiérage,soulignage,dédoublement,échenillage,épierrage,décorticage,concurrence,imposition,lavement,gravure,défoncement,test,platinage,authentification,maquillage,humidification,lavage,dynamitage,freinage,modernisation,francisation,gemmage,marinage,rétamage,gonflage,planification,décolonisation,fertilisation,interrogation,partage,exonération,égrainage,houblonnage,aiguisage,reconsolidation,aplanissement,gavage,égrisage,trépanation,écrabouillage,pressurisation,déshydratation,gommage,densification,éclaircissage,décalage,quadrillage,smillage,cadmiage,corroyage,égrappage,renforçage,gerbage,alcoolisation,inventaire,remontage,insémination,blutage,étouffage,dégommage,dosage,mûrissage,lyophilisation,enrichissement,pagination,déboisage,râpage,déridage,étamage,rigolage,taquineries,consultation,mensualisation,attaque,enlevage,expérimentation,recordage,bombardement,décoloration,commercialisation,cuisson,évidage,empaquetage,démontage,frettage,recouvrement,chaptalisation,étayage,gazéification,dépilation,rabotage,massage,rencaissage,épuçage,enquête,dégazage,étripage,remboîtage,charcutage,réunissage,feuilletage,hourdage,mouillage,démasclage,redressement,pastiche,dépolissage,réfection,incorporation,forçage,vulcanisation,enregistrement,bureaucratisation,cannetage,soudage,empilement,grattage,approvisionnement,rôtissage,renouvellement,verrouillage,contre-attaque,suppression,décentralisation,répartition,crabotage,boulonnage,toilettage,malaxage,implantation,désamidonnage,noyautage,délayage,écaillage,pansage,creusage,pitonnage,dallage,gainage,concassage,mortaisage,cassage,modification,aluminage,pelage,écrémage,officialisation,débobinage,réunification,clabotage,cambriolage,détournement,caoutchoutage,encollage,radioguidage,explicitation,rationalisation,grimage,relevé,dépolymérisation,électrocoagulation,forgeage,majoration,turbinage,centrage,timbrage,préfinancement,étalement,laminage,compostage,carottage,décrusage,remplacement,congélation,chronométrage,clavetage,écrouissage,carroyage,clarification,engraissement,carénage,rééducation,serrage,tyndallisation,marouflage,étuvement,chicaneries,chauffage,mithridatisation,pesage,multiplication,savonnage,centrifugation,ramonage,estimation,taraudage,entoilage,gabionnage,militarisation,déchiffrage,baguage,retirage,damage,entaillage,incrustation,équarrissage,décodage,ficelage,déglaçage,garnissage,rempotage,râtelage,garançage,rapatriement,dévissage,dénazification,mathématisation,mutilation,restauration,torpillage,égouttement,nourrissage,intervention,remoulage,décalquage,supervision,avortement,tarification,feutrage,dénoyautage,immobilisation,déroctage,dégonflage,mobilisation,dénucléarisation,exhérédation,discrimination,agrafage,lancement,compactage,radiosondage,réchauffage,disqualification,informatisation,remaillage,déboisement,déroutement,lissage,orchestration,maçonnage,déneigement,transcription,blindage,graphitage,datage,rechapage,renflouage,piquage,canonnage,désoufrage,coffrage,ramassage,démantèlement,dévidage,bouclage,déferlage,ponction,déménagement,stabilisation,amputation,écumage,estampillage,épincetage,humectage,catéchisation,camouflage,lustration,lévigation,parcellisation,démilitarisation,tamponnage,filage,recalage,consécration,plombage,accentuation,évidement,désinfection,doublage,alunage,vitrification,décollement,azurage,affinage,niellage,transposition,capitonnage,régalage,stérilisation,phosphatage,usinage,parodie,dépotage,remembrement,comblement,fusionnement,sauvetage,décantage,ceinturage,dépècement,décongélation,conditionnement,asticage,stucage,décarburation,dessiccation,berginisation,désinsectisation,chamoisage,maculation,accélération,subdivision,inoculation,attrapage,boisage,décapage,cisellement,épinçage,adoucissage,démazoutage,tressage,censure,déplissage,bruissage,sarclage,traçage,soulignement,dragéification,téléguidage,jaugeage,emboîtement,mouchetage,pinçage,pralinage,émondage,raccommodage,traînage,déballastage,endigage,étuvage,dénivellement,étêtement,étiquetage,tannage,catissage,graissage,délainage,chargement,grignotage,retroussage,puddlage,dédoublage,calfatage,boisement,démarquage,excision,harmonisation,reformulation,détroquage,battage,bouturage,extradition,modelage,assèchement,aérosondage,halogénation,soufflage,desserrage,forage,retapage,nouage,échardonnage,couplage,enchemisage,automatisation,vaccination,enrôlement,étendage,charronnage,retordage,binage,rattrapage,défilage,épluchage,maternage,dégorgement,triage,regrattage,vannage,dépicage,défénestration,politisation,poudrage,rivetage,replâtrage,démonétisation,boycottage,enfleurage,assolement,graticulation,décélération,enfournage,stoppage,traitement,dénaturalisation,déstabilisation,démagnétisation,barattage,infiltration,moissonnage,tarage,calibrage,canetage,régalement,vérification,minage,valorisation,ensilage,tuberculination,déverrouillage,correction,charruage,bardage,kidnappage,défrancisation,calomnie,dépréciation,ligotage,fartage,désensibilisation,vinage,dissolution,amorçage,vulgarisation,caricature,repoussage,bouffissage,ventage,balisage,ripage,piégeage,fignolage,désentoilage,filetage,ignifugation,sulfuration,aménagement,granulation,rénovation,espionnage,irrigation,maroquinage,empesage,détoxication,empotage,opacification,mitigation,dégrossissement,irradiation,désamorçage,empaillage,curetage,défrichement,purification,débourbage,calcination,conservation,roulage,chaulage,tronçonnage,rajeunissement,réorganisation,dédorage,plâtrage,riblage,réanimation,aplatissage,matriçage,métrage,repavage,compartimentage,barbouillage,hersage,réévaluation,pailletage,émorfilage,auscultation,rinçage,révocation,recerclage,bonification,déminéralisation,débourrage,patentage,estivage,sablage,dépaillage,dégrossissage,démaquillage,flottage,cachetage,panachage,rapetassage,étirage,jaunissage,épuration,manipulation,sassage,déportation,blanchiment,copartage,insufflation,ampliation,biseautage,limage,ratissage,tatouage,relèvement,pasteurisation,rabattage,sursoufflage,buttage,collage,pointage,glissage,engommage,écussonnage,pelliculage,scellage,classement,distillation,élagage,brunissage,recyclage,analyse,asphaltage,dévaluation,énucléation,débroussaillement,décentrage,pillage,exploration,marnage,tréfilage,javellisation,ajustage,martelage,inspection
+-> base = N0 faire Det N Prép N1 avec les colonnes suivantes codées :
+N0 faire un N à N1, N0 faire un N de N1, N0 faire un N contre N1, N0 faire un N sur N1
+N0 faire un N Modif à N1, N0 faire un N Modif de N1, N0 faire un N Modif contre N1, N0 faire un N Modif sur N1
++ N0 faire le N de N1 qui est gardée telle quelle car ne pose pas de pb (code un Det et une Prép particulière en plus)
+-> PB: Ces colonnes codent à la fois le Det et la Prép
+-> CHANGEMENT: Ces 8 colonnes sont remplacées par :
+Det =: un, Det =: un-Modif
+Prép =: à, Prép =: de, Prép =: contre, Prép =: sur
+-> chacune est + dès qu'une construction avec cette donnée est vraie, donc on perd la relation d'exclusivité si un Det n'est valable qu'avec une Prép particulière
+ex :
+biseautage : N0 faire un N à N1, N0 faire un N Modif à N1, N0 faire un N Modif de N1
+-> généralise à "N0 faire un N de N1"
+rétamage : N0 faire un N à N1, N0 faire un N de N1, N0 faire un N Modif de N1
+-> généralise à "N0 faire un N Modif à N1" également
+IMPORTANT: C'est pourquoi les colonnes originales ont été gardé en cas de restitution mais sont codées - en rouge dans la tdt pour ne pas faire double emploi MAIS du coup ces colonnes sont inutiles (elles sont gardés dans la tdt et lgextract mais devrait disparaître)
+REMARQUE :
+Quelques entrées ont ces 8 colonnes codées - mais la colonne N0 faire le N de N1 codée + donc c'est bon :
+berginisation, bistournage, chauffage, consécration, électrisation, élévation, interlignage, 
+MAIS 3 entrées ont ces 8 colonnes codées - ainsi que la colonne N0 faire le N de N1 donc aucun Det ni Prép n'est codé :
+grenadage, mensualisation, perquisition
+-> CHANGEMENT: codage + pour Det =: un, Det =: un-Modif, Prép =: de et N0 faire le N de N1 (les colonnes les plus fréquentes, ex: un grenadage de la zone, une mensualisation de temps/prix, la mensualisation de l'impôt, la perquisition de son domicile, une perquisition d'argent, etc.)
+-> A FAIRE: colonne N0 faire le N de N1 à prendre en compte dans lglex2ilex (surtout lorsqu'elle est codée seule car ne trouve pas de prép)
+
+Elsa(25-05-10)
+-------------------------------------------------------------------------------------
+Tables ayant <OPT>Adj :
+Annie Meunier : an01,an02,an03,an04,an05,an06,ansy
++ Gaston : es
+
+an01,an02,an03,an04,an05,an06 : base dans la tdt = N0 être Adj
+
+ansy : base dans la tdt = N0 être Adj Prép N1
+
+es : colonne N0 être Adj Prép N1 codée + pour les adjectifs
+PB: Les <E> et les - ne correspondent pas, j'ai donc ajouté des verbes, des adjectifs, échanger des + et - pour rendre la table cohérente.
+->  entrées contenant lemma="<E>" à suppr!!!
+
+Tables ayant <OPT>V :
+Giry : f1a,f1b,f1c,f1d,f1r,f2a,f2b,f2c,f21,f3,f4,f5,f9
++ Gaston: ad,dr1,drc,es,fr1,fs1,is1
+
+ad : colonne N0 V N1 codée + partt
+
+drc : N0 V N1 et N0 V N1 un coup codées + pour toutes les entrées non <E> pour <OPT>V
+->  entrées contenant lemma="<E>" à suppr!!!
+Correction des fautes :
+oxygèner -> oxygéner
+rape, raper -> râpe, râper
+téléphonner -> téléphoner
+
+es : colonne N0 V N1 codée + pour les verbes
+PB: Les <E> et les - ne correspondent pas, j'ai donc ajouté des verbes, des adjectifs, échanger des + et - pour rendre la table cohérente.
+->  entrées contenant lemma="<E>" à suppr!!!
+Correction des fautes : 
+ensorceller -> ensorceler
+hostil -> hostile
+méchammant -> méchamment
+
+f1a,f1b,f1c,f1d,f1r,f2a,f2b,f2c,f21,f3,f4,f5,f9 :
+N0 V N1 codé + dans la tdt au minimum (plus d'autres conctructions, cf. le 09-02-10)
+
+dr1 : rien
+Correction des fautes :
+appeller -> appeler
+homologer -> homologuer
+
+fr1 : rien
+Correction des fautes :
+glorifiier -> glorifier
+sermoner -> sermonner
+
+fs1 : rien
+Correction des fautes :
+alcooler -> alcooliser
+allèger -> alléger
+arrester -> arrêter
+asticage -> dédoublement : asticage / astiquage
+assècher -> assécher
+caprification -> <E> (vb) -> une entrée vide à suppr!!!
+ciseller -> ciseler
+congéler -> congeler
+consécrer -> consacrer
+déblocer -> débloquer
+décongéler -> décongeler
+défénestration, défénestrer -> défenestration, défenestrer
+démantèler -> démanteler
+déniveller -> déniveler
+destruire -> détruire
+drager -> draguer
+éléver -> élever
+embatter -> embattre
+empièter -> empiéter
+fumiguer -> fumiger
+glaçer -> glacer
+irriger -> irriguer
+léviguer -> léviger
+morceller -> morceler
+remoulage, remouler -> dédoublement : remmoulage, remmouler / remoulage, remouler
+renouveller -> renouveler
+rusticer -> rustiquer
+surgéler -> surgeler
+transcripre -> transcrire
+zinger -> zinguer
+
+Laissé car entrée doublée avec le bon orthographe
+aluminier? (aluminer = vb)
+déniveller? (déniveler)
+niveller? (niveler)
+
+is1 : rien
+Correction des fautes :
+banissement, banir -> bannissement, bannir
+excommuniquer -> excommunier
+harcèler -> harceler
+
+Pour ces 4 tables
+-> + ajouté en rouge dans la tdt pour N0 V N1
+IMPORTANT: On devrait ajouter passif + pour tous les verbes!!!
+
+REMARQUE: Le lexique contient des entrées vides (lemma="<E>") que l'on ne peut pas supprimer de lgextract, mais on peut ne pas en tenir compte dans lglex2ilex
+
+A mettre en commentaire dans lglex2ilex :
+    #if ($verb eq "V" && $id =~ /^N/) {
+     # unless (defined($warning_already_output{$_})) {
+	#$warning_already_output{$_} = 1;
+	#print STDERR "WARNING: verbal construction not handeled within noun tables: $_\n";
+      #}
+      #next;
+    #}
+
+Elsa(07-06-10)
+-------------------------------------------------------------------------------------
+Modification de la construction de base des tables F3 et F31:
+à l'origine: N0 faire Det N (à+contre) N1
+Or les deux colonnes "Prép1 =: à" et "Prép1 =: contre" sont codées dans la table
+-> construction de base plus générale : N0 faire Det N Prép N1
+ex (contre) : Max fait une attaque contre Eve
+ex (à): Max fait du baratin à Eve
+
+Modification de la construction de base de la table F21:
+Avant: N0 faire Det N Prép N1
+N0 faire Det N Prép N1 à N2
+ex: Max a fait une escroquerie d'une somme importante
+ex: Max a fait l'escroquerie d'une somme importante à Léa
+Mais toutes les entrées n'acceptent pas un N2 comme l'entrée arbitrage :
+Max fait l'arbitrage de ce match
+Cela est codé par la colonne "N0 faire Det N à N2" puisqu'elle sous-entend l'effacement possible de "Prép N1" ainsi que la présence de l'argument N2.
+-> dupplication de cette colonne pour coder de la même manière : N0 faire Det N Prép N1 à N2
+Unique construction de base : N0 faire Det N Prép N1
+
+Modification de la construction de base de la table F5:
+Avant: N0 faire Det N Prép N1 (E+de N2)
+Or la colonne "N0 faire un N Prép N1 de N2" code la présence du N2 qui est peu fréquent
+ex: Paul fait des broderies sur cette nappe de jolies petites fleurs 
+Or le Det n'est as obligatoirement "un" comme dans la construction, de plus, les Det sont codés indépendemment
+-> colonne renommée en "N0 faire Det N Prép N1 de N2"
+-> unique construction de base  N0 faire Det N Prép N1
+
+Elsa(13-08-10)
+-------------------------------------------------------------------------------------
+Tables DR1/FR1/FS1/IS1:
+L'entrée verbale est notée dans <OPT>V, mais le problème est que l'on ne peut pas établir de constrution définitoire verbale car elle peut être intransitive ou transitive en fonction des entrées, comme par exemple :
+Luc a ordonné à Max de se taire
+= Luc a donné l'ordre à Max de se taire
+et
+Luc a appuyé ce projet
+= Luc a donné son appui à ce projet
+Il faudrait donc coder les deux colonnes "N0 V à N1" et "N0 V N1" dans la table.
+Pour pouvoir tenir compte des entrées verbales, les deux propriétés sont définies comme définitoires temporairement (en rouge dans la tdt).
+
+Elsa(24-08-10)
+------------------------------------------------------------------------------------
+FS3: fautes d'orth corrigés:
+contrîle de routine -> contrôle de routine
+étude psychanalitique -> étude psychanalytique
+éxégèse littéraire -> exégèse littéraire
+
+Elsa(02-09-10)
+------------------------------------------------------------------------------------
+Table SYM (en cours):
+Remplacement des suffixes de la colonne "suffixe -n" par le nom complet sauf quand la colone est codée "-".
+La règle est : on elève la terminaison -er, -ir, etc. et on ajoute le suffixe (ex: unir	té -> unité) mais cela n'est pas toujours aussi évident (voici la liste des exceptions, un exemple de chaque exception uniquement):
+unir	ion -> union (on ne double pas le i, modèle non calé à unité)
+unir	son -> unisson (double s)
+solidariser	té -> solidarité (-s)
+scinder	sion -> scission (-nd + double s, définition: action de scinder ou de se scinder; le résultat de cette action)
+rompre	ure -> rupture (-omp +upt)
+rattacher	ment -> rattachement (+e)
+
+A demander:
+transiger	ction -> transigeance (pas de mot trouvé se terminant par -ction, définition: fait de transiger) -> pk pas intransigeance?
+sympathiser	e -> ?
+
+Elsa(30-11-10)
+------------------------------------------------------------------------------------
+IMPORTANT : Nouvelle notation pour la construction de base de chaque table : ++ dans la tdt
+-> permet de la distinguer des autres propriétés définitoires
+Seul pb: la table an06 n'en a pas! -> "N0 être Adj" uniquement
+
+Elsa(17-08-11)
+--------------------------------------------------------------------------------
+A FAIRE :
+Table F2B1 a supprimer car remplacée par FNDN et table F31 a supprimer car remplacée par FNAN en acceptant la perte suivante :
+
+7 entrées supprimées dans FNDN (présentes dans F2B1) et présentes dans aucune
+autre table :
+générique
+mise en scène
+scénario
+squelette
+tissu
+toile de fond
+trame
+
+27 entrées supprimées dans FNAN (présentes dans F31), dont seulement 11 sont
+présentes dans d'autres tables de J. Giry ou de G. Gross :
+apothéose -> N_fr2_6
+baroud d'honneur -> N_fnann_7
+boniment
+bouche à bouche -> N_fnann_8
+chose
+clin d'oeil -> N_fnann_13 + N_fr3_33
+condition -> N_fr2_24
+conversation
+coup -> N_fn_85
+courte échelle
+croc-en-jambe -> N_fs3_42
+cuisine -> N_fn_96
+difficulté
+école
+facilité
+haie
+hara-kiri
+joie
+mauvais parti
+misères -> N_fs2_65
+mystère
+pied de nez -> N_fnann_53
+respiration artif
+sentiment
+sort
+triomphe -> N_fr2_116
+vie impossible
+
+Elsa(23-08-11)
+--------------------------------------------------------------------------------
+PRISE EN COMPTE DES TABLES PSY ET SYM :
+Ajout de la colonne "<ENT>N" codée avec le nom complet et non le suffixe -> suppression de la colonne "suffixe -n"
+Intitulé de la colonne "<ENT>V" modifié en "<OPT>V"
+-> lexique complet
+
+Elsa(09-02-12)
+--------------------------------------------------------------------------------
+Ajout et codage de la colonne "Nagent" dans les tables fd1, fd2 et fd4 :
+-> codée dès que la colonne "N0 être Nagent" est codée +, grâce au codage des colonnes "élément dérivé", "suff-" et "suff+"
+
+Explication de la notation - (tiret) dans les colonnes "suff-" et "suff+" = début de mot
+(+ dans la colonne "suff+" signifie que le mot est resté tel quel)
+
+La colonne "élément dérivé" indique pour les composés sur quel élément s'applique la dérivation :
+- 1 pour le premier : Jean fait du "piano à queue" / Jean est pianiste
+- 2 pour le deuxième : Paul fait du "jeu à treize" / Paul est treiziste
+- 3 pour le troisième : Paul faut du "qwan-ki-do" / Paul est qwan-ki-doka
+-> si le nom n'a pas de tiret, l'élément dérivé est le seul mot gardé; si le mot a un tiret, et que le suffixe s'ajout au 1er nom, la suite est supprimée, mais si le suffixe concerne le dernier mot, le mot entier est gardé même si le suffixe s'applique à ce mot
+
+Modifications de 3 entrées dans la table fd4 pour appliquer cette règle sans exception (les espaces n'étant pas prioritaire par rapport aux tirets) :
+ki do -> ki-do
+kwan ki do -> kwan-ki-do
+tae kuondo -> tae-kuondo
+
+Suppression des 3 colonnes "élément dérivé", "suff-" et "suff+" puisqu'à présent inutiles
+-> elles apparaissent pour la dernière fois dans la version 2131 sur svn, avec en rouge les modifications effectuées afin de créer correctement les Nagent
+
+Suppression également dans la tdt + ajout de "Nagent"
++ ajout dans lglextract :
+define abs N0etreNagent {construction="@*N0 être Nagent@::N0 être Nagent:@Nagent@"};
+
+-> Ajout dans le lexique
+
+Elsa(09-05-12)
+--------------------------------------------------------------------------------
+Ajout de la colonne <OPT>V dans les tables fd1, fd2 et fd4 :
+-> codée dès que la colonne "verbe associé" est codée +
+
+-> Ajout direct dans le lexique puisque "verbassoc="@<OPT>V@"" est déjà utilisé pour d'autres tables
+
+Elsa(11-05-12)
+--------------------------------------------------------------------------------
+
+Ajout dans lglex de la propriété classverbassoc en prenant en compte la colonne "classe du verbe"
+-> modifications dans les tables :
+f1-9 : 
+- remplacement de 34lo par 34L0 (le chiffre plutôt que la lettre) pour correspondre au nom actuel de la table (dans f1b et f1c)
+- remplacement de <E> par - pour l'entrée signer de f1c pour harmoniser avec les autres codages - qui correspondent au fait qu'il n'y a pas de table codant ce verbe
+psy et sym : 
+- noms des tables avec minuscules (ex: 31H -> 31h) pour harmoniser avec le codage des tables f1-9
+
+Elsa(15-11-13)
+--------------------------------------------------------------------------------
+
+
+
+N1 =: ce Qu P
+Prép N1 =: de ce Qu Pind
+-> à supprimer (comme pour les verbes)

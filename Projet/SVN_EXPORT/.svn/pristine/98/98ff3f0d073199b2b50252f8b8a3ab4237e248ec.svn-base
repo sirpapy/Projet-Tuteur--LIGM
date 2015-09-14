@@ -1,0 +1,71 @@
+Consignes pour le travail collaboratif sur les tables et la table des classes
+----------------------------------------------------------------------------
+
+Ce document explique les règles à suivre pour éviter les problèmes de concurrence de versions dans les tables, la TDC (table des classes) et la liste des propriétés.
+
+1) Chaque groupe de travail a une couleur.
+
+2) Les propriétés attribuées par Eric à un groupe sont repérées dans la colonne C de la TDC par la couleur du groupe.
+   
+3) Il est interdit de modifier une propriété attribuée à un autre groupe.
+
+4) Toute modification apportée à une table, à la TDC ou à la liste des propriétés doit être mise en évidence par la couleur du groupe. Ceci est valable pour toute opération, même le fait de mettre une valeur dans une case de table.
+
+5) Les données qui font foi sont celles présentes sur SVN. On doit toujours retélécharger la dernière version des données et ne pas travailler en local sur des copies! De plus, dès qu'on a fini de travailler, on doit faire un commit de ses modifications sur SVN. Il faut remplacer les données existantes et non pas créer un fichier du type "TDC.xls(14)".
+
+6) Pour éviter de modifier les données en concurrence, un groupe doit signaler qu'il est train de modifier les données. Pour cela, il télécharge la dernière version puis la verrouille. Cela permettra aux autres groupes qui voudraient travailler au même moment de se rendre compte que la place est temporairement prise. Une fois la séance de travail finie et toutes les modifications faites sur les données, on doit faire un commit et déverrouiller le fichier.
+
+7) Lorsqu'une ligne de la TDC est jugée pertinente linguistiquement mais inexploitable pour l'analyse syntaxique, la ligne sera colorée en rouge, mais son contenu ne sera pas modifié. On placera une "x" uniquement dans la case "Suppr". De plus, la propriété sera mise en rouge dans le fichier de description des propriétés avec la mention NON UTILISEE INFORMATIQUEMENT en noir.
+   A ne pas confondre: Une "*" est placée dans cette même colonne "Suppr" lorque la propriété a été traitée dans le programme lgextract.
+
+8) Lorsqu'une propriété est jugée à supprimer complètement, la ligne sera colorée en rouge et toutes ses cases seront remplies de "x", y compris la case "Suppr". De plus, la propriété sera mise en rouge dans le fichier de description des propriétés avec la mention PROPRIETE SUPPRIMEE en rouge également. La suppression complète d'une propriété devra être discutée collégialement. En revanche, on ne retirera jamais la propriété du fichier des propriétés pour en garder une trace.
+
+9) Dans le cas exceptionnel où un groupe interviendrait sur le contenu d'une table ou sur une ligne de la TDC, comme par exemple pour renommer une propriété, il faut s'assurer que les mises à jour nécessaires ont bien été effectuées dans TOUTES les tables concernées ainsi que dans la TDC. De plus, il faut indiquer dans le fichier des propriétés ANCIENNEMENT "..." en noir, pour garder une trace de l'ancienne propriété.
+
+10) Lors d'un ajout de propriété, il faut insérer la ligne dans l'ordre alphabétique dans la TDC et dans le fichier des propriétés.
+
+11) Toutes les remarques et commentaires qui pourraient être faites seront placées dans le fichier "Notes.txt". Quand on fait référence à une propriété, le faire par son intitulé entre guillemets.
+
+12) Rappel des codes utilisés dans la TDC :
+
+x   propriété supprimée
++      "     constante plus solide
+?+     "     constante plus à la louche
+-      "     constante moins solide
+?-     "     constante moins à la louche
+o      "     codée dans la table correspondante
+
+13) Code utilisé dans la colonne "LGLex":
+x non utilisable informatiquement
+? non utilisée car intitulé à éclaircir
+Toutes les autres sont intégrées au lexique en tant que:
+E = Valeur de l'entrée <ENT> (pred)
+V = Vsup
+DC0 = Distribution du C0
+D0 = Distribution du N0
+D1 = Distribution du N1
+D01 = Distribution du N0 et du N1
+D1P = Distribution du N1 avec une Prép spécifique
+D12 Distribution du N1 ou du N2
+D2 = Distribution du N2
+D2P = Distribution du N2 avec une Prép spécifique
+D3 = Distribution du N3
+D3P = Distribution du N3 avec une Prép spécifique
+Dc = Distribution du Nc
+Dv = Distribution du Nv
+Ppv = Distribustion du Ppv
+D = Distribution plus spécifique
+C = Construction
+CV = Construction verbale (pour les noms)
+T = Transformation (lexical rule)
+P = Prép (ou zone)
+GN = Construction dérivée du GN (dérivation)
+Det = Determinant
+Adv = Structure de l'adverbe
+Adj = Structure de l'adjectif
+DetN = Structure du nom
+P = Paraphrase + Structure de l'adverbe
+PC = Paraphase + Construction + Structure de l'adverbe
+PE = Valeur de l'entrée d'une paraphase
+A = Autre structure de l'entrée + Structure de l'adverbe
+ID = Nouvelle entrée adverbiale avec intensification + Structure de l'adverbe

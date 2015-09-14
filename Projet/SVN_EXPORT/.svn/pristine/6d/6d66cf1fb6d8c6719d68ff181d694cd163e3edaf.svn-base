@@ -1,0 +1,18 @@
+Notons que la table F2B1 (contenant 65 entrées) est incluse dans la version~3.3 mais pas dans la version 3.4 puisqu'elle a été remplacée et annulée par la table FNDN.
+Cette dernière contient 136 entrées supplémentaires, mais 7 entrées ont également été supprimées (\textit{générique}, \textit{mise en scène}, \textit{scénario}, \textit{squelette}, \textit{tissu}, \textit{toile de fond}, \textit{trame}) et ne figurent dans aucune autre table.
+%En effet, 7 entrées ont été supprimées (générique, mise en scène, scénario, squelette, tissu, toile de fond, trame), une entrée a été corrigée (compte rendu -> compte-rendu) et 136 entrées ont été ajoutées (agrandissement, assaut, barème, etc.).
+%Aucune des entrées supprimées ne se trouve dans une autre table, c'est pourquoi il faudrait vérifier si ces entrées étaient des erreurs et n'existent pas en tant que noms prédicatifs ou chercher à les placer dans une table.
+%FNDN: 65 entrées -> 194 entrées et FNAN: 102 entrées -> 246 entrées
+De plus, même si la construction de base est la même, on passe de 20 colonnes codées dans la table à 7 colonnes uniquement~: on perd notamment des constructions telles que \prop{N0 faire Det N de N1 à N2}, ou avec la forme pronominale \textit{se faire} (\prop{N0 se faire Det N de N1}), ou encore des informations sur les réductions en groupe nominal (\prop{GN \dist le N de N0}).
+%FNDN: 20 à 7 colonnes et de FNAN: 24 à 8 colonnes
+
+Le même cas de figure se présente avec la table F31 (contenant 102 entrées), qui a été remplacée et annulée par FNAN, avec 171 entrées supplémentaires et 27 entrées supprimées. Parmi celles-ci, 11 seulement figurent dans d'autres tables de J.~Giry-Schneider
+(\textit{baroud d'honneur} dans FNANN, \textit{cuisine} dans FN), 
+ou de G.~Gross %, telles que FR2, FS2 ou FS3. 
+(\textit{apothéose} dans FR2, \textit{croc-en-jambe} dans FS3). %\textit{misères} dans FS2
+
+Notons de plus que la table APE21
+contient pratiquement les mêmes entrées que la table AA, il serait donc judicieux de garder la table AA en y ajoutant les informations de la table APE21.
+En effet, \citet{gross89gaston} ayant etudié toutes les converses du français, sa terminologie est plus cohérente avec ses autres classes.
+%Celle de G. Gross a 25 entrées supplémentaires et celle de R. Vives en a 6 (attention, aversion,
+%commisération, mansuétude, préférence, soins).

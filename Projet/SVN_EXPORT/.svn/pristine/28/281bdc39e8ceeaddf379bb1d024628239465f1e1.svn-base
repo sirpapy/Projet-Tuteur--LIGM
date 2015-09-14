@@ -1,0 +1,26 @@
+﻿PACKAGE: Multiword adverbs of French
+
+SUBMITTED BY: Stavroula Voyatzi
+              Université Paris-Est (France)
+              voyatzi@univ-mlv.fr
+
+DATE: 01.02.2008
+
+SOURCE: Electronic Dictionary of compound adverbs of French (DELA)
+	Lexicon-Grammar tables of compound adverbs of French (M. Gross 1986, 1990)
+	URL of the research team: http://infolingu.univ-mlv.fr/
+	URL of the resources: http://infolingu.univ-mlv.fr/english/DonneesLinguistiques/Lexiques-Grammaires/fr-adv-figes
+	
+
+DESCRIPTION:  
+
+This package contains an electronic dictionary of French multiword adverbs.
+The dictionary is displayed as a series of 15 tables or binary matrices, each one corresponding to a formal class of multiword adverbs.
+Multiword adverbs have been classified according to their internal syntacitc structure which is described at the elementary level of sequences of parts of speech (PoS).
+The size of the dictionary is 6 763 lexical entries associated with syntactic and semantic features.
+The General table gives an overview of both the adverbial classes and features.    
+
+LICENSE:
+
+This electronic dictionary is LGPLLR-licensed.
+http://infolingu.univ-mlv.fr/lgpllr.html

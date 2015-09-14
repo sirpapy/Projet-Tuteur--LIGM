@@ -1,0 +1,248 @@
+Tables du Lexique-Grammaire version 3.4 - 2011/10/05
+http://infolingu.univ-mlv.fr/
+Licence: LGPL-LR
+
+Les tables du Lexique-Grammaire du français constituent une grande base de
+données lexicales, syntaxiques et sémantiques pour les verbes (Gross, 1975; 
+Borillo, 1971; Boons et al., 1976a, 1976b; Leclère, 1990; Guillet et Leclère, 
+1992), les noms prédicatifs (Labelle, 1974; Giry-Schneider, 1978; de 
+Négroni-Peyre, 1978; Meunier, 1981; Vivès, 1983; Giry-Schneider, 1987; 
+Gross, 1989; Giry-Schneider & Balibar-Mrabti, 1993; Giry-Schneider, 2005), 
+les expressions figées (Danlos, 1980; Gross, 1982, 1988, 1996) et les adverbes 
+(Gross, 1986; Molinier & Levrier, 2000).
+Pour plus de détails sur les changements apportés aux tables, voir (Tolone, 2011, 
+2009, 2010; Tolone et al. 2010).
+
+Contenu :
+- le nombre d'entrées et la référence de chaque table
+- un répertoire par catégorie contenant les tables de la catégorie concernée
+- un répertoire par catégorie contenant la table des classes de la catégorie
+  concernée, ainsi que pour les verbes :
+  - index de toutes les entrées avec la classe dans laquelle elle figure
+    et plusieurs exemples associés
+  - documentation des propriétés
+  - formules définitoires de chaque table
+  - arbre classement et conventions de lecture
+
+Vous pouvez contribuer au Lexique-Grammaire (nouvelles classes, nouvelles 
+entrées, nouvelles propriétés, etc.) et envoyer les données que vous avez 
+construites à Takuya Nakamura (LIGM) : takuya.nakamura@univ-mlv.fr
+
+_____________________
+Format des fichiers :
+
+Les tables sont au format CSV (voir
+http://fr.wikipedia.org/wiki/Comma-separated_values). Ce format permet de
+représenter les tables indépendamment du logiciel utilisé (Microsoft Excel,
+LibreOffice Calc, OpenOffice.org Calc, Gnumeric, etc.). Le logiciel doit 
+cependant gérer l'Unicode, sinon des caractères incorrects peuvent apparaître.
+
+Ce sont des fichiers texte en UTF-8. Chaque ligne correspond à une rangée
+du tableau et les cellules d'une même rangée sont séparées par un point-
+virgule. Les champs texte des cellules sont délimités par des caractères 
+double quote. Lorsqu'un champ contient lui-même des guillemets, ils sont 
+doublés afin de ne pas être considérés comme fin du champ.
+
+Il est préférable d'ouvrir les tables au format CSV dans un tableur en
+indiquant que :
+
+- Le séparateur est le ; (Point-Virgule)
+- Le séparateur de texte est le " (Double quote)
+
+Pour une meilleure lisibilité des tables :
+- Selectionner la première ligne en cliquant sur le 1 de la colonne de gauche :
+Format > Cellules... > Degrés : 90 > OK
+- Selectionner toutes les cellules en cliquant sur le coin en haut à gauche (Ctrl+A) :
+Colonne > Largueur optimale... > Ajouter : 0,2cm > OK
+
+Si le fichier est ouvert avec un simple éditeur de texte, les séparateurs
+doivent être respectés, notamment l'ouverture d'un guillemet doit être fermé.
+
+Les tables au format .csv sont générées à partir des fichiers de travail
+avec le programme xls2csv, fourni par la suite logicielle catdoc.
+On peut utiliser cette commande bash :
+
+  for i in *.xls;do xls2csv -c ";" "$i" > "${i%%.xls}".csv;done
+
+_____________________
+Codage des fichiers :
+
+Une table se présente sous forme de matrice :
+- en lignes, les entrées lexicales de la classe correspondante
+- en colonnes, les propriétés syntaxico-sémantiques, qui ne sont pas forcément 
+respectées par tous les éléments de la classe
+- codes utilisés à l'intersection d'une ligne et d'une colonne pour indiquer 
+si l'entrée lexicale décrite par la ligne accepte ou non la propriété décrite 
+par la colonne :
+
++ = constante plus solide
+- = constante moins solide
+~ ou ? = à coder dans la table
+
+Une table des classes se présente sous forme de matrice :
+- en lignes, l'ensemble de toutes les propriétés syntaxico-sémantiques 
+répertoriées pour la catégorie concernée
+- en colonnes, l'ensemble des classes définies pour cette même catégorie
+- codes utilisés à l'intersection d'une ligne et d'une colonne pour indiquer 
+si la propriété correspondante est vérifiée ou non par tous les éléments de 
+la classe (c'est-à-dire par toutes les entrées de la table correspondante) :
+
+++ = constante plus solide (construction ou structure de base)
++ = constante plus solide
+?+ = constante plus à la louche
+- ou / = constante moins solide
+?- = constante moins à la louche
+o = codée dans la table correspondante
+O = à coder dans la table correspondante
+? = à coder dans la table des classes
+
+- la première colonne de la table des classes intitulée "LGLex" indique si 
+la propriété a été intégrée ou non dans le lexique LGLex (x ou ? indique qu'elle
+ne l'est pas)
+
+____________
+Références :
+
+- verbes :
+
+Classes 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18 :
+Gross, Maurice (1975). Méthodes en syntaxe. 
+<http://books.google.fr/books?id=bUBcAAAAMAAJ>. Paris: Hermann.
+
+Classe 36S :
+Borillo, Andrée (1971). Remarques sur les verbes symétriques français.
+<http://www.persee.fr/articleAsPDF/lfr_0023-8368_1971_num_11_1_5544/article_lfr_0023-8368_1971_num_11_1_5544.pdf?mode=light>.
+Langue Française 11, pp. 17-31, Paris: Larousse.
+
+Classes 31H,31R,33,34L0,35L,35S,35ST,35R :
+Boons, Jean-Paul; Guillet, Alain & Leclère, Christian (1976a). La structure 
+des phrases simples en français: constructions intransitives.
+<http://books.google.fr/books?id=BlnZtt2H6QoC>/. Genève: Droz, 378 p.
+
+Classes ,32C,32CL,32CV,32H,32NM,32PL,32R1,32R2,32R3,32RA,36R,38PL,38R,39 :
+Boons, Jean-Paul; Guillet, Alain & Leclère, Christian (1976b). La structure
+ des phrases simples en français: classes de constructions transitives. 
+Rapport de Recherches du LADL 6, Paris: Université Paris 7.
+
+Classes 35RR,36S,38RR :
+Leclere, Christian (1990). Organisation du Lexique-Grammaire des verbes 
+français. Langue française 87(1), pp. 112--122.
+
+Classes 36DT,36SL,37E,37M1,37M2,37M3,37M4,37M5,37M6,38L,38L0,38L1,38LD,38LH,38LR,38LS :
+Guillet, Alain & Leclère, Christian (1992). La structure des phrases
+simples en français : Les constructions transitives locatives.
+<http://books.google.fr/books?id=S-b5hGhMs4gC>/. Genève, Droz, 446 p.
+
+- noms prédicatifs :
+
+Classes ana,anm,anml,anmr,anp,anpr,ans,ansu :
+Labelle, Jacques (1974). Etude de constructions avec opérateur avoir 
+(nominalisations et extensions). Thèse de troisième cycle, Laboratoire 
+d'Automatique Documentaire et Linguistique, Paris: Université Paris 7.
+
+Classes f1a,f1b,f1c,f1d,f1r,f21,f2a,f2b,f2c,f2r,f3,f4,f41,f5,f6,f7,f8,f9,f91 :
+Giry-Schneider, Jacqueline (1978). Les nominalisations en français. 
+L'opérateur faire dans le lexique.
+<http://books.google.fr/books?id=FYnhAAAAMAAJ>/. Genève: Droz.
+
+Classes an01,an02,an03,an04,an05,an06,ansy :
+Meunier, Annie (1981). Nominalisations d'adjectifs par verbes supports. 
+Thèse de troisième cycle, LADL, Université Paris 7.
+
+Classes ape1,ape11,ape2,ape21,ape22,ape3,app1,app2,app3 :
+Vivès, Robert (1983). Avoir, prendre, perdre: constructions à verbe support 
+et extensions aspectuelles. Thèse de troisième cycle, LADL, Université Paris 7.
+
+Classes fn,fna,fnan,fnana,fnann,fndn,fnn,fnpn,fnpna,fnpnn :
+Giry-Schneider, Jacqueline (1987). Les prédicats nominaux en français. Les 
+phrases simples à verbe support.
+<http://books.google.fr/books?id=Z6cxYAH9__oC>/. Genève: Droz.
+
+Classes aa,ad,dr1,dr2,dr3,drc,es,fr1,fr2,fr3,fs1,fs2,fs3,is1,is2 :
+Gross, Gaston (1989). Les constructions converses du français.
+<http://cat.inist.fr/?aModele=afficheN&cpsidt=11886646>. Droz: Genève.
+
+Classes an07,an08,an09,an10 :
+Giry-Schneider, Jacqueline & Balibar-Mrati, Antoinette  (1993). Classes de
+noms construits avec avoir, Rapport technique 42, LADL, Université Paris 7.
+
+Classes andn,ansn :
+Giry-Schneider, Jacqueline (2005). Les noms épistémiques et leurs verbes
+supports. Lingvisticae Investigationes 27 (2). pp. 219--238.
+
+Classes psy,sym :
+de Negroni-Peyre, Dominique (1978). Nominalisations par être en et 
+réflexivation (admiration, opposition, révolte et rage). Lingvisticae 
+Investigationes 2(1), pp. 127--164.
+
+Classes fd1,fd2,fd3a,fd3b,fd4 :
+Pivaut, Laurent (1989). Verbes supports et vocabulaire technique : sport, 
+musique et activités intelectuelles. Thèse de doctorat, LADL, Université Paris 7.
+
+- expressions verbales et adjectivales figées :
+
+Classe 31I :
+Boons, Jean-Paul; Guillet, Alain & Leclère, Christian (1976b). La structure
+des phrases simples en français: classes de constructions transitives. 
+Rapport de Recherches du LADL 6, Paris: Université Paris 7.
+
+Classes z1,z5d,z5p,zp,zs :
+Danlos, Laurence (1980). Représentation d'informations linguistiques : 
+les constructions N être Prép X. Thèse de troisième cycle, Paris: Université 
+Paris 7.
+
+Classes a1,a12,a1p2,a1pn,anp2,c0,c0e,c0q,c1d,c1dpn,c1g,c1gpn,c1i,c1ipn,c1p2,
+c1r,c1rpn,c5,c5c1,c6,c7,c8,cadv,can,cdn,cff,cnp2,cp1,cpn,cpp,cppn,cppq,cpq,
+cv,e01,e0p1,ec0,ya :
+Gross, Maurice (1982). Une classification des phrases «figées» du français. 
+Revue Québécoise de Linguistique 11.2, pp. 151-185, Montréal: UQAM.
+
+Classes eapc,epa,enpc :
+Gross, Maurice (1988). Adjectifs composés. 
+<http://cat.inist.fr/?aModele=afficheN&cpsidt=11849258>.
+In Grammaire et histoire de la grammaire. Hommage à la mémoire de J. Stéfanini,
+pp. 211-233, Aix-en-Provence: Publications de l'Université de Provence.
+
+Classes epac,epc,epca,epcdc,epcdn,epcpc,epcpn,epcpq,epdetc :
+Gross, Maurice (1996). Les formes être Prép X du français.
+<http://cat.inist.fr/?aModele=afficheN&cpsidt=2458298>. Lingvisticae
+Investigationes XX:2, pp. 217-270, Amsterdam-Philadelphie, John Benjamins.
+
+- adverbes :
+
+Classes advmf,advmp,advmqc,advmqe,advmqi,advms,advmtd,advmf,advmtq,advmv,
+advpae,advpah,advpam,advpas,advpc,advps :
+Gross, Maurice (1986). Grammaire transformationelle du français. Vol. 3, 
+Syntaxe de l'adverbe. Paris: CERIL, Université Paris 7.
+
+Classes pac,padv,pc,pca,pcdc,pcdn,pconj,pcpc,pcpn,pdetc,peco,pf,pjc,ppco,pv,pvco:
+Molinier, Christian & Levrier, Françoise (2000). Grammaire des adverbes : 
+description des formes en -ment. Droz, Genève, Suisse.
+
+
+- modifications récentes :
+
+Nouvelles entrées (adverbes) :
+Tolone, Elsa & Voyatzi, Stavroula (2011). Extending the adverbial coverage of 
+a NLP oriented resource for French. Proceedings of the 5th International Joint 
+Conference on Natural Language Processing. 9 pp. Chiang Mai, Thaïlande.
+
+Classes fd1,fd2,fd3a,fd3b,fd4 (noms prédicatifs) :
+Tolone, Elsa (2011). Conversión de las tablas del Léxico-Gramática del francés 
+en el léxico LGLex. 2nd Argentinian Workshop on Natural Language Processing, 
+10 pp. Córdoba, Argentine.
+
+Nouvelles classes 2T,32D,35LD,35LR,35LS,38LHD,38LHR,38LHS (verbes) :
+Tolone, Elsa (2011). Analyse syntaxique à l'aide des tables du Lexique-Grammaire 
+du français. Thèse de doctorat, LIGM, Université Paris-Est. 340 pp.
+
+Tolone, Elsa (2009). Les tables du Lexique-Grammaire au format TAL. Actes de 
+la conférence MajecSTIC 2009, 8 pp. Avignon, France.
+
+Tolone, Elsa (2010). Constructions définitoires des tables du Lexique-Grammaire : 
+Le cas des complétives et des infinitives. Actes de la session poster de 
+MajecSTIC 2010, 4 pp. Bordeaux, France. 
+
+Tolone, Elsa; Voyatzi, Stavroula & Leclère, Christian  (2010). Constructions 
+définitoires des tables du Lexique-Grammaire. Actes du 29ème Colloque 
+international sur le Lexique et la Grammaire, pp. 321-331, Belgrade, Serbie.

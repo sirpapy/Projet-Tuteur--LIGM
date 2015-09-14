@@ -1,0 +1,224 @@
+aa:
+Exemple Base1 : N0 avoir Det N Prep N1
+Exemple Autre1 : N0 avoir (de le+le) N (E+de N1)
+ad:
+Exemple Autre1 : avoir Det N (E+Modif)
+an01:
+Exemple Base1 : être de Det N
+Exemple Base2 : avoir Det N
+Exemple Base3 : être Adj
+Exemple Autre1 : être Det N
+an02:
+Exemple Base1 : être de Det N Modif
+Exemple Base2 : avoir Det N (E+Modif)
+Exemple Base3 : être Adj
+Exemple Autre1 : avoir le N
+Exemple Autre2 : avoir de N
+an03:
+Exemple Base1 : être de Det N
+Exemple Base2 : avoir Det N (E+Modif)
+Exemple Base3 : être Adj
+Exemple Autre1 : Il y a
+Exemple Autre2 : être (Det) N
+Exemple Autre3 : Que P avoir Det N Modif
+an04:
+Exemple Base1 : être de Det N (E+Modif)
+Exemple Base2 : avoir Det N (E+Modif)
+Exemple Base3 : être Adj
+an05:
+Exemple Base1 : être de Det N (E+Modif)
+Exemple Base2 : avoir Det N (E+Modif)
+Exemple Base3 : être Adj
+Exemple Autre1 : avoir Det N de N1
+an06:
+Exemple Base1 : être de Det N
+Exemple Base2 : avoir Det N (E+Modif)
+Exemple Base3 : être Adj
+Exemple Autre1 : il y a (de le+Det) N
+an07:
+Exemple Base1: avoir Det N Modif
+Exemple Base2 : être d'un certain N
+Exemple Autre1 : être de Det N Modif
+Exemple Autre2 : être (de+Det) N Modif
+Exemple Autre3 : avoir de le N Modif
+Exemple Autre4 : avoir Det N de combien
+Exemple Autre5 : avoir (de +le) N Modif
+Exemple Autre6 : Il y a
+Exemple Autre7 : être Adj
+Exemple Autre8 : GN
+an08:
+Exemple Base1 : avoir Det N
+Exemple Autre1 : il y a
+Exemple Autre2 : avoir Det N de combien
+Exemple Autre3 : avoir (de+ de le) N
+Exemple Autre4 : GN
+an09:
+Exemple Autre1 : avoir un N
+Exemple Autre2 : avoir un certain N
+Exemple Autre3 : avoir des N
+Exemple Autre4 : avoir Det N de combien
+Exemple Autre5 : N0 et N1 être Det N
+Exemple Autre6 : avoir de N
+Exemple Autre7 : être Det N
+Exemple Autre8 : il y a
+Exemple Autre9 : GN
+an10:
+Exemple Autre1 : avoir des N
+Exemple Autre2 : avoir un N (E+Modif)
+Exemple Autre3 : avoir de le N
+Exemple Autre4 : avoir le N
+Exemple Autre5 : avoir de  N
+Exemple Autre6 : être (de) Det N
+Exemple Autre7 : GN
+ana:
+Exemple Base1 : avoir Det N (E+(à+pour) (N1+V0-inf W)
+Exemple Autre1 : avoir du N (E+à (N1+V0-inf W))
+andn: /
+anm:
+Exemple Base1 : avoir Det N
+anml:
+Exemple Base1 : avoir Det Nmal (E+Loc Npc)
+anmr: /
+anp:
+Exemple Base1 : avoir Det N (pour+contre+en faveur de) N1
+Exemple Autre1 : éprouver Det N devant N1
+anpr:
+Exemple Base1 : avoir Det N (E+contre N1)
+Exemple Autre1 : avoir Det N
+ans:
+Exemple Base1 : avoir Det N avec N1
+Exemple Autre1 : avoir Det N
+Exemple Autre2 : Il y a
+Exemple Autre3 : faire Det N
+ansn: /
+ansu:
+Exemple Base1 : avoir Det N sur N1
+Exemple Autre1 : avoir Det N
+ansy:
+Exemple Base1 : avoir Det N avec N1
+Exemple Base2 : N0 et N1 avoir Det N Modif
+Exemple Base3 : être de Det N Modif
+Exemple Base4 : être Adj
+Exemple Autre1 : être en N Modif
+ape11:
+Exemple Base1 : APE Det N
+ape1:
+Exemple Base1 : APE Det N
+ape21:
+Exemple Base1 : APE Det N Prép N0
+ape22 : /
+ape2:
+Exemple Base1 : APE Det N Prép N1
+ape3:
+Exemple Base1 : APE Det N (E+Prép N1)
+Exemple Autre1 : donner Det N
+app1:
+Exemple Base1 : APP Det N
+Exemple Autre1 : être de Det N
+Exemple Autre2 : Il y a
+app2:
+Exemple Base1 : APP Det N Prép N1
+app3:
+Exemple Base1 : APP Det N (E+Prép N1)
+dr1:
+Exemple Base1 : donner Det N à N1
+Exemple Autre1 : donner Det N de N1
+Exemple Autre2 : donner Det N sur N1
+dr2:
+Exemple Base1 : donner Det N à N1
+Exemple Autre1 : avoir Det N (E+de+de le+sur+avec) N1
+Exemple Autre2 : avoir Det N QueP
+dr3 : /
+drc : /
+es:
+Exemple Base1 : N0 exercer Det N Prep N1
+Exemple Base2 : N1 subir Det N (de+de la part de) N0
+Exemple Autre1 : avoir Det N Modif (E+sur N1)
+f1a : /
+f1b:
+Exemple Base1 : N0 faire Det N
+f1c : /
+f1d : /
+f1r:
+Exemple Base1 : N0 faire Det N
+f21:
+Exemple Base1 : N0 faire Det N de N1
+Exemple Base2 : N0 faire Det N Qu P
+Exemple Autre1 : N0 faire Det N de N1 à N2
+Exemple Autre2 : faire des N 
+f2a:
+Exemple Base1 : N0 faire le N de N1
+Exemple Autre1 : faire le N de N1 (à+sur) N2
+f2b1 : /
+f2b:
+Exemple Base1 : N0 faire Det N de N1
+f2c : /
+f2r:
+Exemple Base1 : N0 faire Det N de N1
+Exemple Autre1 : N0 faire Det N de N1 à N2
+f31:
+Exemple Base1 : N0 faire Det N à N1
+f3:
+Exemple Base1 : faire Det N à N1
+Exemple Base2 : N0 faire Det N contre N1
+Exemple Autre1 : N0 faire Det N (à+sur) N1
+f41 : /
+f4 : /
+f5:
+Exemple Autre1 : faire Det N sur N1
+Exemple Autre2 : faire Det N Loc(=:à+dans) N1
+Exemple Autre3 : faire Det N autour de N1
+Exemple Autre4 : faire Det N (E+de N1)
+f6:
+Exemple Base1 : N0 faire Det N de N1 Prép N2
+Exemple Autre1 : faire Det N de N1
+f7:
+Exemple Autre1 : faire Det N
+Exemple Autre2 : faire Det N entre N1 et N2
+Exemple Autre3 : faire Det N de N1 et N2
+f8:
+Exemple Autre1 : faire Det N (E+(avec+sur) N1)
+f91 : /
+f9 : /
+fna : /
+fnana : /
+fnan:
+Exemple Autre1 : faire Det N 
+fnann : /
+fndn:
+Exemple Autre1 : faire Det N de N1 (E+(à+avec) N2)
+fn:
+Exemple Base1 : faire Det N (E+(à+de) N1)
+fnn:
+Exemple Autre1 : faire Det N à N1
+fnpna:
+Exemple Autre1 : faire Det N
+fnpn:
+Exemple Autre1 : faire Det N (E+Prép N1)
+fnpnn:
+Exemple Autre1 : faire Det N (E+de N1)
+fr1:
+Exemple Base1 : N0 faire Det N Prép N1
+Exemple Autre1 : faire Det N (E+à N1)
+fr2:
+Exemple Base1 : N0 faire Det N Prép N1
+fr3 : /
+fs1:
+Exemple Base1 : N0 faire le N Prép N1
+Exemple Base2 : N1 subir Det N (de+de la part de) N0
+fs2:
+Exemple Base1 : N0 faire Det N Prép N1
+Exemple Autre1 : faire Det N Modif
+fs3 : /
+is1:
+Exemple Autre1 : (infliger+subir) N (E+Modif+de N1)
+is2:
+Exemple Base1 : N0 infliger Det N à N1
+Exemple Autre1 : subir Det N (E+de N1)
+psy:
+Exemple Autre1 : avoir Det N (E+devant N1)
+Exemple Autre2 : être Det N
+sym:
+Exemple Autre1 : avoir Det N
+Exemple Autre2 : avoir de N avec N1
+Exemple Autre3 : Il y a 

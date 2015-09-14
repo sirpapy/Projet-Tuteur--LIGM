@@ -1,0 +1,45 @@
+#!/usr/bin/perl
+
+while($s = <>){
+    $s =~ s/\r*\n//;
+    $s =~ s/   / /g;
+    $s =~ s/  / /g;
+    $s =~ s/A/a/g;
+    $s =~ s/B/b/g;
+    $s =~ s/C/c/g;
+    $s =~ s/D/d/g;
+    $s =~ s/E/e/g;
+    $s =~ s/F/f/g;
+    $s =~ s/G/g/g;
+    $s =~ s/H/h/g;
+    $s =~ s/I/i/g;
+    $s =~ s/J/j/g;
+    $s =~ s/K/k/g;
+    $s =~ s/L/l/g;
+    $s =~ s/M/m/g;
+    $s =~ s/N/n/g;
+    $s =~ s/O/o/g;
+    $s =~ s/P/p/g;
+    $s =~ s/Q/q/g;
+    $s =~ s/R/r/g;
+    $s =~ s/S/s/g;
+    $s =~ s/T/t/g;
+    $s =~ s/U/u/g;
+    $s =~ s/V/v/g;
+    $s =~ s/W/w/g;
+    $s =~ s/X/x/g;
+    $s =~ s/Y/y/g;
+    $s =~ s/Z/z/g;
+    $s =~ s/\(/\(/g;
+    $s =~ s/\)/\)/g;
+    $s =~ s/\+/\+/g;
+    $s =~ s/Û/û/g;
+    $s =~ s/Â/â/g;
+    $s =~ s/Ê/ê/g;
+    $s =~ s/É/é/g;
+    $s =~ s/Ï/ï/g;
+    print "$s\n";
+}
+
+
+

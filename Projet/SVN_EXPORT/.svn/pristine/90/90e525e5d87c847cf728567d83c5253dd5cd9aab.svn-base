@@ -1,0 +1,33 @@
+Modifs tables
+
+/////////
+Adverbes simples
+/////////
+- table P_advmp : ajout et codage de la colonne lexicale "Ddef" intervenant dans la propriété "Adj-ment = du point de vue de Ddef Ndomaine" (20-10-2011)
+- table P_advmp : dédoublément de l'entrée "financièrement" à cause de la présence de deux Ndomaine (et, par conséquent, deux Ddef) associés à l'adverbe (20-10-2011)
+- table P_advmp : dédoublément de l'entrée "pénalement" à cause de la présence de deux Ndomaine associés à l'adverbe (20-10-2011)
+- table P_advmp : dédoublément de l'entrée "plastiquement" à cause de la présence de deux Ndomaine (et, par conséquent, deux Ddef) associés à l'adverbe (20-10-2011)
+- table P_advmp : dédoublément de l'entrée "scientifiquement" à cause de la présence de deux Ndomaine (et, par conséquent, deux Ddef) associés à l'adverbe (20-10-2011)
+///Si on ne dédouble pas les entrées dans les tables, on ne pourra pas produire deux variantes distinctes dans le LGLex. L'autre solution est de dédoubler la colonne lexicale "Ndomaine" mais elle sera notée <E> pour 275 entrées sur 279.
+Une fois que l'extraction des adverbes sous forme de DELA sera faite, il faudra penser à supprimer les "vrais doublons" générés pour ces 4 entrées {financièrement, pénalement, plastiquement, scientifiquement}.
+
+
+/////////
+Adverbes (semi-)figés
+/////////
+- table P_pv : à parler franchement -> noter + dans « Prép V Prépv Detv Cv » (20-10-2011)
+- table P_pv : à parler franchement -> noter + dans « Prép V Prépv Detv Cv » (20-10-2011)
+- table P_pv : à parler franchement -> noter + dans « Prép V Prépv Detv Cv » (20-10-2011)
+- table P_pca : à l'instant ou je te parler -> corriger "parle" au lieu de "parler" (20-10-2011)
+- table P_pca : à l'instant ou je vous parler -> corriger "parle" au lieu de "parler" (20-10-2011)
+- table P_pca : au moment ou je te parler -> corriger "parle" au lieu de "parler" (20-10-2011)
+- table P_pca : au moment ou je vous parler -> corriger "parle" au lieu de "parler" (20-10-2011)
+- table P_pca : à l'heure ou je te parler -> corriger "parle" au lieu de "parler" (21-10-2011)
+- table P_pca : à l'heure ou je vous parler -> corriger "parle" au lieu de "parler" (21-10-2011)
+
+
+/////////
+Mise en relation des adverbes simples avec des adverbes (semi-)figés
+/////////
+- adverbes de fréquence (table advmtf) => groupes nominaux non prépositionnels (tables pdetc, pcpc)
+ex.: annuellement = chaque année, tous les ans| trimestriellement = chaque trimestre, tous les trimestres| trisannuellement = trois fois par an| bimensuellement = deux fois par mois| bimestriellement = tous les deux mois

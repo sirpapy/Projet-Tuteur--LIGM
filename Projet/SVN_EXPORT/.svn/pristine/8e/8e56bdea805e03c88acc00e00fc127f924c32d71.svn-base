@@ -1,0 +1,841 @@
+﻿10488 entries  have been processed in 32 tables, including 2 entries TO COMPLETE and 0 entries TO ENCODE. (29-03-11)
+﻿10487 entries have been processed in 32 tables, dont :
+- 3203 entries have been processed in 16 tables (simple adv).
+- 7284 entries have been processed in 16 tables (frozen adv).
+-> Toutes les tables sont distribuées (les tables d'adv figés de M. Gross ont déjà été mises par Eric sur infolingu et Ch. Molinier a confirmé à Elsa par mail la disponiblité de ses tables d'adv simples le 29-04-10)
+
+adjectifs-predicatifs_advassoc :
+10488 entries  have been processed in 32 tables, including 1341 entries TO COMPLETE and 0 entries TO ENCODE. (28-03-11)
+figees_advassoc :
+10488 entries  have been processed in 32 tables, including 1341 entries TO COMPLETE and 0 entries TO ENCODE. (28-03-11)
+
+
+Nombre de propriétés dans la table des classes (26-03-11): 160
+
+Nombre d'entrées par table (26-03-11):
+advmf: 16
+advmp: 279
+advmqc: 13
+advmqe: 21
+advmqi: 247
+advms: 883
+advmtd: 11
+advmf: 33
+advmtq: 31
+advmv: 1523 (bcp)
+advpae: 10 (peu)
+advpah: 10 (peu)
+advpam: 28
+advpas: 30
+advpc: 51
+advps: 17
+pac: 776
+padv: 524
+pc: 664
+pca: 840
+pcdc: 750
+pcdn: 555
+pconj: 332
+pcpc: 287
+pcpn: 151
+pdetc: 848
+peco: 304
+pf: 396
+pjc: 185
+ppco: 50
+pv: 285
+pvco: 338
+
+///Je ne trouve pas le fichier .xls avec les structures de base///
+///Pour la documentation sur les propriétés j'ai besoin de la liste définitive des intitulées des colonnes///
+///Pour remplir la tdt des adverbes figés et monolexicaux j'ai besoin de la liste définitive des intitulées des colonnes///
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+couleurs dans la "tdt-adverbes.xls" définitive:
+1ère case d'une colonne en jaune -> tables d'adverbes figés de M.Gross (1990)
+1ère case d'une ligne en orange -> propriétés d'adverbes figés déjà codées dans la tdt d'adverbes figés
+intitulé de propriété en rose -> constructions de base ajoutées pour les adverbes figés (ne figurent pas dans les tables) avec les + en rose
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+couleurs dans "tdt_ADVmodifs_090410.xls" (qui n'est gardée qu'à titre indicatif):
+lignes en jaune -> tables d'adverbes figés de M.Gross (1990)
+colonnes en orange -> propriétés d'adverbes figés déjà codées dans la tdt d'adverbes figés
+en-têtes des colonnes en rose -> en-têtes modifiées par Stav
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Dans "tdt_ADVfiges_211008.xls", mise en correspondance des anciens intilutés avec les nouveaux (avec parfois 2 différents -> en vert), pour savoir d'où vient le codage récupéré dans la tdt (groupe rose).
+En vert, sont aussi mis les constantes "de" et "comme", à traiter dans lgextract par la suite.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+P_advms : manière orientés vers le sujet
+P_advmv : manière verbaux
+P_advmqc : manière quantifieurs de complétude
+P_advmqe : manière quantifieurs d'extension qualitative
+P_advmqi : manière quantifieurs intensifs
+P_advmp : adverbes de point de vue
+P_advmtq : adverbes de date
+P_advmtf : adverbes de fréquence
+P_advmtd : adverbes de durée
+P_advmf : focalisateurs
+P_advpc : adverbes de phrase conjonctifs 
+P_advps : adverbes de phrase disjonctifs de style
+P_advpae : adverbes de phrase disjonctifs d'attitude EVALUATIFS 
+P_advpah : adverbes de phrase disjonctifs d'attitude D'HABITUDE 
+P_advpam : adverbes de phrase disjonctifs d'attitude MODAUX
+P_advpas : adverbes de phrase disjonctifs d'attitude ORIENTES VERS LE SUJET
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Différence entre Conj, ConjC et ConjS :
+<ENT>ConjC : conjonction de coordination obligatoire dans la classe {P_pjc.lgt};
+<ENT>ConjS : conjonction de subordination obligatoire dans la classe {P_pf.lgt};
+<ENT>Conj : élément lexical susceptible d'avoir une fonction conjonctive dans
+des combinaisons d'adverbes figurant dans la classe {P_pconj.lgt}. Ici, "Conj"
+ne se limite pas à la classe lexicale des conjonctions de coordination, ex:
+que, comme, moins, <E>...
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Différence entre "Nég" et "Nég obl" avec proposition de modifications :
+Les colonnes "Nég" et "Nég obl" se distinguent l'une de l'autre par le
+fait que "Nég" code la présence obligatoire de la particule préverbale de
+négation (colonne "Ppv") dans l'entrée adverbiale. En revanche, "Nég obl" code
+la portée de l'entrée adverbiale sur un prédicat type mis obligatoirement à la
+forme négative.
+-> Codage plus cohérent (pour les adverbes) :
+- "Neg obl" : portée de l'adverbe sur un prédicat obligatoirement à la forme
+négative, codage binaire (anciennement nommée "Neg obl");
+- "Ppv =: Neg" qui contient la particule préverbale de négation lexicalement
+(anciennement nommée "Ppv nég" et "Nég" pour les verbes);
+- "Ppv" qui contient la particule préverbale autre que la particule de négation
+lexicalement
+-> Pour les verbes, avant on avait la colonne "Ppv" contenant la
+particule préverbale lexicalement et comme cela n'était pas utilisable
+informatiquement, on a ajouté les colonnes "Ppv =: se figé", "Ppv =: y figé",
+"Ppv =: en figé", "Ppv =: la figé", "Ppv =: le figé" et "Ppv =: Neg" qui
+contiennent donc le codage binaire correspondant.
+-> Fait également pour les adverbes : création des colonnes "Ppv =: se figé", 
+"Ppv =: en figé", "Ppv =: y figé", "Ppv =: vous figé", "Ppv =: te figé", "Ppv =: Neg", 
+"Ppv =: nous figé", "Ppv =: me figé", "Ppv =: le figé", "Ppv =: lui figé", 
+"Ppv =: leur figé".
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Modifications effectuées sur les tables P_adv :
+
+Notation :
+Lorsque le codage d'une colonne est terminé : ajout et codage de colonne -> ...
+Lorsque le codage d'une colonne reste encore à coder : ajout de colonne, à coder -> ...
+
+{P_padv.lgt} Nég obl -> Neg obl; 
+{P_padv.lgt} @1D -> Ppv; 
+{P_padv.lgt} @1E -> Prédicat type;
+{P_padv.lgt} Adv -> <ENT>Adv;
+{P_padv.lgt} Adv =: où -> Adv =: où ?;
+{P_padv.lgt} de Dind façon C-a -> N0 V W de (E+Dind) (façon+manière) C-a
+///pour faire plus court, "N0 V W de (E + Dind) façon C-a", et on indique dans le fichier "structures de base" que 'façon = manière'///Elsa_NON: C'est bon car le + veut dire ET (et pas OU).
+///à terme, on peut supprimer la colonne "AdvPhrase" à condition que l'on code dans la table les colonnes "Adv, N0 ne V pas W" et "C'est Adv que P"///
+
+{P_pc.lgt} Nég obl -> Neg obl; 
+{P_pc.lgt} @1D -> Ppv; 
+{P_pc.lgt} @1E -> Prédicat type;
+{P_pc.lgt} Prép -> <ENT>Prép;
+{P_pc.lgt} C -> <ENT>C;
+{P_pc.lgt} de Dind façon C-a -> N0 V W de (E+Dind) (façon+manière) C-a; 
+{P_pc.lgt} C-a-ment -> N0 V W C-a-ment; 
+{P_pc.lgt} ajout et codage de colonne -> C-a-ment; 
+///pour faire plus court, "N0 V W de (E + Dind) façon C-a", et on indique dans le fichier "structures de base" que 'façon = manière'///Elsa_NON: C'est bon car le + veut dire ET (et pas OU).
+
+{P_pdetc.lgt} Nég obl -> Neg obl; 
+{P_pdetc.lgt} @1D -> Ppv; 
+{P_pdetc.lgt} @1E -> Prédicat type;
+{P_pdetc.lgt} Prép -> <ENT>Prép;
+{P_pdetc.lgt} Dét -> <ENT>Det;
+{P_pdetc.lgt} C -> <ENT>C;
+{P_pdetc.lgt} de Dind façon C-a -> N0 V W de (E+Dind) (façon+manière) C-a; 
+{P_pdetc.lgt} C-a-ment -> N0 V W C-a-ment; 
+{P_pdetc.lgt} ajout et codage de colonne -> C-a-ment; 
+///pour faire plus court, "N0 V W de (E+Dind) façon C-a", et on indique dans le fichier "structures de base" que 'façon = manière'///Elsa_NON: C'est bon car le + veut dire ET (et pas OU).
+
+{P_pac.lgt} Nég obl -> Neg obl; 
+{P_pac.lgt} @1D -> Ppv; 
+{P_pac.lgt} @1E -> Prédicat type;
+{P_pac.lgt} Prép -> <ENT>Prép;
+{P_pac.lgt} Dét -> <ENT>Det;
+{P_pac.lgt} Adj -> <ENT>Adj;
+{P_pac.lgt} C -> <ENT>C;
+{P_pac.lgt} Prép Dét C -> Prép Det C
+
+{P_pca.lgt} Nég obl -> Neg obl; 
+{P_pca.lgt} @1D -> Ppv; 
+{P_pca.lgt} @1E -> Prédicat type;
+{P_pca.lgt} Prép -> <ENT>Prép;
+{P_pca.lgt} Dét -> <ENT>Det;
+{P_pca.lgt} C -> <ENT>C;
+{P_pca.lgt} Modif pré-adj -> <ENT>Modif pré-adj;
+{P_pca.lgt} Adj -> <ENT>Adj;
+{P_pca.lgt} Prép Dét C -> Prép Det C;  
+{P_pca.lgt} Prép Dét MPA Adj C -> Prép Det Modif pré-adj Adj C;
+{P_pca.lgt} Prép MPA Adj C -> Prép Modif pré-adj Adj C
+///à noter dans le fichier "structures de base" que 'Modif pré-adj = MPA'///Elsa_NON: C'est mieux d'avoir le moins de sous-entendu possible, surtout quand ça n'apporte pas de gain énorme de place.
+
+{P_pcdc.lgt} Nég obl -> Neg obl; 
+{P_pcdc.lgt} @1D -> Ppv; 
+{P_pcdc.lgt} @1E -> Prédicat type;
+{P_pcdc.lgt} Prép1 -> <ENT>Prép1;
+{P_pcdc.lgt} Dét1 -> <ENT>Det1;
+{P_pcdc.lgt} C1 -> <ENT>C1;
+{P_pcdc.lgt} Prép2 -> <ENT>Prép2;
+{P_pcdc.lgt} Dét2 -> <ENT>Det2;
+{P_pcdc.lgt} C2 -> <ENT>C2 ; 
+{P_pcdc.lgt} Prép1 Dét1 C1 -> Prép1 Det1 C1
+
+{P_pcpc.lgt} Nég obl -> Neg obl; 
+{P_pcpc.lgt} @1D -> Ppv; 
+{P_pcpc.lgt} @1E -> Prédicat type;
+{P_pcpc.lgt} Prép1 -> <ENT>Prép1;
+{P_pcpc.lgt} Dét1 -> <ENT>Det1;
+{P_pcpc.lgt} C1 -> <ENT>C1;
+{P_pcpc.lgt} Prép2 -> <ENT>Prép2;
+{P_pcpc.lgt} Dét2 -> <ENT>Det2;
+{P_pcpc.lgt} C2 -> <ENT>C2 ; 
+{P_pcpc.lgt} Prép1 Dét1 C1 -> Prép1 Det1 C1
+
+{P_pconj.lgt} Nég obl -> Neg obl; 
+{P_pconj.lgt} @1D -> Ppv; 
+{P_pconj.lgt} @1E -> Prédicat type;
+{P_pconj.lgt} Prép1 -> <ENT>Prép1;
+{P_pconj.lgt} Dét1 -> <ENT>Det1;
+{P_pconj.lgt} C1 -> <ENT>C1; 
+{P_pconj.lgt} Conj -> <ENT>Conj;
+{P_pconj.lgt} Prép2 -> <ENT>Prép2;
+{P_pconj.lgt} Dét2 -> <ENT>Det2;
+{P_pconj.lgt} C2 -> <ENT>C2 ; 
+{P_pconj.lgt} Prép1 Dét1 C1 -> Prép1 Det1 C1
+
+{P_pcdn.lgt} Nég obl -> Neg obl; 
+{P_pcdn.lgt} @1D -> Ppv; 
+{P_pcdn.lgt} @1E -> Prédicat type;
+{P_pcdn.lgt} Prép1 -> <ENT>Prép1;
+{P_pcdn.lgt} Dét1 -> <ENT>Det1;
+{P_pcdn.lgt} C1 -> <ENT>C1;
+{P_pcdn.lgt} Prép2 -> <ENT>Prép2;
+{P_pcdn.lgt} N2 =: que P -> N2 =: ce Qu P; 
+{P_pcdn.lgt} [pc z.] -> Prép2 N2 =: Prép2 ce Qu P = Qu P; 
+{P_pcdn.lgt} N2 =: de V0 W -> N2 =: V0-inf W;
+{P_pcdn.lgt} C1 de N2 = Poss2 C1 -> Prép1 Det1 C1 de N2 = Prép1 Poss2 C1; 
+{P_pcdn.lgt} de N2 = général -> Prép1 Det1 C1 de N2 = Prép1 Det1 C1 général;  
+{P_pcdn.lgt} de N2 = E -> Prép1 Det1 C1
+///N2, bien que variable, fait partie de l'entrée adverbiale///
+///pour faire plus court, on peut noter "de N2 =: de ce Qu P = Qu P" mais dans ce cas on restreint la propriété à 'Prép2=: de'///Elsa_NON: On garde la même notation que pour les verbes.
+
+{P_pcpn.lgt} Nég obl -> Neg obl; 
+{P_pcpn.lgt} @1D -> Ppv; 
+{P_pcpn.lgt} @1E -> Prédicat type;
+{P_pcpn.lgt} Prép1 -> <ENT>Prép1;
+{P_pcpn.lgt} Dét1 -> <ENT>Det1;
+{P_pcpn.lgt} C1 -> <ENT>C1;
+{P_pcpn.lgt} Prép2 -> <ENT>Prép2; 
+{P_pcpn.lgt} Prép1 Dét1 C1 -> Prép1 Det1 C1; 
+{P_pcpn.lgt} N2 =: que P -> N2 =: Qu P;
+{P_pcpn.lgt} ajout et codage de colonne -> N2 =: ce Qu P; 
+{P_pcpn.lgt} [pc z.] -> Prép2 N2 =: Prép2 ce Qu P = Qu P; 
+{P_pcpn.lgt} N2 =: de V0 W -> N2 =: de V0-inf W; 
+{P_pcpn.lgt} ajout et codage de colonne -> N2 =: V0-inf W
+///N2, bien que variable, fait partie de l'entrée adverbiale///
+
+{P_pf.lgt} ConjS -> <ENT>ConjS; 
+{P_pf.lgt} Dét0 -> <ENT>Det0;  
+{P_pf.lgt} C0 -> <ENT>C0; 
+{P_pv.lgt} Nég -> Ppv =: Neg (cf.verbes);
+{P_pf.lgt} Ppv -> <ENT>Ppv + codage des 8 colonnes de type Ppv =: (cf.verbes);
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: se figé;
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: en figé;
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: y figé;
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: vous figé;
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: te figé;
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: nous figé;
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: me figé;
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: le figé;
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: lui figé; 
+{P_pf.lgt} ajout et codage de colonne -> Ppv =: leur figé;
+{P_pf.lgt} V -> <ENT>V; 
+{P_pf.lgt} Prép1 -> <ENT>Prép1; 
+{P_pf.lgt} Dét1 -> <ENT>Det1; 
+{P_pf.lgt} C1 -> <ENT>C1; 
+{P_pf.lgt} ajout et codage de colonne -> N1 =: ce Qu P; 
+{P_pf.lgt} N1 =: de V1 W1 -> N1 =: V1-inf W; 
+///N0 et N1, bien que variables, font partie de l'entrée adverbiale///
+
+{P_pv.lgt} @1C -> Prédicat type; 
+{P_pv.lgt} Prép -> <ENT>Prép; 
+{P_pv.lgt} Nég -> Ppv =: Neg (cf.verbes); 
+{P_pv.lgt} Ppv -> <ENT>Ppv + codage des 8 colonnes de type Ppv =: (cf.verbes);
+{P_pv.lgt} ajout et codage de colonne -> Ppv =: se figé;
+{P_pv.lgt} ajout et codage de colonne -> Ppv =: en figé;
+{P_pv.lgt} ajout et codage de colonne -> Ppv =: y figé;
+{P_pv.lgt} ajout et codage de colonne -> Ppv =: vous figé;
+{P_pv.lgt} ajout et codage de colonne -> Ppv =: te figé;
+{P_pv.lgt} ajout et codage de colonne -> Ppv =: nous figé;
+{P_pv.lgt} ajout et codage de colonne -> Ppv =: me figé;
+{P_pv.lgt} ajout et codage de colonne -> Ppv =: le figé; 
+{P_pv.lgt} V -> <ENT>V; 
+{P_pv.lgt} Prép1 -> <ENT>Prépv; 
+{P_pv.lgt} Dét1 -> <ENT>Detv; 
+{P_pv.lgt} C1 -> <ENT>Cv; 
+{P_pv.lgt} W V -> Prép Prépv Detv Cv V; 
+{P_pv.lgt} V W -> Prép V Prépv Detv Cv
+///N1, bien que variable, fait partie de l'entrée adverbiale///
+///à noter dans le fichier "structures de base" que 'Prépv Detv Cv = W'///Elsa_NON: Cela prêterait à confusion avec la notation W qui désigne n'importe quel complément (cf. doc des verbes).
+
+{P_pjc.lgt} Nég obl -> Neg obl; 
+{P_pjc.lgt} @1D -> Ppv;
+{P_pjc.lgt} @1E -> Prédicat type;
+{P_pjc.lgt} Conj -> <ENT>ConjC; 
+{P_pjc.lgt} [Conj z.] -> ConjC Det1 C1 Prép2 C2 = Det1 C1 Prép2 C2;
+{P_pjc.lgt} Dét -> <ENT>Det1; 
+{P_pjc.lgt} C1 -> <ENT>C1; 
+{P_pjc.lgt} Prép -> <ENT>Prép2; 
+{P_pjc.lgt} C2 -> <ENT>C2
+
+{P_peco.lgt} Nég -> supprimée car toujours -
+{P_peco.lgt} Ppv -> colonne supprimée car tous les Ppv sont <E> (il n'y a pas de Ppv avec les entrées adjectivales puisque le verbe support est être)
+{P_peco.lgt} être -> <OPT><être>;
+{P_peco.lgt} Adj -> <OPT>Adj figé;
+{P_peco.lgt} comme -> <ENT>comme;
+{P_peco.lgt} Dét -> <ENT>Det;
+{P_peco.lgt} C -> <ENT>C
+///les colonnes <OPT> (Ppv, <être> et Adj figé) comportent le prédicat figé de type adjectival auquel l'adverbe est rattaché : on a donc une entrée adverbiale avec uniquement les colonnes <ENT> et une entrée adjectivale d'expression figée avec les colonnes <OPT> et <ENT> (cf. tables Annie Meunier - Nominalisation d'adjectifs)///
+///Cette table est utilisée pour reconnaître à la fois des adverbes figés comparatifs et des phrases simples figées à adverbe comparatif///
+
+{P_pvco.lgt} Nég -> <OPT>Ppv =: Neg;
+{P_pvco.lgt} Ppv -> <OPT>Ppv + codage des 2 colonnes de type <OPT>Ppv =: (codage avec <OPT> pour ne pas se mélanger à l'entrée adverbiale);
+{P_pv.lgt} ajout et codage de colonne -> <OPT>Ppv =: se figé; 
+{P_pv.lgt} ajout et codage de colonne -> <OPT>Ppv =: en figé;
+{P_pvco.lgt} V -> <OPT>V figé;
+{P_pvco.lgt} comme -> <ENT>comme;
+{P_pvco.lgt} Dét -> <ENT>Det;
+{P_pvco.lgt} C -> <ENT>C
+///les colonnes <OPT> (Ppv et V figé) comportent le prédicat figé de type verbal auquel l'adverbe est rattaché : on a donc une entrée adverbiale avec uniquement les colonnes <ENT> et une entrée verbale simple d'expression figée avec les colonnes <OPT> et <ENT>///
+///Cette table est utilisée pour reconnaître à la fois des adverbes figés comparatifs et des phrases simples figées à adverbe comparatif///
+
+{P_ppco.lgt} Nég -> <OPT>Ppv =: Neg;
+{P_ppco.lgt} Ppv -> <OPT>Ppv + codage des 2 colonnes de type <OPT>Ppv =: (codage avec <OPT> pour ne pas se mélanger à l'entrée adverbiale);
+{P_pv.lgt} ajout et codage de colonne -> <OPT>Ppv =: se figé; 
+{P_pv.lgt} ajout et codage de colonne -> <OPT>Ppv =: y figé;
+{P_ppco.lgt} V -> <OPT>V figé;
+{P_ppco.lgt} comme -> <ENT>comme;
+{P_ppco.lgt} Prép -> <ENT>Prép;
+{P_ppco.lgt} Dét -> <ENT>Det;
+{P_ppco.lgt} C -> <ENT>C
+///les colonnes <OPT> (Ppv et V figé) comportent le prédicat figé de type verbal auquel l'adverbe est rattaché : on a donc une entrée adverbiale avec uniquement les colonnes <ENT> et une entrée verbale simple d'expression figée avec les colonnes <OPT> et <ENT>///
+///Cette table est utilisée pour reconnaître à la fois des adverbes figés comparatifs et des phrases simples figées à adverbe comparatif///
+
+{P_advpc.lgt} C'est Adv que P -> C'est Adv Qu P;
+///les colonnes "Adv à N" et "Adv de N" codent la possibilité pour l'adverbe de recevoir un complément de type respectivement "à N" et "de N" où "N" peut prendre la forme d'un groupe nominal ou d'une complétive de type "ce Qu P". La plupart des 'formes à complément' sont représentées et codées dans les tables respectivement "P_pcpn.lgt" et "P_pcdn.lgt". Ex: conformément à N2-hum, conséquemment à (N2-hum + ce Qu P)///
+
+{P_advps.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advps.lgt} Adv, N0 V W! -> Adv, V W!;
+{P_advps.lgt} en N -> Adj-ment = en Adj-n; 
+{P_advps.lgt} en toute N -> Adj-ment = en toute Adj-n; 
+{P_advps.lgt} à Adv parler -> à Adv parler, P; 
+{P_advps.lgt} en termes Adj -> Adj-ment = en termes Adj; 
+{P_advps.lgt} de source Adj -> Adj-ment = de source Adj; 
+{P_advps.lgt} ajout et codage de colonne -> Adj-n; 
+{P_advps.lgt} ajout et codage de colonne -> Adj
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+///la plupart des 'formes paraphrastiques' sont représentées et codées dans les tables d'adverbes figés. Ex: de source officielle {P_pca.lgt}, en toute franchise/de manière franche/franchement/ {P_pdetc.lgt}///
+
+{P_advpah.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advpah.lgt} C'est Adv Ni que P-Ni -> C'est Adv Ni Qu P-Ni;
+///les adverbes de cette table peuvent être paraphrasés par des formes qui sont représentées et codées dans les tables d'adverbes figés. Ex: généralement = de manière générale {P_pca.lgt} = en général {P_pc.lgt}, habituellement = d'habitude {P_pc.lgt}, ordinairement = d'ordinaire {P_pc.lgt}/// 
+
+{P_advpam.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advpam.lgt} C'est Adv Ni que P-Ni -> C'est Adv Ni Qu P-Ni;
+{P_advpam.lgt} Adj-ment, P = Que P être Adj -> Adj-ment, P = Qu Psubj être Adj;
+{P_advpam.lgt} ajout et codage de colonne -> Adj-ment, P = Il être Adj Qu P; 
+{P_advpam.lgt} Adv, que P -> Adv Qu P; 
+{P_advpam.lgt} Adv, que P! -> Adv, Qu P!;
+{P_advpam.lgt} ajout et codage de colonne -> Adj
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+
+{P_advpae.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advpae.lgt} Adj-ment, P = Que P être Adj -> Adj-ment, P = Qu Psubj être Adj;
+{P_advpae.lgt} ajout et codage de colonne -> Adj-ment, P = Il être Adj Qu Psubj;
+{P_advpae.lgt} Adv que P -> Adv Qu P; 
+{P_advpae.lgt} Adv, que P -> Adv, Qu P; 
+{P_advpae.lgt} ajout et codage de colonne -> Adj
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+
+{P_advpas.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advpas.lgt} Adj-ment, P = Que N0 V W être Adj   de la part de N1 -> Adj-ment, P = Qu N0 V W être Adj de la part de N0; 
+{P_advpas.lgt} Adj-ment, P = N0 être Adj de V-inf W -> Adj-ment, P = N0 être Adj de V0-inf W;
+{P_advpas.lgt} ajout et codage de colonne -> Adj-ment, P = Qu N0 V W être Adj de Poss0 part; 
+{P_advpas.lgt} ajout et codage de colonne -> Adj-ment, P = Il être Adj de la part de N0 de V0-inf W; 
+{P_advpas.lgt} ajout et codage de colonne -> Adj
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+
+{P_advmp.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advmp.lgt} N0 V de façon Adj -> N0 V W de (façon+manière) Adj;
+{P_advmp.lgt} d'un point de vue Adj -> Adj-ment = d'un point de vue Adj; 
+{P_advmp.lgt} avec Adj-n -> Adj-ment = avec Adj-n;
+{P_advmp.lgt} en N -> Adj-ment = en N;
+{P_advmp.lgt} Adv parlant -> Adv parlant, P;
+{P_advmp.lgt} ajout de colonne, à coder -> Adj;
+{P_advmp.lgt} ajout et codage de colonne -> Adj-n;
+{P_advmp.lgt} ajout de colonne, à coder -> N
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+///pour faire plus court, "N0 V W de façon Adj", et on indique dans le fichier des "structures de base" que 'façon = manière'///Elsa_NON: Autant mettre toutes les infos quand c'est possible.
+///la colonne "Adj-ment = avec Adj-n" étant codée "-" pour l'ensemble des entrées adverbiales, la colonne "Adj-n" est forcément vide <E>///
+///les "N" intervenant dans la propriété "Adj-ment = en N" sont sémantiquement homogènes, et sont principalement des 'Ndomaine'///
+
+{P_advmqi.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advmqi.lgt} Adv = Comment -> Adv =: comment ?; 
+{P_advmqi.lgt} N0 V de façon Adj -> N0 V W de (façon+manière) Adj;
+{P_advmqi.lgt} N0 V avec Adj-n -> N0 V W avec Adj-n;
+{P_advmqi.lgt} ajout et codage de colonne -> Adj;
+{P_advmqi.lgt} ajout et codage de colonne -> Adj-n
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+///la colonne "Adj-ment de N" est à différencier de la colonne "Adv de N" codée dans la table "P_advpc.lgt"; la première code la possibilité pour l'adverbe de fonctionner comme déterminant indéfini du substantif, ex: (énormément + extrêmement + drôlement + etc.) de force. La deuxième code la possibilité pour l'adverbe de recevoir un complément de type "de N" où "N" peut prendre la forme d'un groupe nominal ou d'une complétive de type "ce Qu P", ex: indépendamment de (l'intention de l'auteur + ce que l'auteur pense).
+Afin de mieux montrer la différence, on pourrait peut-être coder "Adj-ment de N" et "Adv de (N+ce Qu P)"///
+///la colonne "N0 V W avec Adj-n" étant codée "-" pour l'ensemble des entrées adverbiales, la colonne "Adj-n" est forcément vide <E>///
+
+{P_advmqc.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advmqc.lgt} ajout et codage de colonne -> Adv, N0 ne V pas W; 
+{P_advmqc.lgt} Adv = Comment -> Adv =: comment ?; 
+{P_advmqc.lgt} N0 V de façon Adj -> N0 V W de (façon+manière) Adj;
+{P_advmqc.lgt} N0 V avec Adj-n -> N0 V W avec Adj-n;
+{P_advmqc.lgt} ajout et codage de colonne -> Oui, Adv; 
+{P_advmqc.lgt} ajout et codage de colonne -> Adj;
+{P_advmqc.lgt} ajout et codage de colonne -> Adj-n
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+///la colonne "N0 V W avec Adj-n" étant codée "-" pour l'ensemble des entrées adverbiales, la colonne "Adj-n" est forcément vide <E>///
+
+{P_advmqe.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advmqe.lgt} Adv = Comment -> Adv =: comment ?; 
+{P_advmqe.lgt} N0 V de façon Adj -> N0 V W de (façon+manière) Adj;
+{P_advmqe.lgt} N0 V avec Adj-n -> N0 V W avec Adj-n;
+{P_advmqe.lgt} ajout et codage de colonne -> Adj;
+{P_advmqe.lgt} ajout et codage de colonne -> Adj-n
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+///la colonne "N0 V W avec Adj-n" étant codée "-" pour l'ensemble des entrées adverbiales, la colonne "Adj-n" est forcément vide <E>///
+
+{P_advmtq.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advmtq.lgt} Adv = Quand -> Adv =: quand ?; 
+{P_advmtq.lgt} N0 V de façon Adj -> N0 V W de (façon+manière) Adj;
+{P_advmtq.lgt} ajout et codage de colonne -> Adj
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+
+{P_advmtd.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advmtd.lgt} Adv = pendant longtemps -> Adv =: pendant longtemps ?; 
+{P_advmtd.lgt} Adv = pour longtemps -> Adv =: pour longtemps ?;
+{P_advmtd.lgt} Adv = en combien de temps -> Adv =: en combien de temps ?;
+{P_advmtd.lgt} N0 V de façon Adj -> N0 V W de (façon+manière) Adj;
+{P_advmtd.lgt} ajout et codage de colonne -> Adj
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+
+{P_advmtf.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advmtf.lgt} C'est Adv Ni que P-Ni -> C'est Adv Ni Qu P-Ni
+{P_advmtf.lgt} Adv = souvent -> Adv =: souvent ?; 
+{P_advmtf.lgt} Adv, P = Que P être Adj -> Adj-ment, P = Qu Psubj être Adj;
+{P_advmtf.lgt} ajout et codage de colonne -> Adj-ment, P = Il être Adj Qu Psubj;
+{P_advmtf.lgt} N0 V de façon Adj -> N0 V W de (façon+manière) Adj;
+{P_advmtf.lgt} (plus+moins) Adv que P -> (plus+moins) Adv (E+Qu P);
+{P_advmtf.lgt} ajout et codage de colonne -> Adj
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"/// 
+///pour ce qui est de la colonne "(plus+moins) Adv (E+Qu P)", l'élément "P" prend le plus souvent la forme d'un groupe nominal "N" obtenu après réduction d'un second membre phrastique parallèle à un premier membre phrastique (la principale). Ex: Le thé vert est utilisé plus rarement que le thé semi-fermenté (E+est utilisé) pour faire du Kung-Fu/// 
+ 
+{P_advms.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advms.lgt} Nhum être Adj -> N0hum être Adj; 
+{P_advms.lgt} Que P être Adj -> Adj-ment, P = Qu N0 V W être Adj de la part de N0;
+{P_advms.lgt} ajout et codage de colonne -> Adj-ment, P = Qu N0 V W être Adj de Poss0 part;
+{P_advms.lgt} N0 se comporter Adj-ment -> N0 se comporter Adj-ment W;
+{P_advms.lgt} N0 vivre Adj-ment -> N0 vivre Adj-ment W;
+{P_advms.lgt} N0 parler Adj-ment -> N0 parler Adj-ment W;
+{P_advms.lgt} N0 V de façon Adj -> N0hum V W de (façon+manière) Adj;
+{P_advms.lgt} N0 V avec Adj-n -> N0hum V W avec Adj-n;
+{P_advms.lgt} ajout de colonne, à coder -> Adj;
+{P_advms.lgt} ajout de colonne, à coder -> Adj-n
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"///
+
+{P_advmv.lgt} C'est Adv que P -> C'est Adv Qu P;
+{P_advmv.lgt} Que P être Adj -> Adj-ment, P = Qu Psubj être Adj;
+{P_advmv.lgt} Adv = Comment -> Adv =: comment ?;
+{P_advmv.lgt} N0 V de façon Adj -> N0hum V W de (façon+manière) Adj;
+{P_advmv.lgt} N0 V avec Adj-n -> N0hum V W avec Adj-n;
+{P_advmv.lgt} ajout de colonne, à coder -> Adj;
+{P_advmv.lgt} ajout de colonne, à coder -> Adj-n
+///à noter dans le fichier des "structures de base" que "Adj-ment = Adv"/// 
+///il existe d'autres paraphrases (formes figées ?) que l'on pourrait coder dans la table "P_advmv.lgt" : "Adj-ment = par N" (téléphoniquement = par téléphone, nommément = par le nom), "Adj-ment = par N Adj" (diplomatiquement = par voie diplomatique), "Adj-ment = selon N" (également = selon la loi, proverbialement = selon le proverbe), "Adj-ment = en N" (massivement = en masse, vainement = en vain), "Adj-ment = en tout N" (librement = en toute liberté), "Adj-ment = comme N" (adjectivement = comme adjectif), "Adj-ment = à N" (mortellement = à mort, manuellement = à la main), "Adj-ment = à titre N" (gratuitement = à titre gratuit, patrimonialement = à titre patrimonial)///
+///à étudier et coder la propriété de nominalisation à Vsup qui donne lieu à des combinaisons nominales figées (formation de noms composés) : colonne à ajouter "N0 V Adj-ment W = N0 Vsup Det V-n Adj". Ex: Max et Marie se sont mariés civilement = Max et Marie ont fait un mariage civil, 75% des employeurs américains surveillent électroniquement leurs employés = 75% des employeurs américains mettent sous surveillance électronique leurs employés///    
+Stavroula(09-04-10)
+Elsa(05-05-10)
+-------------------------------------------------------------------------------------------
+
+Modifications effectuées sur les structures de base des adverbes figés dans la tdt :
+Adj comme Dét C	-> comme Det C (Structure de base pour les adjectifs : Adj comme Det C)
+Conj Dét C1 Prép C2 -> ConjC Det C1 Prép C2
+ConjS P -> ConjS (Det0 C0+N0) V Prép1 (Det1 C1+N1)
+Prép C -> Prép C
+Prép Dét Adj C -> Prép Det Adj C
+Prép Dét C MPA Adj -> Prép Det C Modif pré-adj Adj
+Prép V W -> pas de base = colonnes codées dans la table (Prép V Prépv Detv Cv ou Prép Prépv Detv Cv V)
+A NOTER: 4 entrées acceptent les 2 donc il faut ajouter 4 entrées supplémentaires aux chiffres incluant les paraphrases, sous-structures, etc.!!! -> prendre en compte notperm=[complete= ET perm=[complete=
+Prép1 Dét1 C1 Conj Prép2 Dét2 C2 -> Prép1 Det1 C1 Conj Prép2 Det2 C2
+Prép1 Dét1 C1 Prép2 Dét2 C2 -> Prép1 Det1 C1 Prép2 Det2 C2
+Prép1 Dét1 C1 Prép2 N2 -> Prép1 Det1 C1 Prép2 N2
+V comme Dét C -> comme Det C (Structure de base pour les figees : V comme Det C)
+V comme Prép Dét C -> comme Prép Det C (Structure de base pour les figees : V comme Prép Det C)
+Elsa(09-04-10)
+Stav(12-04-10)
+Elsa(27-04-10)
+-------------------------------------------------------------------------------------------
+Suppression des 2 colones suivantes dans les tables qui accepetent ces propriétés comme structure de base (on a donc remplacé le codage o dans la tdt par une constante + ou -, valable pour l'ensemble des entrées existantes et même futures) :
+
+Adv, N0 V W -> tables advmp (+), advmqc (-), advmqe (-), advmqi (-), advms (+), advmtf (+), advpae (+), advpah (+), advpam (+), advpas (+), advpc (+), advps (+).
+
+Adv, N0 ne V pas W -> tables advmf (-), advmp (+), advmqc (-), advmqi (-), advms (-), advpae (+), advpah (+), advpam (+), advpas (+), advpc (+), advps (+).
+
+Elsa(28-04-10)
+-------------------------------------------------------------------------------------------
+Commentaire sur la CDB "N0 V Adv W" (Stavroula,28-04-10):
+A l'exception des adverbes conjonctifs peut-être. On peut dire :
+
+[P1] N0 V N1 Adv =:
+[Si le joueur perd encore] il pariera 4 unités et ainsi de suite
+
+Adv, N0 V N1 =:
+Cinquièmement, Sunrider n'utilise aucun sous-produit animal
+
+Mais on ne peut pas dire :
+
+[P1] N0 V Adv N1 =:
+*[Si le joueur perd encore] il pariera et ainsi de suite 4 unités
+
+N0 V Adv N1 =:
+*Sunrider n'utilise cinquièmement aucun sous-produit animal
+
+---> On a 3 groupes :
+- Tables advmf, advmp, advmqc, advmqe, advmqi, advms, advmtd, advmtf, advmtq, advmv : N0 V Adv W -> constante +
++ advmp, advms, advmtf : Adv, N0 V W -> constante +
++ advmp : Adv, N0 ne V pas W -> constante +
+Pour les autres tables, soit la colonne est codées (o), soit :
+1) Adv, N0 ne V pas W : advmf (-), advmqc (-), advmqe (-), advmqi (-), advms (-);
+2) Adv, N0 V W : advmqc (-), advmqi (-), advmqe (o). ///ATTENTION : pour advmqe, le codage de cette propriété dans les tables n'est pas compatible avec ce qui est écrit dans le bouquin de Molinier (2000 : 216) ; ça devrait donc être + pour les adverbes censément, congénitalement, essentiellement, foncièrement, fondamentalement et intrinsèquement. En plus, j'ai fait une requête sur Google et j'ai trouvé des exemples de "foncièrement" et de "fondamentalement" qui vérifient cette construction. Il faut donc mettre (o) pour advmqe et je corrigerais le codage dans la table./// -> codage + pour les adverbes cités (ce qui reste à vérifier)
+
+- Tables advpae, advpah, advpam, advpas, advpc, advps : Adv, N0 V W et Adv, N0 ne V pas W -> constante + et qui restent à coder (O) pour N0 V Adv W car il y a certains adverbes de phrase qui acceptent cette construction. Mais, ce n'est certainement pas la construction qui est valable pour toutes les entrées de ces tables. Au contraire, Adv, N0 V W et Adv, N0 ne V pas W sont valables pour l'ensemble des entrées.
++ advpc : P1 Adv P2 -> constante +
+
+- Tables des adv figés (pac, padv, pc, pca, pcdc, pcdn, pconj, pcpc, pcpn, pdetc, peco, pf, pjc, ppco, pv, pvco): Pour savoir dans quelles constructions ils prennent part il faudra faire le test avec toutes les entrées présentes dans les tables des adverbes figés. A priori, il me semble que dans beaucoup de cas la
+construction N0 V Adv W -bien que théoriquement acceptable- ne peut pas être admise.
+Mais pour les adverbes figés on a en plus des CDB leurs constructions morphosyntaxiques internes (par exemple, Adv = Prép1 Det1 C1 Prép2 Det2 C2).
+Stavroula:
+---> A mon avis, pour les adverbes figés les trois CDB sont à coder "cas par cas" pour l'ensemble des entrées adverbiales. Il faudra donc mettre plutôt "O" (colonne avec codage variable qui n'est pas encore codée dans les tables).
+En fait, les tables des adverbes monolexicaux sont syntaxiquement homogènes et pour cela le codage de leurs propriétés (constructions, paraphrases...) est cohérent (chaque table correspond à une seule classe syntaxico-sémantique des
+adverbes).
+En revanche, les tables des adverbes figés sont syntaxiquement hétèrogènes et pour cela le codage de leurs propriétés, essentiellement morphosyntaxiques, est très variable (chaque table correspond à une classe morphosyntaxique des adverbes polylexicaux ou complexes).
+Par exemple, dans la table "P_pac.lgt" sont codés à la fois d'adverbes conjonctifs, d'adverbes de phrase, d'adverbes de temps, d'adverbes de manière verbaux etc etc etc
+Eric:
+-> Pour commencer, mettre + (en rouge) à toutes les constructions de base, cad considérer par défaut que tous les adverbes peuvent se mettre à toutes les places (le temps que les 3 colonnes soient réèllement codées dans les tables).
+
+Elsa(28-04-10)
+-------------------------------------------------------------------------------------------
+2 tildes à coder dans la table "P_advmv.lgt" :
+Stavroula : A mon avis, le codage devrait être "-" dans les deux cas.
+---> OK ! Je m'en charge. Juste une chose : il y a des exemples dans la version
+imprimée des tables, càd dans le bouquin de Molinier. Je vais les ajouter dans
+le fichier des "notes-adverbes.txt".
+En deux mots, la différence entre les deux entrées adverbiales réside dans le
+fait que l'un des deux emplois semble être figé en combinaison avec un certain
+verbe (ou plûtot avec une certaine famille des verbes).
+Elsa(06-05-10)
+-------------------------------------------------------------------------------------------
+Table P_advpae:
+colonne H: Adv, que P" -> "Adv que P" (suppression de la virgule)
+colonne I: Adv, que P" OK
+Elsa(04-11-08)
+-------------------------------------------------------------------------------------------
+Table P_peco:
+mêchant -> méchant
+calin -> câlin
+Elsa(09-04-10)
+-------------------------------------------------------------------------------------------
+Table pf:
+Ajout de colonnes dans la table (et dans la tdt si nouvelle) :
+<ENT>Prép2
+N2 =: Nhum -> N2 =: N-hum n'est pas codée car elle vaut toujours -
+Prép1 N1hum = Ppv =: lui
+Prép1 N1hum = Ppv =: le -> cf. notation des verbes (le+la+les)
+Prép1 N1-hum = Ppv =: en
+N1 =: ce(ci+la) -> cf. notation des verbes
+Prép2 N2hum = Ppv =: lui
+ConjS (Det0 C0+N0) V Prép1 (Det1 C1+N1) -> colonne qui sera forcée à + par la tdt pour l'entrée "cela chante à Nhum" et "faire plaisir à Nhum" car c'est la structure de base
+ConjS (Det0 C0+N0) V Prép1 (Det1 C1+N1) Prép2 N2 -> colonne codée + dès que <ENT>Prép2 existe
+
+Table pv:
+Colonnes codées - dans la tdt car il n'y a pas de N2 :
+N2 =: N-hum
+N2 =: Nhum
+
+Remarque par rapport aux sous-structures : Les 5 entrées où le N2 a été ajouté ont donc 2 constructions, cela apparait tout de même dans structure!
+
+Stavroula & Elsa(28-03-11)
+-------------------------------------------------------------------------------------------
+
+Format Lefff :
+Adv à N (advpc) -> <Objà:(à-sn|à-sn)> 
+Adv de N (advpc) -> <Objde:(de-scompl|de-scompl|de-sinf|de-sn|de-sn)>
+Adv parlant, P (advmp) -> adv_parlant = +
+
+
+Construction de base pour catégorie adj ou figée + Structure de l'adjectif
+peco : N0 être Adj	Adj comme Det C
+ppco : N0 V comme Prép Det C	
+pvco : N0 V comme Det C	
+
+Adj = Structure de l'adjectif
+DetN = Structure du nom -> A FAIRE DANS LES NOMS!!!
+
+------------------------------------------------------------------------------------------
+Stavroula (29/07/2011)
+
+CODER:
+(1) advmp -> "Adj", "N"	--OK--
+(2) advms -> "Adj", "Adj-n" --OK--
+(3) advmv -> "Adj", "Adj-n" --OK--
+(4) advms et advms -> "N0-hum V W de (façon+manière) Adj", "N0-hum V W avec Adj-n"
+
+MODIFIER INTITULEE:
+(1) advpc -> "Adv à N" -> "Adv à (N+ce Qu P)", "Adv de N" -> "Adv de (N+ce Qu P)"	--OK--
+(2) advmqi -> "Adj-ment de N" -> "Adj-ment de N = Det N Adj" ///=: La cuisine chinoise ne demande pas excessivement de temps = La cuisine chinoise ne demande pas un temps excessif///	--OK--
+//Je pense qu'il existe d'autres adverbes qui autorisent cette propriété mais qu'ils sont codés "-" dans la table. D'après google: abondamment, désespérément -> Codage à revoir (plus tard)//
+
+AJOUT et CODER:
+(1) advmv -> autres paraphrases (l.463)
+(2) advmv -> "N0 V Adj-ment W = N0 Vsup Det V-n Adj" (l.464)
+(3) advmp -> Tables 4 et 5 dans article IJCNLP'2011	--OK--
+
+REVOIR et CORRIGER:
+(1) advmqe -> "Adv, N0 V W"
+(2) advmv -> tildes (péniblement, pertinemment) pour Adj-ment, P = Qu Psubj être Adj -> codage + pour les 2 --OK--
+(3) advmv : idolatriquement -> idolâtriquement --OK--
+mais drolatiquement avec "Adj" : drolatique+drôlatique et "Adj-n" : drôlerie --OK--
+(4) advmv : atomiquement -> Adj : <E> (et pas ~) puisqu'aucune colonne associée n'est acceptée --OK--
+
+/////////////////////////////////////////
+
+PROPOSITIONS:
+(1) advmp: "N" -> "Ndomaine", "Adj-ment = en N" -> "Adj-ment = en Ndomaine" et "Adj-ment = du point de vue de Ddef N" -> "Adj-ment = du point de vue de Ddef Ndomaine" --OK-- //A modifier dans l'article//
+---> J'ai vérifié dans tous les tables (simples et figés): le seul N qui
+correspond à un nom dérivé est le nom de domaine codé dans la table advmp. Si
+l'on veut être précis et cohérent on devra modifier également les intitulés de
+propriétés actuellement notés "Adj-ment = en N" et "Adj-ment = du point de vue
+de Ddef N".
+A mon avis, cela s'avère nécessaire pour les deux raisons suivantes:
+(i) les adverbes de la table advmp et leurs constructions dérivées sont
+sémantiquement homogènes, d'où l’intérêt (à la fois linguistique et TAL) de
+spécifier la nature morphosémantique des noms qui y interviennent;
+(ii) à la table advmv on envisage d'ajouter (plus tard...) un certain nombre des
+paraphrases qui mettent en jeu de noms de nature morphosémantique variée, ex.:
+Adj-ment = à N =: mortellement = à mort, Adj-ment = comme N =: adjectivement =
+comme adjectif, Adj-ment = en tout N =: librement = en toute liberté, Adj-ment
+= par N =: téléphoniquement = par téléphone, etc. Faudra idéalement pouvoir
+distinguer linguistiquement et formellement les différents N intervenant dans
+ces constructions. Par exemple: Adj-ment = par Nmoyen_de_communication =:
+téléphoniquement = par téléphone
+(2) advmp, advmqi, advmqe, advmqc, advmtd, advmtq, advmtf: "N0 V W de (façon+manière) Adj" -> "N0 V W de (E+une) (façon+manière) Adj" --OK-- //A modifier dans l'article//
+(3) advms, advmv: "N0hum V W de (façon+manière) Adj" -> "N0hum V W de (E+une) (façon+manière) Adj"  --OK-- //A modifier dans l'article//
+(4) padv, pc, pdetc: "N0 V W de (E+Dind) (façon+manière) C-a" -> "N0 V W de (E+une) (façon+manière) C-a"  --OK-- //A modifier dans l'article//
+
+/////////////////////////////////////////
+
+NON TROUVES (en rouge):
+(1) advms -> "Adj-n": belliqueusement (l. 76) -> bellicisme --OK--
+(2) advms : cafouilleusement -> "Adj" : cafouilleux (et pas cafouilleur, cf. Molinier - Sur la productivité adverbiale des adjectifs (p.68) : "adjectifs en -eux") --OK--
+(3) advmv -> "Adj" : minablement (l.917), pittoresquement (l. 1126) -> mine, pittoresque (adj et nom) --OK--
+/////////////////////////////////////////
+
+PROBLEMES/ QUESTIONS:
+(1) advms: La propriété "N0hum V W de (façon+manière) Adj" est-elle codée dans les tables (version originale) de Molinier ? Elle est codée "+" pour la totalité des entrées de la table ? 
+(2) menteusement (menteur, mensonger), chattement (*de manière chatte), adverbes dérivés des substantifs !!!
+
+Il me semble que pour les adverbes dérivés de substantifs la construction
+"N0hum V W de (façon+manière) Adj" n'est pas possible. Par exemple, l'adverbe
+"chattement" n'accepte pas, SELON MOI, la construction "de (façon+manière)
+chatte" bien qu'il soit noté "+" dans la colonne correspondante de la table
+advms. En revanche, l'adverbe peut être paraphrasé par les deux constructions
+suivantes : "à la manière des chattes" ou "comme un chat".
+
+La situation devient plus compliquée car la propriété lexicale "Adj" encode
+l'adjectif qui intervient à la fois dans la propriété définitionnelle de cette
+classe "N0hum être Adj" et dans ses dérivées "Adj-ment, P = Qu N0 V W être Adj
+de la part de N0" et "Adj-ment, P = Qu N0 V W être Adj de Poss0 part" (colonnes
+avec identifiants respectivement D, E et F), et également dans la propriété
+paraphrastique "N0hum V W de (façon+manière) Adj" (colonne avec identifiant J).
+Mais, dans certains cas, l'adjectif n'est pas le même dans toutes les deux
+(voire quatre) constructions.
+
+Question :
+D'après Molinier - Sur la productivité adverbiale des adjectifs (p.65) : "couples d'adjectifs morphologiquement apparentés complémentaires pour ces deux propriétés" :
+(i) "N0hum V Adv W" =: Max a affirmé menteusement cela.
+(ii) "N0hum être Adj" =: Max a été (menteur + *mensonger).
+(iii) "N0hum V W de (façon+manière) Adj" =: Max a affirmé cela de (façon+manière) (*menteuse + mensongère).
+
+Réponse :
+advms : menteusement -> menteur
+advmv : mensongèrement -> mensonger
++ "N0hum V W de (E+une) (façon+manière) Adj" codée + dans les 2 tables alors que devrait être - dans la table advms
+-> pas de dédoublement de la colonne Adj car un seul est l'adjectif vraiment dérivé!
+
+--------------------------------------------------------------------------------
+IMPORTANT : Nouvelle notation pour la structure de base de l'adverbe de chaque table : ++ dans la tdt
+-> permet de la distinguer des autres propriétés définitoires
+Seul pb: la table pv n'en a pas!
+
+Elsa(17-08-11)
+--------------------------------------------------------------------------------
+Mots isolés résultant d'une sous-structure : suppression de ceux qui ne sont pas des adverbes simples → codage modifié dans la table correspondante (= ne pas accepter la variante)
+
+Entrées qui ne sont pas des adverbes:
+
+--OK--
+PCDC: chacun (entrées : [faire N] chacun de :POSS-0 côté, [récompenser Nhum] chacun de :POSS-1 côté), [se produire Adv] ironie (entrée : ironie de le sort), non mais (entrée : [ne se produire pas] non mais de les fois !) (acceptable peut-être quand il est suivi des points de suspension)
+PCPC: avis (entrée: [se produire Adv] avis à les amateurs !)
+PCPN: avis (entrée : [se produire Adv] avis à)
+PAC: bas (entrée : [parler] tout bas)
+PCA: pourboire (entrées : [payer Nsomme] pourboire compris, pourboire inclus) (pour moi, c’est faux de dire que Luc a payé 30 euros pourboire compris est équivalent de Luc a payé 30 euros de pourboire, et par ailleurs il manque la préposition "de")
+-> = 9 variantes en -
+
+Pas d'accord :
+PCPC: gratis (entrée : [travailler] gratis pro :DEO), mieux (entrées : [n'en agir guère] mieux pour cela, [n'en agir pas] mieux pour cela), moins (2 entrées idem), plus (2 entrées idem), pas (entrées : [n'agir] pas pour autant, pas sans mal)
+Remarque: même entrée avec 2 prédicats type différents alors que le prédicats ne fait pas partie de l'entrée...
+
+---> OK. Ces cinq formes simples sont certainement des adverbes. Mais, les
+formes "gratis", "mieux", "moins", "plus", "pas" ne sont pas de sous-structures
+des formes respectivement "gratis pro DEO", "mieux pour cela", "moins pour
+cela", "plus pour cela" et "pas pour autant". Il n'y a pas de synonymie
+apparente entre les formes réduites (et générées automatiquement) et les formes
+longues qui autorisent (peut-être à tort... en tout cas, selon M. Gross) la
+réduction du complément prépositionnel.
+Cela dit, lors de l'utilisation de ces sous-structures comme de nouvelles
+entrées (associées éventuellement à des entrées existantes) dans un lexique
+comme le DELA ou le Lefff, il faudra penser à les supprimer !
+Mais, il est certain qu'à ce stade du travail, ces cinq formes peuvent
+légitimement faire partie du lexique LGLex.
+
+Pourquoi ce ne sont pas des adverbes? Je travaille (gratis+mieux+moins+plus+pas)
+
+---> Les sous-structures issues des entrées (gratis pro :DEO, mieux pour cela, moins
+pour cela, plus pour cela, pas pour autant, pas sans mal) de la table PCPC sont
+bien évidemment des adverbes. Mais, celles-ci sont ambigus !
+Par exemple, ce n'est pas "plus" qui est une sous-structure de "plus pour cela".
+C'est "plus[+Neg]" qui l'est. Je préférerais que cette information (contrainte
+de négation) apparaisse explicitement dans le LGLex et, notamment, dans la
+mise en correspondance d'une entrée adverbiale (LEMME) avec ses formes variées
+(LEXEMES).
+-> colonne "Neg obl" dans les tables, notation neg="true" dans LGLex et @neg dans le Lefff
+
+Entrées qui sont des adverbes:
+PCDC: jamais, point, résultat (obligatoirement suivi des deux points ou d’une virgule, i.e. marqueur d’introduction de discours), rien, bon sang
+PCONJ: ah, enfer, minute, etc. → ok puisque ce sont des exclamations comme dans PJC (crac !, enfin !, hop !, paf !, pan !, patatra !, rebolote !, toc !, voilà !) ou PAC (juste !, oui !, vrai ?, etc.) mais toutes avec un point d'exclamation...
+PCPC: jamais, partout
+PCPN: nonobstant
+PAC: ailleurs (la sous-structure est possible mais avec changement de sens et différence de champ de référence, personnellement je coderais « – »), bref, donc, fort (même emploi que dans PADV avec possibilité d’intensification par très), juste, seul
+PCA: aujourd'hui (entrée : aujourd'hui même) (MODIF FAITE: <ENT>C = aujourd' -> aujourd'hui), dame (entrée: dame oui), ici, là, non, oui
+
+///Il y a plein d'erreurs de codage qu'on devrait regarder, mais plus tard....///
+
+Erreurs corrigées dans les tables :
+TABLE PCA :
+(i) à la nuit tombée -> mettre - dans la propriété d'inversion (colonne Prép Det Modif pré-adj Adj C)
+(ii) au moment où on l'attendais le moins -> mettre attendait !!!!
+
+Table advms: ID 35: amèrement -> colonne "Adj" -> "amer" au lieu de "amère"
+Table advms: ID 194: crûment -> colonne "Adj" -> "cru" au lieu de "cruel"
+Table advmv: ID 947: mortellement -> colonne "N0hum V W de (E+une) (façon+manière) Adj" 
+-> "-" au lieu de "+" (Molinier et Lévrier, 2000, p. 137)
+
+Elsa(19-08-11)
+--------------------------------------------------------------------------------
+Est-ce que c'est normal que habituellement dans la table advpah ne donne aucune variante?
+habituellement (advpah) => d'un point de vue habituel (advmp) => habituellement parlant (advmp) => de (manière+façon) habituelle (advms/mv/mp/mt/mq/md)
+
+---> Pour répondre à cette question : La table PAH contient une dizaine
+d'adverbes dont chacun peut avoir une ou plusieurs paraphrases qui sont
+présentes dans les tables de M.Gross. Ces paraphrases n'étant pas du même type
+et ne pouvant pas alors être regroupées, Molinier les a écartées de sa
+représentation. Mais, il en cite quelques unes dans le bouquin (p. 83):
+
+"habituellement" = "d'habitude", ?"de (manière+façon) habituelle"
+"ordinairement" = "d'ordinaire", ?"de (manière+façon) ordinaire"
+"généralement" = "en général", "en règle générale", "de manière générale",
+"généralement parlant"
+
+Elsa(12-10-11)
+--------------------------------------------------------------------------------
+Si je continue à trouver du temps pour les adverbes, je proposerais d'organiser
+ce travail de la manière suivante:
+
+1) Documentation des adverbes du français;
+2) (en parallèle) Évaluation des entrées adverbiales générées (doublons,
+ambiguïtés, ajout au DELAF, test de reconnaissance, corrections);
+3) Codage d'autres colonnes dans les tables des adverbes simples de Molinier
+(notamment MV, MS);
+4) (en parallèle) Voir avec Molinier les problèmes d'incompatibilité de codage
+entre la version papier et la version tables (prise de décisions);
+5) Étude de la (pré+suf)fixation des adverbes simples et ajout/codage des
+colonnes appropriées (cf. explications en fin du paragraphe);
+6) Classification syntaxico-sémantique et ajout/codage des colonnes appropriées
+pour les adverbes figés de Gross (16 tables);
+7) Passage à la langue grecque !!!
+
+Sur le point (5), par exemple:
+- L'adverbe "lentissimement" a-t-il le même comportement syntaxico-sémantique
+que l'adverbe "lentement" ?
+//La tortue géante des Galápagos est comme on l'imagine: paisible, marchant
+"lentissimement", profitant de la vie, le plus épicurien des animaux//
+//Je roulais "hyperlentement", tellement ça glissait!//
+- Les deux adverbes appartiennent-ils à la même classe syntaxico-sémantique et
+partagent-ils les mêmes propriétés distributionnelles, de structure et
+paraphrastiques ?
+- Compléter les tables des adverbes simples avec leurs dérivés (pré+suf)fixés.
+-> Si l'emploi et les propriétés sont les mêmes (voici mon hypothèse pour la
+quasi-totalité des entrées), il suffira de noter "+" dans la colonne de
+préfixation ou suffixation correspondante.
+
+Stavroula(12-10-11)
+--------------------------------------------------------------------------------
+Documentation des propriétés
+
+Sur SVN il y a deux fichiers:
+(1) <<proprietes_v1.doc>> -> 95% des propriétés figurant dans les tables des
+adverbes simples en -ment de Molinier (en français);
+(2) <<ADV-features.rtf>> dans le répertoire
+<<infolingu_fr-adv-figes_Stavroula_01-02-2008>> -> 90% des propriétés figurant
+dans les tables des adverbes (semi-)figés de Gross (en anglais).
+
+Stavroula(14-10-11)
+--------------------------------------------------------------------------------
+Table advmp :
+Ajout de la colonne Ddef "Ddef" codée pour les entrées qui valident la propriété "du point de vue de Ddef Ndomaine".
+Le codage de la colonne "Ddef" tient compte de la présence ou non d'un "h aspiré" :
+(i) Ddef: l'   Ndomaine: hippiatrie, histologie, hydronautique
+(ii) Ddef: la  Ndomaine: hiérarchie
+
+-> 4 entrées de la table advmp dédoublées avec le même identifiant à cause du codage de la colonne "Ddef" associée à "Ndomaine" :
+financièrement (ID=105) -> la finance / les finances
+pénalement (ID=207) -> le pénal / le droit pénal
+plastiquement (ID=225) -> la plastique / les arts plastiques
+scientifiquement (ID=246) -> la sience / les sciences
+-> ceci augmente le nombre d'entrées liée à la construction "du point de vue de Ddef Ndomaine" de 4!
+
+Stavroula(20-10-11)
+--------------------------------------------------------------------------------
+parler -> parle dans 4 entrées de la table pca :
+:se	 produire 	à	le	instant	où je te	parle
+:se	 produire 	à	le	instant	où je vous	parle
+:se	 produire 	à	le	instant	où je te	parle
+:se	 produire 	à	le	instant	où je vous	parle
+
+codage + de Prép V Prépv Detv Cv pour 3 entrées de la table pv :
+se produire ":Adv"	à parler franchement
+se produire ":Adv"	à parler proprement
+se produire ":Adv"	à parler strictement
+-> ceci augmente le nombre d'entrées liée à la construction "Prép V Prépv Detv Cv" de 3!
+
+Stavroula
+--------------------------------------------------------------------------------

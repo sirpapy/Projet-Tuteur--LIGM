@@ -1,0 +1,47 @@
+\documentclass[10pt, a4paper]{article}
+
+%% Environnement français (accents, guillements, mini table des matières, ...)
+\usepackage[utf8]{inputenc} %latin1
+\usepackage[french]{babel} %greek
+%\usepackage[iso-8859-7]{inputenc}
+\usepackage[french]{minitoc}
+
+\newcommand{\proptab}[1]{\mbox{\scriptsize\sf#1}} %intitulé de propriété dans les tables -> taille plus petite (footnotesize) pour les tableaux
+
+\begin{document}
+
+\begin{table}[htbp]
+\footnotesize
+\begin{tabular}{|p{4cm}|p{11cm}|}
+\hline
+%Propriétés  & Description de la propriété \\ \hline
+\textbf{Feature}  & \textbf{Description of the feature}\\ \hline
+\proptab{N0 =: homme} & activité dont le sujet pratiquant est exclusivement masculin\\ \hline
+\proptab{N0 =: femme} & activité dont le sujet pratiquant est exclusivement féminin\\ \hline
+\proptab{Det pluriel obl} & le déterminant est obligatoirement au pluriel\\ \hline
+%ex: Max fait des mathématiques / Max fait des claquettes
+\proptab{Det =: Poss0} & indique qu'il existe en parallèle à la phrase en \textit{faire de} une phrase figée construite sur \textit{faire Poss}. Le possessif étant obligatoirement coréférent au sujet\\ \hline
+%ex: faire son droit / faire sa médecine
+\proptab{Det =: un-Modif} & indique la possibilité du déterminant \textit{un-Modif}\\ \hline
+\proptab{Det =: un, faire = fabriquer} & indique que le déterminant \textit{un} est possible donnant à la phrase le sens de \textit{fabriquer} en plus de celui de \textit{pratiquer ponctuellement}\\ \hline
+\proptab{A (Prép+E) B = B} & indique pour les noms composés construits sur deux composants (A,B) que le premier composant (A) peut s'effacer\\ \hline
+\proptab{A (Prép+E) B = A} & indique pour les noms composés construits sur deux composants (A,B) que le deuxième composant (B) peut s'effacer\\ \hline
+\proptab{élément dérivé} & indique pour les composés sur quel élément s'applique la dérivation\\ \hline
+%- 1 pour le premier : Jean fait du piano à queue / Jean est pianiste
+%- 2 pour le deuxième : Paul fait du jeu à treize / Paul est treiziste
+%- 3 pour le troisième : Paul faut du qwan-ki-do / Paul est qwan-ki-doka
+\proptab{suff-} & suffixe ôté au nom prédicatif pour former le \proptab{Nagent} dérivé\\ \hline
+\proptab{suff+} & suffixe ajouté au nom prédicatif pour former le \proptab{Nagent} dérivé\\ \hline
+\proptab{verbe associé} & indique qu'au nom prédicatif est associé un verbe\\ \hline
+%ex : Paul fait du dessin / Paul dessine
+\proptab{N0 jouer à Det N} & indique que parallèlement à la pharse \textit{faire de "activité"} il existe une phrase \textit{jouer à "activité"}\\ \hline
+\proptab{N0 jouer de Det N} & indique que parallèlement à la pharse \textit{faire de "activité"} il existe une phrase \textit{jouer de "activité"}\\ \hline
+\end{tabular}
+\normalsize
+%\caption{Extrait de la documentation des propriétés}
+\caption{Features documentation}
+\label{tbl:doc}
+\end{table}
+
+\end{document}
+

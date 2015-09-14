@@ -1,0 +1,72 @@
+sembler Adj -> 31R
+avoir -> 32H*2, 38R
+en avoir -> 31H, 35R
+être -> 1, 35ST, 32PL, 35L, 35R*3
+être Adj -> 31R
+être Advt -> 35R
+n'y être plus -> 31H
+faire -> 38RR, 38R, 38L0*2, 39, 32NM, 36DT, 35R, 38LR, 32R2*2, 9
+se faire -> 32H, 31R
+vouloir bien -> 6
+se vouloir -> 32NM
+venir -> 1, 7, 35L
+venir Advm -> 31R
+venir Advt -> 31R
+s'en venir -> 35L
+sentir -> 32R3*3, 38L0
+sentir Advm -> 32NM, 32R2
+bouger -> 31H, 31R, 32C, 32R3, 35L
+se bouger -> 35L, 31H
+ne bouger -> 31H, 35L
+gagner -> 32R3, 32R2, 32NM, 35R, 7
+laisser -> 3, 11, 9, 38LR*4, 38LD*2, 32R2*2, 32H
+laisser se -> 1
+lire -> 38LR, 31H, 32R2, 32R3*2
+monter -> 32A*2, 31R, 35ST*2, 2, 32H*2, 32R3*4, 35L, 35RR, 35S, 37M4
+se monter Advp -> 31R
+passer -> 31R*5, 35ST*2, 35R*2, 35L*2, 38L0, 32R3*2, 38L1, 39, 31H, 36DT*2, 38LR, 38R*2
+passer Advm -> 31R*2
+se passer -> 31R
+passer y -> 31H, 31R
+perdre -> 32R3, 38LR, 32R2*2, 4, 32NM
+perdre poss N -> 32R3
+perdre se -> 31R*2
+prendre -> 32H, 4, 32R3*4, 35ST, 38LH, 38LR, 38R*2
+prendre Advm -> 32H, 35R
+s'y prendre Advm -> 35R*2
+prendre Advt -> 32H
+s'y prendre Advt -> 35R
+ne prendre -> 35R
+s'en prendre -> 33
+se prendre -> 35R
+préparer -> 32R3, 38LR
+se préparer -> 1
+revenir -> 35R, 5, 33, 35ST
+en revenir -> 33
+n'en revenir pas -> 8
+s'en revenir -> 35L
+craindre -> 6, 31R, 32H, 32R2
+doser -> 32C, 38LR
+jouer -> 31H, 31R*4, 32NM, 32R3*3, 35R*3, 35ST*2
+se jouer -> 31R
+manger -> 32C, 32R3*2, 36DT
+ne manger -> 32H
+porter -> 39, 31R, 32R3, 35L, 35R, 38LD*3
+rattraper -> 32R1, 32R3*2, 38LR, 38R
+suivre -> 33, 32H, 32R1, 32R2, 32R3*6, 38LD, 38LR
+tirer -> 33, 32A*3, 32C*3, 32R3*2, 35R*2, 36DT, 38L, 38LD, 38LS
+tirer Advm -> 31R*2
+se tirer Advm -> 35R
+tirer Ntemps -> 35ST
+s'en tirer -> 35R
+se tirer -> 31R
+trouver -> 16, 32A, 32NM, 32R2, 32R3, 38R
+se trouver Advm -> 8, 35ST
+se trouver Adj -> 31R
+apporter -> 36DT
+servir -> 36R, 32R3*2, 35ST
+servir Advm -> 31R
+se servir -> 35R
+susciter -> 38R, 36DT
+rivaliser -> 35S
+contester -> 32H, 36DT

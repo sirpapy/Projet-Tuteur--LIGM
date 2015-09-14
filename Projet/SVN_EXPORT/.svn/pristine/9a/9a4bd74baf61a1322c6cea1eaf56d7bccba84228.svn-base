@@ -1,0 +1,985 @@
+Tables distribuées:
+C_31i,C_a1,C_a1p2,C_anp2,C_c0e,C_c1dpn,C_c1g,C_c1i,C_c1p2,C_c1rpn,C_c5,C_c5c1,C_cadv,C_cdn,C_cff,C_cpn,C_cppn,C_cpq,C_cv,C_e1,C_eapc,C_ec0,C_edn,C_epac,C_epc,C_epcdn,C_epcpc,C_epc,C_ya,C_fc,C_fcan,C_fcann,C_fcpn,C_fcpnn,C_z5d,C_z1,C_zs,C_zp
+
+lgextract sur toutes les tables:
+39628 entries  have been processed in 69 tables, including 1 entries TO COMPLETE and 16 entries TO ENCODE. (22-03-11)
+39627 entries  have been processed in 69 tables
+avec C_zd.lgt.xls, C_zm.lgt.xls, C_z.lgt.xls (No such file or directory)
+
+lgextract sur les tables distribuées:
+17198 entries  have been processed in 38 tables.
+
+Nombre de propriétés dans la table des classes (26-03-11): 276
+
+Nombre d'entrées par table (26-03-11):
+31i: 51
+a1: 586
+a1p2: 603
+a1pn: 207
+a12: 133
+anp2: 104
+c0: 1892 (bcp)
+c0e: 702
+c0q: 405
+c1d: 1662 (bcp)
+c1dpn: 552
+c1g: 671
+c1gpn: 404
+c1i: 1731 (bcp)
+c1ipn: 938
+c1p2: 1200 (bcp)
+c1r: 589
+c1rpn: 549
+c5: 121
+c5c1: 104
+c6: 354
+c7: 185
+c8: 371
+cadv: 407
+can: 895
+cdn: 855
+cff: 206
+cnp2: 2051 (bcp bcp)
+cp1: 2116 (bcp bcp)
+cpn: 396
+cpp: 264
+cppn: 387
+cppq: 420
+cpq: 322
+cv: 434
+e0p1: 651
+e1: 280
+e01: 3043 (bcp bcp bcp)
+e1hc: 457
+e1pn: 289
+eapc: 1304 (bcp)
+ec0: 456
+edn: 781
+enpc: 630
+epa: 661
+epac: 743
+epc: 1357 (bcp)
+epca: 710
+epcdc: 953
+epcdn: 933
+epcpc: 902
+epcpn: 910
+epcpq: 185
+epdetc: 1060
+fc: 215
+fca: 57
+fcan: 89
+fcana: 18
+fcann: 6 (peu)
+fcn: 30
+fcpn: 88
+fcpna: 25
+fcpnn: 12
+ya: 351
+z1: 38
+z5d: 38
+z5p: 48
+zp: 50
+zs: 91
+
+-----------------------------------------------------------------------------
+Modifications faites sur les tables figees:
+31i: <ENT> -> <ENT>V
+
+a1p2: Prep2 -> <ENT>Prep2
+a12: <ENT>Adj -> <ENT>Adj1
+anp2: <ENT>Prep1 -> <ENT>Prep2 ; <ENT>Det1 -> <ENT>Det2 ; <ENT>N1 -> <ENT>N2
+a1p2: Exemple entrées 1 à 4: "affait" -> "affaire"
+
+c0e: <ENT>x1 et <ENT>x2 supprimées car toujours <E> ; <ENT>Prep -> <ENT>Prep0
+c0q: N1 =: si P -> N2 =: si P
+c1d,c1dpn: (passif) -> [passif]
+c1d,c1dpn,c1g,c1ipn,c1p2,c5,c6,c7,c8,cavd,can,cdn,cpn,cppq,cpq,cnp2,cv: <ENT> -> <ENT>V
+c1dpn,c1rpn: Prep -> Prep2
+c1p2: <ENt>Prep -> <ENT>Prep2
+c5: <ENT>Prep -> <ENT>Prep1
+c6: <ENT>Prep -> <ENT>Prep2 ; <ENT>Det1 -> <ENT>Det2
+c7: N1 =: Nhum -> N2 =: Nhum ; N1 =: N-hum -> N2 =: N-hum
+(le N1 fait parti de l'expression figées)
+cadv: <ENT>Adv -> <ENT>Adv1
+can: <ENT>Det -> <ENT>Det1
+cpn,cpq: <ENT>Prep -> <ENT>Prep1 ; <ENT>Det -> <ENT>Det1
+cpp: N0 V Prep1 N1 -> N0 V Prep N1 ; N0 V Prep2 N2 -> N0 V Prep N2
+(on sait qu'il s'agit de la Prep1/2 lorsqu'elle est suivi du N1/2)
+cppq: <ENT>Prep3 -> Prep3
+cpq: (rien) -> Prep2
+cnp2: <ENT>Prep -> <ENT>Prep2 ; <ENT>Det1 -> <ENT>Det2
+cp1: <ENT>Prep -> <ENT>Prep1
+
+e01: <ENT>Det -> <ENT>Det0 ; <ENT>N1 -> <ENT>N0 ; <ENT>N2 -> <ENT>Adj1
+REMARQUE: <ENT><être>  vaut est au lieu de être pour action de la justice et Allah
+-> A CHANGER?
+e0p1: <ENT>Det -> <ENT>Det0 ; <ENT>N1 -> <ENT>N0 ; <ENT>Det2 -> <ENT>Det1 ; <ENT>N2 -> <ENT>N1
+e1hc: <ENT>Prep1 -> <ENT>Prep2
+eapc: <ENT>V1 -> <ENT>Adj1 ; <ENT>Prep1 -> <ENT>Prep2 ; <ENT>Det1 -> <ENT>Det2 ; <ENT>N1 -> <ENT>N2
+enpc: <ENT>Det1 -> <ENT>N1 ; <ENT>Prep1 -> <ENT>Prep2 ; <ENT>xx -> <ENT>Det2 ; <ENT>N1 -> <ENT>N2
+epa: <ENT>Adj1 -> <ENT>Adv1 ; <ENT>N1 -> <ENT>Adj1
+epc: <ENT>Prepxx -> <ENT>Prep1 ; <ENT>Nxx -> <ENT>N1
+epca: <ENT>Prepxx -> <ENT>Prep1 ; <ENT>Detxx -> <ENT>Det1 ; <ENT>Nxx -> <ENT>N1 ; <ENT>xx -> <ENT>Adj1
+epcdn: <ENT>Prep -> <ENT>Prep1
+epdetc: <ENT>Prep -> <ENT>Prep1
+
+toutes les tables fc...: <ENT> -> <ENT>N
+toutes les tables fc contenant Prép -> Prep (sans accent)
+fc: <ENT>Det2 -> <ENT>Det
+fcpna,fcpn: Prép -> Prép1
+fcpnn: Prép1 -> Prép ; Prép2 -> Prép1
+fcpn: Det -> <ENT>Det
+fcn,fcann,fcpnn: <ENT>Det2 -> <ENT>Detc ; <ENT>N2 -> <ENT>Nc
+
+Elsa(07-11-08)
+-----------------------------------------------------------------------------
+Modifications à faire:
+e1hc,e1,eapc,epdetc: x1... ou ??? -> A CHERCHER -> A FAIRE!!!
+epabis,cffbis,cvbis -> A COMPRENDRE -> FAIT (SUPPR)
+eapcbis,ec0bis -> A SUPPRIMER? -> FAIT
+cff,cv,ec0,ya -> <ENT> à determiner -> FAIT
+cv -> Duppliquer la colonne Prep2 Det2 -> A FAIRE!!!
+
+c5,c7,cppq,31i -> colonnes à vérifier:
+c5: N1 =: N(-)hum et N0 V Prep N1 ? -> C1=: C1 de N(-)hum et N0 V Prép1 Det1 C1 -> OK 
+c7: Vérifier le changement de N1 =: N(-)hum en N2 =: N(-)hum -> OK
+cppq: N1 =: Nhum? OK
+31i: N0 V W -> N0 V N1 ? NON remis comme avant (Eric) -> OK
+epca: Prep Det Adj C = permutation -> "N0 V Prep Det1 Adj1 N1" ? NON "Adj1 permut obl" (comme pour fca, fcana, fcpna et pour les noms) pour pouvoir avoir la bonne entrée en permutant dans lgextract (et pas avoir à le faire dans le Lefff en devant comparer les 2 constructions comme fait jusqu'à présent)
+-> "N0 V Prep Det1 Adj1 N1" reste valable pour epac puisque c'est la construction de base et qu'il n'y a aucune permutation par la suite -> OK 
+Mettre N1 ou C1 -> semi-figement? -> FAIT (N1 pour libre, C1 pour figé)
+cpn...: N0 V Prep N1 -> N0 V Prep Det1 N1 ? -> OK
+
+Savoir si c'est figé ou semi-figé -> FAIT
+Définir la construction de base pour chaque table -> Ajouter une colonne CONSTR BASE dans la tdt avec la construction codée en clair pour chaque table -> puis ajouter les + correspondant -> FAIT
+Dédoublement Ppv en plusieurs colonnes (comme pour les verbes) -> A FAIRE!!!
+Prep -> Prép (tout mettre avec accent comme pour les verbes et les noms) -> OK
+Det laissé sans accent (comme pour les noms) -> OK
+ce que P -> ce Qu P (idem, harmoniser avec verbes et noms) -> OK
+
+Elsa(07-11-08) -> Elsa OK (22-01-10)
+-----------------------------------------------------------------------------
+Modifications faites sur les tables figees:
+
+c31i:	N0=: il -> <ENT>C0 =: il -> C0 =: il ; N0=: ça -> <ENT>C0 =: ça -> C0 =: ça; Ppv -> <ENT>Ppv
+C_a1:	N être Det1 N1 Prep2 Det2 N2 -> N être Det1 C1 Prép Detc Cc ; <ENT>N1 -> <ENT>C1 ; <ENT>Prep2 -> <ENT>Prépc ; <ENT>Det2 -> <ENT>Detc ; <ENT>N2 -> <ENTCc ; C Adj -> C1 = C1 Adj1 ; Adj C -> C1 = Adj1 C1
+C_a12:	<ENT>N1 -> <ENT>C1 ; N1 =: N0pc -> C1 =: Npc0 (C1pc porte obligatoirement sur N0, donc C1pc de N0) ; il y avoir N1 Prep(N2 de N0) -> il y avoir Det1 C1 Adj1 Prép (N2 de N0) (exemple: Mickey Rourk a eu un passage difficile = Il y a eu un passage difficile dans la vie de Mickey Rourk)
+C_a1p2:	N1 =: Npc -> C1 =: Npc ; <ENT>N1 -> <ENT>C1 ; <ENT>Prep2 -> <ENT>Prép2 ; N2 =: Npc -> C2 =: Npc ; <ENT>N2 -> <ENT>C2
+C_a1pn:	N1 =: Npc -> C1 =: Npc ; <ENT>N1 -> <ENT>C1 ; N0 V N1 -> N0 V Det1 C1 ; Prep2 -> <ENT>Prép2 ; il y avoir(N1 de N0)Prep N2 -> il y avoir (Det1 C1 de N0) Prép2 N2
+C_anp2:	<ENT>Prep2 -> <ENT>Prép2 ; N2 =: Npc -> C2 =: Npc ; <ENT>N2 -> <ENT>C2
+C_c0:	N0 =: Npc -> C0 =: Npc ; <ENT>N0 -> <ENT>C0 ; N0 =: C0 de Nhum -> C0 =: C0 de Nhum (propriété de métonymie) ; N1 =: N0pc -> C1 =: Npc0 -> C1 =: Npc (faux 0) ; <ENT>Prep1 -> <ENT>Prép1 ; <ENT>N1 -> <ENT>C1 ; N1 =: C1 de Nhum -> C1 =: C1 de Nhum ; Prep2 -> <ENT>Prép2
+C_c0q:	<ENT>N0 -> <ENT>C0 ; Ppv -> <ENT>Ppv ; <ENT>Prep1 -> <ENT>Prép1 ; <ENT>N1 -> <ENT>C1 ; Prep2 -> <ENT>Prép2 ; N2 =: ce que P -> N2 =: ce Qu P ; N2 =: ce que Psubj -> N2 =: ce Qu Psubj
+C_c0e:	<ENT>Prep0 -> <ENT>Prép0 ; <ENT>N0 -> <ENT>C0 ; <ENT>Prep1 -> <ENT>Prép1 ; <ENT>N1 -> <ENT>C1 ; Prep2 -> <ENT>Prép2 ; N2 =: ce que P -> N2 =: ce Qu P ; N2 =: ce que Psubj -> N2 =: ce Qu Psubj ; N2 =: (de) V W -> N2 =: (de) V-inf W
+C_c1d:	Ppv -> <ENT>Ppv ; N0 V N1 Prep N2 -> N0 V Det1 C1 Prép2 N2 ; <ENT>N1 -> <ENT>C1 ; N1 =: Npc -> C1 =: Npc
+C_c1dpn:	N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1 ; N0 V N1 -> N0 V Det1 C1 ; Prep2 -> <ENT>Prép2 ; Prep Nhum = Ppv -> Prép2 N2hum = Ppv -> Prép2 N2hum = Ppv =: lui ; Prep N-hum = Ppv -> Prép2 N2-hum = Ppv (En, Y, Le) ; sur N2 dessus -> sur N2 = dessus N2
+C_c1g:	<ENT>Det1 -> <ENT>Poss1 ; autre Det -> autre Det1 ; <ENT>N1 -> <ENT>C1 ; N1 =: Npc -> C1 =: Npc ; N0 se V N1 -> N0 se V Ddéf1 C1
+C_c1gpn:	N1 =: N0pc -> C1 =: Npc0 ; <ENT>Det1 -> <ENT>Poss1 ; <ENT>N1 -> <ENT>C1 ; N0 V N1 -> N0 V Poss1 C1 ; Prep2 -> <ENT>Prép2 ; Prep Nhum = Ppv -> Prép2 N2hum = Ppv -> Prép2 N2hum = Ppv =: lui ; Prep N-hum = Ppv -> Prép2 N2-hum = Ppv (le, en y) ; sur N2 = dessus -> sur N2 = dessus N2
+C_c1i:	<ENT>N1 -> <ENT>C1 ; N1 =: Npc -> C1 =: Npc
+C_c1ipn:	N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1 ; N0 V N1 -> N0 V Det1 C1 ; Prep2 -> <ENT>Prép2 ; Prep Nhum = Ppv -> Prép2 N2hum = Ppv -> Prép2 N2hum = Ppv =: lui ; Prep N-hum = Ppv -> Prép2 N2-hum = Ppv (le, en, y) ; sur N2 = dessus -> sur N2 = dessus N2
+C_c1p2:	N0 V N1 -> N0 V Det1 C1 ; N1 =: Npc -> C1 =: Npc ; <ENT>N1 -> <ENT>C1 ; N0 V Prep N2 -> N0 V Prép2 Det2 C2 ; <ENT>Prep2 -> <ENT>Prép2 ; N2 =: N0pc -> C2 =: Npc0 ; <ENT>N2 -> <ENT>C2 ; N2 =: C2 de Nhum -> C2 =: C2 de Nhum ; N1 =: C1 de Nhum -> C1 =: C1 de Nhum
+C_c1r:	<ENT>N1 -> <ENT>C1 ; N1 =: Npc -> C1 =: Npc
+C_c1rpn:	N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1 ; N0 V N1 -> N0 V Det1 C1 ; Prep2 -> <ENT>Prép2 ; Prep Nhum = Ppv -> Prép2 N2hum = Ppv ; Prep N-hum = Ppv -> Prép2 N2-hum = Ppv ; sur N2 = dessus -> sur N2 = dessus N2
+C_cadv:	Adv-Adj accord -> Adv1-Adj accord
+C_can:	N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1 ; C1 de Nhum = Ppv-C1 =: lui-Poss0 -> C1 de Nhum = Ppv-C1 =: lui-C1 ; V C1 de N = se V C1 -> N0 V Det1 C1 de Nc = N0 se V Det1 C1 ; C1 de N = Poss C1 -> Det1 C1 de Nc = Poss C1
+C_cdn:	N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1 ; N0 V N1	-> N0 V Det1 C1 ; N1 =: C1 de Nhum -> C1 =: C1 de Nhum ; N1 =: C1 de N-hum	-> C1 =: C1 de N-hum ; V C1 de N = en V C1 -> N0 V Det1 C1 de Nc = N0 en V Det1 C1 ; C1 de N = Poss C1 -> Det1 C1 de Nc = Poss C1
+C_c5:	Ppv -> <ENT>Ppv ; <ENT>Prep1 -> <ENT>Prép1 ; N1 =: Npc -> C1 =: Npc ; <ENT>N1 -> <ENT>C1 ; N0 V Prep N1 -> N0 V Prép1 Det1 C1 ; N1 =: Nhum -> C1=: C1 de Nhum ; N1 =: N-hum -> C1=: C1 de N-hum ; C1 de N = Poss C1 -> Det1 C1 de Nc = Poss C1 ; N0 V Prep N1 pour N2 Qu Psubj -> N0 V Prép1 Det1 C1 pour Nc Qu Psubj
+C_c6: déplacement des colonnes "N1 =: Nhum" et "N1 =: N-hum" ; <ENT>Prep2 -> <ENT>Prép2 ; N2 =: N0pc -> C2 =: Npc0 ; <ENT>N2 -> <ENT>C2 ; N2 =: C2 de Nhum -> C2 =: C2 de Nhum
+C_c7:	N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1 ; N0 V N1 -> N0 V Det1 C1 ; N2 =: ce que Psubj -> N2 =: ce Qu Psubj ; N2 =: ce que P -> N2 =: ce Qu P ; à Nhum =: Lui -> à N2hum =: lui ; à Nhum =: y -> à N2-hum =: y
+C_c8:	N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1 ; N0 V N1 -> N0 V Det1 C1 ; N2 =: ce que Psubj -> N2 =: ce Qu Psubj ; N2 =: ce que P -> N2 =: ce Qu P
+C_cff:	<ENT>Conj1 -> <ENT>Conj ; <ENT>Det1-0 -> <ENT>Det0 ; <ENT>N1-0 -> <ENT>C0 ; <ENT>V1 -> <ENT>V ; <ENT>Det1-1 -> <ENT>Det1 ; <ENT>N1-1 -> <ENT>C1 ; <ENT>Conj2 -> <ENT>Conj-2 ; <ENT>Det2-0 -> <ENT>Det0-2 ; <ENT>N2-0 -> <ENT>C0-2 ; <ENT>V2 -> <ENT>V-2 ; <ENT>Det2-1 -> <ENT>Det1-2 ; <ENT>N2-1 -> <ENT>C1-2 ; N0 =: C0 de Nhum -> C0 =: C0 de Nhum ; N1 =: C1 de Nhum -> C1 =: C1 de Nhum ; N1 =: C1 de N-hum -> C1 =: C1 de N-hum
+C_cnp2:	<ENT>Prep2 -> <ENT>Prép2 ; N2 =: N0pc -> C2 =: Npc0 ; <ENT>N2 -> <ENT>C2
+C_cp1: N0 V -> N0 Ppv V ; <ENT>Prep1 -> <ENT>Prép1 ; N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1
+C_cpn:	<ENT>Prep1 -> <ENT>Prép1 ; N1 =: N0pc -> C1 =: Npc0 ; <ENT>N1 -> <ENT>C1 ; N0 V Prep N1	-> N0 V Prép1 Det1 C1 ; N1 =: C1 de Nhum	-> C1 =: C1 de Nhum ; N1 =: C1 de N-hum -> C1 =: C1 de N-hum ; C1 de Nhum = Ppv-C1 =: lui-Poss0 -> C1 de Nhum = Ppv-C1 =: lui-C1 ; C1 de N = Poss C1 -> Det1 C1 de Nc = Poss C1
+C_cpp:	N0 V Prep N1 -> N0 V Prép1 Det1 C1 ; N1 =: Npc -> C1 =: Npc ; <ENT>Prep1 -> <ENT>Prép1 ; <ENT>N1 -> <ENT>C1 ; <ENT>Prep2 -> <ENT>Prép2 ; <ENT>N2	-> <ENT>C2 ; N0 V Prep N2 -> N0 V Prép2 (Det2 C2 + N2)
+C_cppn:	<ENT>Prep1 -> <ENT>Prép1 ; <ENT>N1 -> <ENT>C1 ; <ENT>Prep2 -> <ENT>Prép2 ; <ENT>N2 -> <ENT>C2 ; <ENT>Prep3 -> <ENT>Prép3 ; <ENT>N3 -> <ENT>C3 ; Prep N3 = ppv -> Prép3 N3 = Ppv
+C_cppq:	<ENT>Prep1 -> <ENT>Prép1 ; <ENT>N1 -> <ENT>C1 ; <ENT>Prep2 -> <ENT>Prép2 ; <ENT>N2 -> <ENT>C2 ; Prep3 -> <ENT>Prép3 ; N3 =: ce que P -> N3 =: ce Qu P ; N3 =: ce que Psubj -> N3 =: ce Qu Psubj
+C_cpq:	<ENT>Prep1 -> <ENT>Prép1 ; <ENT>N1 -> <ENT>C1 ; Prep2 -> <ENT>Prép2 ; N0 V Prep N1 -> N0 V Prép1 Det1 C1 ; N2 =: ce que P -> N2 =: ce Qu P ; N2 =: ce que Psubj -> N2 =: ce Qu Psubj ; Prep N-hum = Ppv -> Prép2 N2-hum = Ppv
+C_cv:	<ENT>Prep1 -> <ENT>Prép1 ; <ENT>N1 -> <ENT>C1 ; <ENT>N2 -> <ENT>V2 ; Prep Det2 -> <ENT>PrépDetv ; N3 -> <ENT>Cv ; N2 =: Nhum -> Nv =: Nhum ; N2 =: N-hum -> Nv =: N-hum
+C_e01:	Det0 C0 =: Det0 C0 de Nhum -> C0 =: C0 de Nhum
+C_e0p1:	Det0 C0 =: Det0 C0 de Nhum -> C0 =: C0 de Nhum ; <ENT>Prep1 -> <ENT>Prép1 ; Det1 C1 =: Det1 C1 de Nhum -> C1 =: C1 de Nhum
+C_e1hc:	<ENT>Prep -> <ENT>Prépc
+C_e1pn:	N0 V N1 -> N0 être Det1 C1 ; <ENT>Prepc -> <ENT>Prépc ; Prep2 -> <ENT>Prép2
+C_eapc:	N0 être très Adj1 W -> N0 être très Adj1 PrépC DetC Cc ; <ENT>Prepc -> <ENT>Prépc
+C_ec0:	<ENT>Prep1 -> <ENT>Prép1 ; <ENT>Prep2 -> <ENT>Prép2 ; Prep3 -> <ENT>Prép3 ; C1 =: C1 de V2-inf N -> C1 =: C1 de V2-inf W ; N3 =: ce que P	-> N3 =: ce Qu P ; N3 =: ce que Psubj -> N3 =: ce Qu Psubj ; N3 =: (de) V W -> N3 =: (de) V-inf W
+C_edn:	N0 =: Npc -> déplacement de la colonne ; N0 V N1 -> N0 V Det1 C1 ; C1 de Nc = Poss C1 -> Det1 C1 de Nc = Poss C1
+C_enpc:	<ENT>Prepc -> <ENT>Prépc ; N0 être Det1 Prepc Detc Nc N1 -> N0 être Det1 Prépc Detc Cc N1 ; N0 être Det1 N1 Prepc Detc Nc -> N0 être Det1 N1 Prépc Detc Cc
+C_epac:	<ENT>Prep1 -> <ENT>Prép1 ; N0 être Prep1 Det1 C1 -> N0 être Prép1 Det1 C1 ; Prep1 Det1 C1 = où ? -> Prép1 Det1 Adj1 C1 = où ? (complément prépositionnel à emploi locatif)
+C_epc: 	<ENT>Prep1 -> <ENT>Prép1 ; Prép Dét C -> Prép1 Det1 C1 //ou Prép1 C1 = Prép1 Det1 C1// (comprendre la signification de cette colonne)
+C_epca:	<ENT>Prep1 -> <ENT>Prép1 ; N0 V Prep1 Det1 C1 -> N0 être Prép1 Det1 C1 ; N0 V Prep1 Det1 Adj1 C1	-> N0 être Prép1 Det1 Adj1 C1 ; Prep1 C1 =: où ? -> Prép1 Det1 C1 Adj1 = où ?
+C_epcdc:	<ENT>Prep1 -> <ENT>Prép1 ; <ENT>de -> on la garde ??? ; N0 V Prep1 Det1 C1 -> N0 être Prép1 Det1 C1 ; Prep1 C1 = où ? -> Prép1 Det1 C1 de Detc Cc = où ?
+C_epcdn:	<ENT>Prep1 -> <ENT>Prép1 ; N0 V Prep1 Det1 C1 -> N0 être Prép1 Det1 C1 ; C1 de Nc = Poss C1 -> Det1 C1 de Nc = Poss C1 ; Prep1 C1 = où ? -> Prép1 Det1 C1 de Nc = où ?
+C_epcpc:	<ENT>Prep1 -> <ENT>Prép1 ; <ENT>Prep2 -> <ENT>Prép2 ; N0 V Prep1 Det1 C1 -> N0 être Prép1 Det1 C1 ; Prep1 C1 = où ? -> Prép1 Det1 C1 Prép2 Det2 C2 = où ?
+C_epcpn:	<ENT>Prep1 -> <ENT>Prép1 ; Prep2 -> <ENT>Prép2 ; N0 V Prep1 plein C1 Prep2 N2 -> N0 être Prép1 plein C1 Prép2 N2 ; N0 V Prep1 Det1 C1 -> N0 être Prép1 Det1 C1
+C_epcpq:	<ENT>Prep1 -> <ENT>Prép1 ; Prep2 -> <ENT>Prép2 ; N0 V Prep1 Det1 C1 -> N0 être Prép1 Det1 C1 ;	Prep2 N2 = Ppv -> Prép2 N2 = Ppv -> (dédoublement) Prép2 N2hum = Ppv =: lui (et)  Prép2 N2-hum = Ppv (le, en, y) 
+C_epdetc:	<ENT>Prep1 -> <ENT>Prép1
+C_ya:	<ENT>N00 -> <ENT>Il ; <ENT>Prep0 -> <ENT>Prép0 ; <ENT>Prep1 -> <ENT>Prép1 ; Prep2 -> <ENT>Prép2 ; N2 =: ce que P -> N2 =: ce Qu P ; N2 =: ce que Psubj -> N2 =: ce Qu Psubj
+
+Stavroula(28-04-09)
+-----------------------------------------------------------------------------
+Commentaires/ suggestions/ propositions:
+
+c31i: ajout de la (cdb) C0 V avec C0=: (Il + Ca)
+-> deja dans la table
+; ajout d'une colonne pour les <V-n>
+-> A FAIRE!!! (comme pour tous les verbes...)
+C_a1: (cdb) N0 avoir Det1 C1 Prép Detc Cc -> N0 avoir Det1 C1 Prépc Detc Cc
+C_c0e:	(cdb) Prép0 Det0 C0 V Prép1 (Det1 C1+N1) Prép2 N2 -> Prép0 Det0 C0 Prép1 (Det1 C1+N1) Prép2 N2 (l'élément C0 est toujours le prédicat, il n'y a pas de verbe, exclamatives & interjections)
+C_c1dpn + C_c1gpn + C_c1ipn +C_epcpq: spécification et dédoublement des Ppv en fonction du référant N2(hum + -hum)
+-> A FAIRE!!!
+C_c1g: dans la colonne "N0 se V C1" le Det est obligatoirement défini (à vérifier !)
+-> OK (N0 se V Ddéf1 C1)
+C_c1p2: C2 de Nhum = Ppv-C2 =: lui-C2 (exemple : La victoire a amené un sourire sur les lèvres des joueurs = La victoire leur a amené un sourire sur les lèvres) (-C2 égale qu'on enlève le C2)
+-> INFO pour lgextract
+C_c1p2 # C_can + C_cpn: C1 de Nhum = Ppv-C1 =: lui-C1 # C1 de Nhum = Ppv-C1 =: lui-Poss0 -> propriétés différentes ? Si non, il faut en garder une seule en-tête pour toutes les tables
+-> OK identique (C1 de Nhum = Ppv-C1 =: lui-C1)
+
+//////
+C_can: ajouter une colonne "N0 V Det1 C1 (à + de) Nc". Sinon, le complément (à+de) Nc n'apparait pas dans la table. A revoir la cdb
+-> OK (cdb: N0 V Det1 C1 (à+de) Nc)
+C_cff: ajouter une colonne "N0 V Det1 C1 de Nc". Sinon, le complément de Nc n'apparait pas dans la table. A revoir la cdb
+-> OK (cdb: N0 V Det1 C1 de Nc)
+C_c7: ajouter une colonne "<ENT>Prép2=à" ???
+C_edn: ajouter une colonne "<ENT>Prépc=de" ???
+C_c8 + C_cpn: ajouter une colonne "<ENT>Prép2=de" ???
+-> NON mais laissé dans C_epcdc car le mot qui suit est figé (idem pour <avoir>, <être>, <ce>) -> p-e à revoir...
+C_cv: Les propriétés "V0-inf W" et "Question indirecte" sont des propriétés (syntaxico-)sémantiques  qui ne sont pas exploitables informatiquement (à discuter !). De toute façon, elles renseignent sur la nature du complément phrastique, à savoir "Prép1 Det1 C1 avec C1=: V" ou "V2 Prépv Detv Cv". Leur codage dans la table n'est pas clair car on ne voit ni la corrélation ni les contraintes morphosyntaxiques (ex.: C1=: V)
+-> INFO pour lgextract
+C_e1: propriétés "x1", "x2" et "x3" ??? (demander à Christian/ Eric)
+C_e1hc: (cdb) N0hum être Det1 C1 Prép Detc Cc -> N0hum être Det1 C1 Prépc Detc Cc ; pas de colonnes pour "N0" ; propriétés "x1", "x2", "x3", "x4", "x5", "x6" et "x7" ??? (demander à Christian/ Eric)
+C_eapc: propriétés "x1" et "x2" ??? (demander à Christian/ Eric)
+-> Pas trouvé
+C_enpc: (cdb) N0 être Det1 N1 Prepc Detc Nc -> N0 être Det1 N1 Prépc Detc Nc
+-> OK
+; propriété "N0 être Det1 Prépc Detc Cc N1" (exemple: Delon est un parmi les plus célèbres acteurs)
+-> INFO pour lgextract
+; erreurs : il faut remplacer le "s" par "les"
+-> OK tout corrigé (disparition de la syllabe "le") :
+toutes s -> tous les (devant les noms masculins)
+bout des ongls -> bout des ongles
+un / cib -> une / cible
+un / couur -> une /couleur
+diab -> diable
+diabs -> diables
+ensemb -> ensemble
+excelnce -> excellence
+exemp -> exemple
+famils -> familles
+femme soû -> femme soûle
+filtte -> fillette
+fuve -> fleuve
+inévitab -> inévitable
+mirac -> miracle
+mirac petit -> miracle petit
+misérab -> misérable
+modè -> modèle
+moel -> moelle
+pacotile -> pacotille
+pantoufs -> pantoufles
+possib -> possible
+règ -> règle
+Regence -> Régence
+sièc -> siècle
+simp -> simple
+symbo -> symbole
+tab -> table
+ttre -> lettre
+tutel -> tutelle
+vaur -> valeur
+POSS -> Poss
+C_epac + C_epca + C_epcdc + C_epcdn + C_epcpc: Une seule en-tête pour toutes les réalisations de cette propriété : "Prép1 C1 = où ?"
+-> FAIT
+C_epcpc + C_epcpn: "Prép2 (Det2 C2 + N2)" correspondent tantôt à un argument du prédicat "être C1" (ex.: être en tête au classement général) tantôt à un complément de nom modifiant le prédicat "être C1" (ex.: être en régime sans sel, être en bas à droite)
+-> cdb de epcpc: N0 être Prép1 Det1 C1 Prép2 Det2 C2 -> devrait parfois s'appeler N0 être Prép1 Det1 C1 Prépc Detc Cc
+-> pas vu le pb pour epcpn...
+-> A FAIRE!!!
+C_epcpn: La propriété de "Symétrie" (MODIFIE) doit être interprétée ainsi : N0 être Prép1 Det1 C1 Prép2 N2 = N2 être Prép1 Det1 C1 Prép2 N0 et N0 être Prép1 Det1 C1 Prép2 N2 = N0 et N2 être Prép1 Det1 C1 ; la propriété de symétrie est notée "N0 et N2 faire Det1 C1" dans la table C_fcpn ; la propriété de symétrie est notée "N0 et N2 faire Det1 C1 Prepc Detc Cc" dans la table C_fcpnn ; la propriété de symétrie est notée "N0 et N2 faire Det1 C1 Adj1" dans la table C_fcpna
+-> FAIT (propriété N0 et N2 être Prép1 Det1 C1 pour epcpn)
+-> INFO pour lgextract
+C_epdetc: propriété "?????" (demander à Christian/ Eric)
+-> Pas trouvé
+C_fca ; C_fcana: Adj1 permut obl -> 2 colonnes -> Det1 C1 Adj1 et Det1 Adj1 C1
+-> NON car pert le caratère obligatoire, il existe la possibilité de permutter dans C_epca par ex sans q cela soit obligatoire
+C_fcan ; C_fcana ; C_fcann: N0 faire Det1 C1 W à N2 de N3
+-> FAIT
+
+///C_c0: N1 =: N0pc -> C1 =: Npc0 -> C1 =: Npc (propriété en correlation avec la propriété "C0 =: C0 de Nhum" (propriété de métonymie), C1pc porte obligatoirement sur Nhum, donc C1pc porte obligatoirement sur N0, donc C1pc de N0pc de Nhum)
+-> INFO pour lgextract -> pas compris (distinguer arg et modif?)
+
+Stavroula(28-04-09) -> Elsa OK (22-01-10)
+-----------------------------------------------------------------------------
+mail du 10-07-09:
+
+A) table c5
+
+- construction de base : N0 V Prép1 Dét1 C1 de N2  OU  N0 V Prép1 Dét1 C1 de Nc
+(déjà codée pour la table C_cpn)
+-> de Nc
+///il faut voir si ces deux tables se distinguent du fait que, dans c5, N0=: Qu
+P alors que, dans C_cpn, N0#: Qu P.
+-> je dirais que oui
+
+P.ex.:
+
+(1a) N0 V Prép1 Dét1 C1 de N2 (N2=:Nhum) =:
+
+Cette situation précaire [commence sincèrement à] courir sur le haricot de la
+jolie demoiselle.
+
+(1b) C1 de Nhum = Ppv-C1 =: lui-C1
+
+Cette situation précaire [commence sincèrement à] lui courir sur le haricot.
+
+/// "N0 courir sur le haricot de N2" est noté (+) dans la colonne "N0 V Prép1
+Dét1 C1" à condition qu'il y ait un Ppv-humain dans la phrase (voir ci-dessus).
+-> il n'y a pas de condition, dc les 2 constructions seront acceptés, y compris : "Cette situation précaire [commence sincèrement à] courir sur le haricot", ce qui n'est pas correct...
+
+1a) N0 V Prép1 Dét1 C1
+
+[Ces travaux ne sont pas encore réalisés et] cela commence par bien faire.
+
+/// "N0 commencer par bien faire" est noté (+) dans la colonne "N0 V Prép1 Dé1
+C1" mais, pourtant, il ne vérifie pas la cdb. Sauf si dans la cdb on peut
+rendre un élément facultatif, i.e.: de N2.
+-> entrée non trouvée
+
+B) C_epc
+
+La colonne "Prép1 Dét1 C1" devrait se transformer en "N0 V Prép1 Dét1 C1". Pour
+toutes les entrées notées (+) dans cette colonne, il y a une relation
+d'équivalence (ou possibilité d'alternance) entre la construction sans
+déterminant (faisant partie de la table C_epc) et la construction avec
+déterminant (figurant normalment dans la table C_epdetc).
+
+P.ex.:
+
+N0 être (en + dans l') accélération
+N0 être (en + dans l') amélioration
+N0 être (en + dans l') action
+-> La Prép sera gardée identique donc cela ne fonctionnera pas...
+
+/// Bien évidemment, les deux constructions, bien qu'équivalentes en première
+vue, présentent des différences au niveau aspectuel. Par ailleurs, bon nombre
+des constructions "N0 V Prép1 C1" semblent être des réductions de la table
+C_cpcdn. P.ex.:
+-> table pas trouvée
+
+2a) La capacité d'autofinancement du groupe est en amélioration de 8,7%.
+
+2b) La capacité d'autofinancement du groupe est en amélioration.
+
+TANDIS QUE :
+
+2c) Le futur des sites marchands est dans l'amélioration de l'expérience
+utilisateur.
+
+2d) *Le futur des sites marchands est dans l'amélioration.
+-> c'est ce qui est ici codé dans epc
+Stavroula(10-07-09) -> Elsa OK (22-01-10)
+-----------------------------------------------------------------------------
+Correction de qq accents sur Prép oubliés + qq numéro de Prép oubliés
+-> Notation: Prép (avec accent) != Det (sans accent) pour être identique aux verbes
+   + On numérote toutes les Prép en fonction de l'argument qui suit juste après (1,2 ou c) -> Cela diffère des verbes!
+
+Prép2 -> <ENT>Prép2 (fcpn,fcpna,fcpnn)
+-> Pour être cohérent avec les autres figées, cela diffère des noms qui ont <ENT>Prép2 si le N2 est figé (C2) et Prép2 s'il est libre.
+Le problème est qu'ici on a parfois Prép2 (Det2 C2 + N2).
+
+[pc z] -> [pc z.] (c7,c8,cpq,epcpq)
+-> Même notation que les verbes
+
+Les structures de bases ont été codées + dans la tdt, ainsi que les prop N0 =: Qu P, N0 =: Nhum et Det1 =: déf ou indéf.
+Par contre les prop N1 =: Qu P, et N2 ou N3 =: ce Qu P ne le sont pas car elles sont codées o car en réalité dépendent des entrées.
+ex pour la table c7: base = N0 V Det1 C1 à N2 avec le N2 spécifié par une de ces 3 colonnes au moins: 
+N2 =: ce Qu Psubj, N2 =: ce Qu P, N2 =: V0-inf W
+
+Elsa(08-07-09)
+-----------------------------------------------------------------------------
+Remplissage de toutes les colonnes non pertinentes par "/".
+Ex: une propriété contenant C1 alors qu'il n'y a pas de C1 défini (<ENT>C1)
+Mais s'il n'y a pas de N1 (<ENT>N1), on garde les propriétés contenant N1 car parfois peut remplacer le C1.
+
+Elsa(09-07-09)
+-----------------------------------------------------------------------------
+Division de la table c5 en 2:
+Toutes les entrées ayant les 4 colonnes "C1=: C1 de Nhum, C1=: C1 de N-hum, C1 de Nhum = Ppv-C1 =: lui-C1, Det1 C1 de Nc = Poss C1" codées "-" ont la colonnes "N0 V Prép1 Dét1 C1" codée "+"(sauf qq oublis), elles ne respectent donc pas la contruction de base de la c5 qui est "N0 V Prép1 Dét1 C1 de Nc", elles doivent donc faire parti d'une autre table avec pour base "N0 V Prép1 Dét1 C1" et qui est nommée "c5c1".
+On a donc:
+-la table c5 (base "N0 V Prép1 Dét1 C1 de Nc") contenant la colonne "N0 V Prép1 Dét1 C1" qui code que le Nc est facultatif, ainsi qu'au moins une des colonnes "C1=: C1 de Nhum, C1=: C1 de N-hum, C1 de Nhum = Ppv-C1 =: lui-C1, Det1 C1 de Nc = Poss C1" codée "+"
+-la table c5c1 (base "N0 V Prép1 Dét1 C1") ne contenant plus la colonne "N0 V Prép1 Dét1 C1" puisqu'elle est constante "+", ni les 4 colonnes "C1=: C1 de Nhum, C1=: C1 de N-hum, C1 de Nhum = Ppv-C1 =: lui-C1, Det1 C1 de Nc = Poss C1" qui sont constantes "-" dans la tdt. La colonne "N0 V Prép1 Dét1 C1 de Nc" est également codée "-" dans la tdt.
+
+A noter: "N0 =: Qu P" reste faisant partie de la construction de base pour les 2 tables.
+Elsa(12-07-09)
+-----------------------------------------------------------------------------
+Table epc (base N0 V Prép1 C1):
+Prép1 Det1 C1 -> N0 V Prép1 Det1 C1
+qui signifie que la présence du déterminant est aussi possible, cela étend la construction de base.
+
+Elsa
+-----------------------------------------------------------------------------
+Table 31i + tdt:
+Renomage de "C0 V W" en "N0 V W" qui est le nom originel de cette propriété qui ne figure que dans 31i.
+Cette propriété avait été renommée récemment de deux façons : "C0 V W"
+et "N0 V N1",
+mais le nom originel "N0 V W" correspondait mieux à la propriété.
+ex. Les tomates pleuvent/Les tomates pleuvent sur la scène.
+-> C0 = il != N0 = les tomates
+
+Elsa (17-09-09)
+-----------------------------------------------------------------------------
+Ajout des nouvelles 5 tables de figées scannées (les 3 autres pourront y être insérées après) + ajouts nécessaires dans la tdt (y compris des tables non scannées -> constructions de base + propriété N0 être Prép1 Det1 C1 = N0 avoir Det C1 présente nulle part ailleurs):
+8 tables de L. Danlos : Z à ZS (Thèse)
+
+*****************Entrées:
+
+IMPORTANT: Les tables Z, ZD, et ZM ne sont pas encore scannées, il n'y a donc aucune d'entrée.
+
+Tables ZS:
+ballotage(E+serré) -> ballottage(E+serré)
+concilliabule -> conciliabule
+
+Table ZP:
+pro-o -> ???
+
+*****************Constructions de base:
+
+Tables Z: (thèse p. 217-22O avec un bon récapitulatif):
+Z5D:
+N0 être Prép1 Det1 C1 de N2
+il être Prép1 Det1 C1 de N2 Qu P
+N0 =: Qu P
+
+Z5P:
+N0 être Prép1 Det1 C1 (E+Prép2 N2)
+il être Prép1 Det1 C1 (E+Prép2 N2) Qu P
+Prép2 # de
+N0 =: Qu P
+
+Z1:
+N0 être Prép1 Det1 C1 de V0-inf W (Remarque: V° W -> V0-inf W)
+N0 =: Qu P -> -
+N2 =: Qu P -> + (cf. discussion ci-dessous)
+ 
+Discussion:
+La propriété N2 =: Qu P est vérifiée d'après le récapitulatif p.220, mais la définition p.128 est "les formes qui se construisent avec une infnitive sans complétive correspondante", on pourrait donc considérer que le N2 (correspondant à "de V0-inf W") ne peut pas être en "Qu P"
+Question: une infinitive fait-elle partie d'une complétive? On peut supposer que non ("sans complétive ni infinitive" p.218)
+Mais p.235 : "Si on veut considérer qu'on a affaire à une opération de nominalisation, il est possible de pousser l'acceptabilité des phrases N0 être Prép1 N1 de ce Qu P:
+?*Luc est au regret (de ce+E) que Max ne puisse pas venir
+?*Luc est au désespoir (de ce+E) que Max ne puisse pas venir"
+-> Les 2 variantes (de ce Qu P et Qu P) ayant été trouvées dans google je rajoute cette propriété comme étant vraie en modifiant son intitulé N2 =: Qu P par N2 =: (de ce+E) Qu P (et en le mettant faux pour les tables concernées).
+Important: Peut-être notation à changer car la prép n'est pas incluse dans N2 alors qu'elle est remplacée (voir avec lgextract) ???
+Modif le 18-08-10:
+N2 =: (de ce+E) Qu P -> N2 =: Qu P car inutile de compliqué cet intitulé (le "de" figure déjà dans la construction et le "ce" est souvent sous-etendu)
+
+ZS:
+N0 être Prép1 Det1 C1 Prép2 N2 (cf. discussion ci-dessous)
+N0 et N2 être Prép1 Det1 C1
+N0 =: Qu P -> -
+N2 =: Qu P -> -
+
+Discussion:
+Intitulé original transformé:
+N0 être Prép1 Det1 C1 avec N2 -> N0 être Prép1 Det1 C1 Prép2 N2:
+La construction avec "avec" est annoncée p.218 et Prép2 =: avec est précisé dans le récapitulatif.
+Mais p.237 "En général Prép2 =: avec, mais nous trouvons quelques cas de Prép2 =: à ou Prép2 =: de :
+Ce tableau est en pendant à celui-là.
+La traduction est en regard du texte original."
+En effet, cela est justifié par la colonne "<ENT>Prép2" qui contient les bonnes prépositions, il n'est donc pas nécessaire de généraliser (à la préposition "avec") puisqu'on ne pourra pas revenir en arrière.
+
+ZD:
+N0 être Prép1 Det1 C1 de N2
+N0 =: Qu P -> -
+N2 =: Qu P -> -
+
+ZP
+N0 être Prép1 Det1 C1 Prép2 N2
+Prép2 # de
+N0 =: Qu P -> -
+N2 =: Qu P -> -
+
+ZM:
+N0 être Prép1 Det1 C1
+Vop = mettre
+N0 =: Qu P -> -
+
+Z:
+N0 être Prép1 Det1 C1
+Vop = mettre -> -
+N0 =: Qu P -> -
+
+*****************Renommage des colonnes:
+
+Tables Z:
+DETAILS pour Z:
+= -> =: (prop distributionnelles)
+V° W -> V0-inf W
+Prép1 -> <ENT>Prép1
+Det1 -> <ENT>Det1
+Colonnes Modif -> plein, constant, total, exact -> Modif =: plein, Modif =: constant, Modif =: total, Modif =: exact (Notation p.291: "Modif = plein"...)
+Colonnes Opér: vivre -> Vop =: vivre, etc.
+
+Z5P:
+Prép2 -> <ENT>Prép2
+
+Z1:
+Colonnes N2 + infinitives: Tp =: Tc, Tc =: futur, Tc =: passé, Tc =: présent-> inf:Tp =: Tc, inf:Tc =: futur, inf:Tc =: passé, inf:Tc =: présent -> a revoir?
+
+VRAIS CHANGEMENTS: (figure en vert dans les tables)
+pour tous les Z:
+Colonnes Extraposition: Qu P, Qu Psubj, de V2 W, de V2c W -> N0 =: Qu P extrap, N0 =: Qu Psubj extrap, N0 =: de V2-inf W extrap, N0 =: de V2c-inf W extrap
+-> Notation V2 et V2c: p.292 "infinitives" (+p.227, 229)
+-> extrap conforme aux tables c5 et c5c1 + Ajout de -inf:
+N0 =: de V1c W extrap -> N0 =: de V1c-inf W extrap
++ cf. ajout de ind pour Qu P ci-dessous...
+Colonnes N2 (qui ne sont pas déjà =:) avec la notation p.291:
+Poss -> de N2 = Poss -> Det1 C1 de N2 = Poss C1 (conforme aux tables de Maurice)
+Ppv -> Prép N2 = Ppv 
+Ajout de la colonne <ENT><être> avec pour valeur "être" partout -> pertinent?
+N1 -> <ENT>C1
+N0 être Prép1 N1... -> N0 être Prép1 Det1 C1... (car figé)
+
+Z5D et ZD:
+Ajout de la colonne <ENT>Prép2 avec pour valeur "de" partout -> pertinent?
+
+ZM et Z (colonnes identiques):
+N1 =: N0pc -> C1 =: Npc0
+être Prép1 N1 = avoir Det N1 -> N0 être Prép1 Det1 C1 = N0 avoir Det C1
+Attention: Det =! Det1
+ex: avoir une activité, avoir un appétit, avoir un arrêt
+Justification: p.251 "La colonne "être Prép1 N1 = avoir Dét1 N1" indique la possibilité d'avoir une paraphrase en "avoir" :
+Luc est en fonds. (ZM)
+=Luc a des fonds.
+Luc est dans une mauvaise passe. (Z)
+=Luc a une mauvaise passe."
+
+Z5D et Z5P:
+Interprétation différente du mode de la complétive:
+N0 =: Qu P extrap -> N0 =: Qu Pind extrap (p. 292: "Qu P (à l'indicatif)")
+Cela ets justifié puisqu'il y a la colonne Qu Psubj aussi et que Qu P tout seul sous-entend Qu Pind+subj (p.230 fait référence à la colonne indicatif et à la colonne subjonctif puisque l'une, l'autre ou les 2 peuvent être vérifiée)
+
+Elsa(18-09-09)
+-------------------------------------------------------------------------------------
+Cette dernière transformation du Qu P en Qu Pind a ammené à revoir toutes les tables contenant une propriété avec Qu P: soit signifie les 2 modes, soit transformé en Qu Pind en présence de la colonne Qu Psubj à côté.
+
+c5 et c5c1 (même changement que pour Z5D et Z5P):
+N0 =: Qu P extrap -> N0 =: Qu Pind extrap
+N0 =: Qu Psubj extrap
+
+ec0:
+C1 =: C1 Qu P -> C1 =: C1 Qu Pind
+C1 =: C1 Qu Psubj
+
+c0e, ya:
+N1 =: Qu P -> N1 =: Qu Pind (changement non réalisé dans cff et cppq car contient uniquement cette colonne sans préciser le mode)
+N1 =: Qu Psubj
+
+c6:
+N1 =: Qu P -> N1 =: Qu Pind
+Qu P = Aux V0-inf W -> Qu Pind = Aux V0-inf W
+Qu P = V0-inf W -> Qu P = V0-inf W
+Qu P = de V0-inf W -> Qu P = de V0-inf W
+N1 =: Qu Psubj
+Qu Psubj = V0-inf W
+Qu Psubj = de V0-inf W
+Qu P = Ppv
+Qu P = ceci
+-> Cette modification est évidente vu la disposition des colonnes car il y a dépendance entre N1 =: Qu P et les suivantes, alors que les 2 dernière colonnes Qu P sont à part.
+
+c0e, c0q, c7, c8, cpq, epcpq, ya:
+N2 =: ce Qu P -> N2 =: ce Qu Pind
+N2 =: ce Qu Psubj
+
+cppq, ec0:
+N3 =: ce Qu P -> N3 =: ce Qu Pind
+N3 =: ce Qu Psubj
+
+edn:
+Nc =: ce Qu P -> Nc =: ce Qu Pind
+Nc =: ce Qu Psubj
+
+Attention à na pas généraliser:
+N0 =: Qu P présent dans beaucoup de tables, N1 =: Qu P dans cff et cppq (comme vu précédemment) et N2 =: (de ce+E) Qu P:
+Pas de changement car une seule colonne, le mode n'est donc pas spécifié.
+
+Elsa(22-09-09)
+-------------------------------------------------------------------------------------
+Remarques importantes sur les colonnes des tables Z:
+N =: Nhum et N =: N-hum:
+"nous n'avons pas tenu compte des phénomènes complexes (et peu formalisables) de métaphores et de métonymie. Ces propriétés ne sont donc là qu'à titre d'indication de choix distributionnel" (p.223).
+-> Il ne faut donc pas en tenir compte dans un analyeur.
+
+A VOIR: chapitre VI
+
+Tables Z5P et Z5D:
+
+Colonnes non présentes dans les tables mais qui sont des propriétés possibles pour certaines entrées:
+N0 =: le fait Qu P et N0 =: Nnr -> codées O: Pas de colonne car "difficile de porter un jugement reproductible sur l'accepatabilité des phrases ainsi construites" (p. 228)
+N0 =: Nhum -> codée O: Pas de colonne car "ne permettent en général que l'interprétation non active" ou "non responsable" pour la table Z5D ou "soulèvent des problèmes autres" (A VOIR: V.2.1.3) pour la table Z5P (p.228,229).
+Conclusion: Ces colonnes sont codées O dans la tdt mais sont pourtant pas forcément à coder pour les raisons évoquées dans la thèse.
+-> Faut-il inventer un codage pour O:"A coder" et #:"Différent selon les entrées mais difficile à coder" ou l'on estime que tout finiera par être codé?
+
+Création de colonne Vop =: vivre car codage indiqué p.235:
+"Nous n'avons pas fait figurer ni dans Z5D ni dans Z5P la possibilité d'avoir l'opérateur vivre car cette propriété aurait été toujours négative, sauf pour : 
+Luc vit à charge à Max [à charge, Z5P]
+Luc vit à la charge de Max [à la charge*2, Z5D]"
+
+A VOIR:"réduction de la complétive à une infinitive ont été étudiées en V.2.1.2"
+
+Ajout de prépositions secondaires dans la table (<ENT>Prép2):
+-Table ZS:
+1) en conflit -> avec+contre
+Justification: p.238 "Pour en conflit, on peut substituer "contre" à "avec" :
+Luc est en conflit (avec+contre) sa mère."
+2) à les prises -> avec+à
+Justification: p.238 "Pour aux prises, avec et à commutent dans l'emploi non symétrique [généralisation abusive?]:
+Luc est aux prises (avec+à) des difficultés."
+-Table ZP:
+de conseil(bon+mauvais+excellent) -> à+pour
+Justification: p.247 "L'expression "de bon conseil" se construit avec un complément introduit par Prép2 =: à ou par Prép2 =: pour :
+Luc est de bon conseil (à+pour) Max."
+
+Tables Z1, ZS, ZD et ZP:
+N0 être Prép1 Det1 C1 = N0 avoir Det C1 -> codée O
+(cf. plus haut dans le renommage des colonnes pour l'explication de cette propriété)
+p.252 "Cette propriété affecte aussi des expressions d'autres tables que Z et ZM :
+Luc est en droit de voter. (Z1)
+=Luc a le droit de voter.
+Le phénomçne A est en rapport logique avec le phénomène B. (ZS)
+=le phénomène A a un rapport logique avec le phénomène B.
+Cet objet est en forme de poire. (ZD)
+=Cet objet a la forme d'une poire.
+Luc est en grand crédit auprès de Max. (ZP)
+=Luc a un grand crédit auprès de Max.
+mais le faible nombre des locutions concernées n'y justifiait pas une représentation en colonne."
+
+A FAIRE:
+Table ZD:
+à l'initiative (avec N0-hum) -> rajouter <ENT>Prép1 = à+sur
+p.246 "à l'initiative:
+Cette expression est telle qu'apparemment N0 et N2 sont permutables :
+(1) Cette manif est à l'initiative de Max
+(2) = Max est à l'initiative de cette manif
+Cependant on peut subsitituer "sur" à "à" dans (1) mais pas dans (2) :
+Cette manif est sur l'initiative de Max
+*Max est sur l'initiative de cette manif"
+
+A NOTER POUR L'INTERPRETATION DANS LGEXTRACT:
+Liste des intitulés p.291:
+"Modif (modifieurs facultatifs)"
+"Modif =: plein : Luc est en (E+pleine) crise." -> <plein>
+"Modif =: constant : Luc est constamment en déficit = Luc est en déficit constant." -> constamment+<constant>
+"Modif =: total : Luc est totalement à la merci de Max = Luc est la merci totale de Max." -> totalement+<total>
+"Modif =: exact : Ce rideau est exactement aux dimmenssions de cette fenêtre = Ce rideau est aux dimenssions exactes de cette fenêtre." -> exactement+<exact>
+
+"N0 être Prép1 N1 (sous-structure) : Luc est en deuil (de Max+E)."
+
+Complétives extraposées (dans Z5D et Z5P): p.292
+extrap -> complète la construction de base:
+il être Prép1 Det1 C1 de N2 Qu P OU il être Prép1 Det1 C1 (E+Prép2 N2) Qu P
+-> Il ne faut donc rien déduire de ces constructions sur la complétive...
+ex: Il est de toute évidence que Luc est malade
+N0 =: Qu Pind extrap
+N0 =: Qu Psubj extrap
+N0 =: de V2-inf W extrap
+N0 =: de V2c-inf W extrap
+-> Permet de préciser la nature de la complétive Qu P:
+Qu P peut correspondre à "V2-inf W" (p.227) et même est obligatoire si "Prép2 # de" cad pour Z5P -> Déjà présent dans les tables
+p. 292 -> précision sur les infinitives:
+de V2 W : "sujet de l'infinitive = N2"
+de V2c-inf W : "sujet de l'infinitive : complément de nom de N2"
+A noter:
+Base de c5c1 : N0 V Prép1 Det1 C1  -> extrap: il V Prép1 Det1 C1 Qu P
+Base de c5: N0 V Prép1 Det1 C1 de Nc  -> extrap: il V Prép1 Det1 C1 de Nc Qu P
+-> Cela peut-il être calculé automatiquement? Si oui constructions à supprimer dans Z, si non transformer ces intitulés par la construction complète dans toutes les tables.
+
+Infinitives (dans Z1): p.292
+inf:Tp =: Tc -> "obligatoire : Luc est en train de partir."
+inf:Tc =: passé : "Luc est au regret de ne pas être venu hier."
+inf:Tc =: présent : "Luc est dans l'impossibilité de venir maintenant."
+inf:Tc =: futur : "Luc est dans l'impossibilité de partir demain."
+-> à relier avec la construction de base : N0 être Prép1 Det1 C1 de V0-inf W
++ Temps de l'infinitive qui pour l'instant n'est pas pris en compte
+
+Elsa(24-09-09)
+-------------------------------------------------------------------------------------
+Remarque importante:
+Les 24 tables dont 14 figurent dans le rapport des noms sont les ZM:
+Ce sont des tables de prep-X figés qui peuvent se construire avec des verbes de M comme Mouvement
+ex:"au chomage" parce que "se retrouver au chômage"
+mais ces tables ont été perdues (il y a peut-être de vieux listings papiers, en peut donc peut-être trouver les 10 tables manquantes sur papier)...
+et de toutes façons ces formes ont été décrites par M Gross lui-même dans ses tables E
+
+Différence avec les tables de sa these:
+Ce sont les prep-X qui ne se construisent PAS avec des verbes de mouvement
+
+Question: Est-ce que se sont les mêmes entrées? peut-être ca dépend lesquelles... à voir!
+Elsa(28-09-09)
+-------------------------------------------------------------------------------------
+PC Z:
+Adaptation du changement des propriétés des verbes pour les figées:
+[pc z.] -> Prép N2 =: Prép ce Qu P = Qu P (car le N2 est le seul complément libre)
+-> tables c7, c8, cpq, epcpq
+Elsa(27-10-09)
+-------------------------------------------------------------------------------------
+Ajout d'entrées avec Christian après révision de l'ancienne table 17 qui a été supprimée :
+Table YA:
+il y avoir - - - - - -
+
+Table COQ:
+- il s'agir pour -- de
+- il apparaître à - - -
+- il s'avérer à - - -
+- il être question pour - - de
+- il faire bon pour - - -
+- il falloir à - - -
+- il s'en falloir de - - pour
+- il s'en falloir de un rien -
+- il paraître - - - -
+- il paraître à - - -
+- il rester à - - à
+- il sembler à - - -
+- il souvenir à - - de
+- il suffire à - - de
+Elsa(29-01-10)
+-------------------------------------------------------------------------------------
+Mise à jour de l'index des figées (en vert):
+-> Ajout des entrées rajoutée précédemment (anciennes entrées de la table 17) avec certaines exemples récupérés de l'ancien index des verbes.
+-> Ajout des entrées manquantes de la table 31I (environ la moitié) avec les exemples récupérés de l'ancien index des verbes pour toutes les entrées.
+Remarque: les codes comme "V3IU" dans les verbes de la table 31I déjà présents ont été supprimés de l'entrée elle-même et mis dans "Anciennement dans tables" (leur signification est à chercher).
+Explications:
+- Chaque tiret correspond à une colonne vide (<E>), ce qui dépend de la liste de colonnes pour chaque table (même si tous les tirets de la colonne "Début de l'entrée" ne sont pas présents dans l'index).
+- La notation "Nég" n'est pas présente dans les entrées des tables, ce qui est bien puisqu'elle est codée par une colonne "Nég" avec un codage binaire et la présence d'un "ne" dans la colonne "<ENT>Ppv". Par contre elle est gardée dans l'index, car elle remplace un mot comme "pas" qui est présent avant la préposition ou les autres mots qui suivent (pour les verbes, Nég a été supprimé des tables car c'était présent et aussi de l'index, car le ne donne suffisamment d'information).
+- Toutes les entrées de l'index ne correspondent pas forcément à ce qu'il y a dans la table (il faudrait donc les coder dans la table, en rouge pour la table 31I) et vice-versa (il suffirait de les ajouter dans l'index).
+Les tables en être ou avoir (E..., A... et YA) ne figurent pas dans l'index mais seulement les tables de Maurice (en C..., V... et T... qui est la 31I).
+De plus, certains noms des tables ne correspondent pas à celle qui existent actuellement.
+Elsa(01-02-10)
+-------------------------------------------------------------------------------------
+Table 31I:
+Colonne "C0 =: ça" supprimée et ajoutée comme constante '+' dans la tdt.
+Elsa(02-02-10)
+-------------------------------------------------------------------------------------
+Création de lg10_figees.lg:
+tdt:
+Ajout de <ENT> codé + pour toutes les tables
+Ajout d'un codage dans la première colonne (au lieu de cellules vides) car sinon lgextract
+ne fonctionnait pas -> puis ajout des codes C, T, D...
+Ajout de "/ false" dans tableOftable-values.txt
+
+Cases vides dans les tables:
+fca: le enfant gâté -> ~ pour GN =: le N et il y avoir Det1 C1 W
+enpc: être un d'antan -> <E> pour <ENT>Detc
+
+Problème de taille avec xml:
+1)Avec java -Xms128m -Xmx128m:
+-> Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Internet: Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+When this exception occurs, it means java runs out of memory.
+You can increase memory(heap size) by run java including these parameters:
+    -Xms[initial heap size] -Xmx[maximum heap size]
+For example, set initial heap size to 128m and maximum to 256m.
+    java -Xms128m -Xmx256m
+2)Avec java -Xms128m -Xmx256m:
+-> Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit
+exceeded
+Internet: Excessive GC Time and OutOfMemoryError
+The parallel collector will throw an OutOfMemoryError if too much time is being
+spent in garbage collection: if more than 98% of the total time is spent in
+garbage collection and less than 2% of the heap is recovered, an
+OutOfMemoryError will be thrown. This feature is designed to prevent
+applications from running for an extended period of time while making little or
+no progress because the heap is too small. If necessary, this feature can be
+disabled by adding the option -XX:-UseGCOverheadLimit to the command line.
+3)Avec java -Xms128m -Xmx256m -XX:-UseGCOverheadLimit:
+-> OK
+Elsa(05-03-10)
+-------------------------------------------------------------------------------------
+Changements dans table c0e :
+Ppv<ENT> -> Conj<ENT> car la colonne ne contient pas de Ppv mais "et, pas, rien" (pas que des conjonctions mais identique à table cff)
++ Ppv<ENT> gardée car une entrée contient "ne pas" -> split en 2, "ne" pour Ppv<ENT> et "pas" pour Conj<ENT>
+base : Det0 C0 V Prép1 (Det1 C1+N1) Prép2 N2 -> Conj Det0 C0 V Prép1 (Det1 C1+N1) Prép2 N2
+Elsa(03-05-10)
+-------------------------------------------------------------------------------------
+Comme pour les verbes et les adverbes, la colonne <ENT>Ppv n'étant pas exploitable informatiquement, les colonnes suivantes sont ajoutées pour préciser le codage de cette colonne (gardée pour la lisibilité) :
+"Ppv =: se figé", "Ppv =: en figé", "Ppv =: y figé", "Ppv =: le figé", "Ppv =: la figé", "Ppv =: les figé", "Ppv =: me figé", "Ppv =: te figé", "Ppv =: lui figé", "Ppv =: nous figé", "Ppv =: vous figé", 
+
+De plus, la colonne Nég est remplacée par "Ppv =: Neg" (pour avoir la même notation).
+
+Remarque : On préfère garder la forme complète "le" ou "la" plutôt que "l'", mais certains cas sont ambigüs.
+Tous les "l'" qui ne sont pas suivi d'un adjectif au féminin, sont souvent par défaut remplacé par "le", comme par exemple :
+l'avoir saumâtre (adj masculin et féminin)
+l'entendre ainsi (adverbe)
+ne l'emporter pas au paradis 
+
+PB: Dans 31I, les Nég (=pas) dans les entrées verbales ont été supprimés (comme pour les verbes car ils découlent automatiquent du ne), mais pas pour les autres tables car peut être pas, plus, que... -> Il faut les rendre plus explicite dans une autre colonne!
+Elsa(04-05-10)
+-------------------------------------------------------------------------------------
+Codage de la colonne Adj1 permut obl (codée \ dans la tdt pour toutes les table non citées car ne contiennent pas <ENT>Adj1)
+
+Table EPAC:
+base =  N0 être Prép1 Det1 Adj1 C1 (et donc ne suit pas l'ordre classique)
+Adj1 permut obl -> + dans la tdt
+
+Colonne Adj1 permut obl -> - dans la tdt pour :
+table A12: base = N0 avoir Det1 C1 Adj1
+table E01: Det0 C0 être Adj1
+table EAPC: base = N0 être Adj1 Prépc Detc Cc
+table EPA: base = N0 être Adv1 Adj1 + colonne N0 être Adj1 Adv1 codant la permutation possible mais pas obligatoire (cad en plus de la base)
+-> ex : être clairement défini + être défini clairement
+
+Colonne Adj1 permut obl -> o dans la tdt pour :
+table EPCA: base = N0 être Prép1 Det1 C1 Adj1
+table FCA: base = N0 faire Det1 C1 Adj1
+table FCANA: base = N0 faire Det1 C1 Adj1 à N2
+table FCPNA: base = N0 faire Det1 C1 Adj1 Prép2 N2
+Elsa(01-06-10)
+-------------------------------------------------------------------------------------
+Pour obtenir la bonne expression figées complete dans lgextract :
+
+Tables FC, FCA, FCAN, FCANA, FCANN, FCN, FCPN, FCPNA, FCPNN:
+Ajout de la colonne <ENT><faire> avec pour valeur lexicale faire partout!
+-> On ne peut pas mettre un + dans la tdt car sinon on ne peut pas récupérer la valeur lexicale nécessaire pour l'expression complète.
++ On ne met jamais de valeur lexicale dans la tdt par convention, donc il veut mieux être conforme aux autre tables.
+
+Table EPCDN:
+<ENT>de -> <ENT>Prépc (même si sa valeur lexicale est tout le temps de)
+-> comme pour les adverbes (PCDC et PCDN).
++ Permet d'éviter de charcher où peut être placé cette préposition de qui n'a pas de numéro.
+
+Remarque: On pourrait remplacer <ENT><avoir>, <ENT><être>, <ENT><faire> par <ENT>V et garder leur valeur lexicale identique dans la table, mais le verbe n'ajoute pas d'ambiguïté quand à l'ordre des mots de l'expression figée.
+
+Table YA:
+La numérotation 0 ne peut pas être après le verbe (contradictoire avec les autres tables)
+Changement de la base:
+il y avoir Prép0 Det0 C0 Prép1 (Det1 C1+N1) Prép2 N2 -> il y avoir Prép1 Det1 C1 Prép2 (Det2 C2+N2) Prép3 N3
+Renommage des colonnes:
+<ENT>Prép0 -> <ENT>Prép1
+<ENT>Det0 -> <ENT>Det1
+<ENT>C0 -> <ENT>C1
+N1 =: Qu Pind -> N2 =: Qu Pind
+N1 =: Qu Psubj -> N2 =: Qu Psubj
+N1 =: V0-inf W -> N2 =: V0-inf W
+<ENT>Prép1 -> <ENT>Prép2
+<ENT>Det1 -> <ENT>Det2
+<ENT>C1 -> <ENT>C2
+<ENT>Prép2 -> <ENT>Prép3
+N2 =: Nhum -> N3 =: Nhum
+N2 =: N-hum -> N3 =: N-hum
+N2 =: ce Qu Pind -> N3 =: ce Qu Pind
+N2 =: ce Qu Psubj -> N3 =: ce Qu Psubj
+N2 =: (de) V-inf W -> N3 =: (de) V-inf W
+Elsa
+-------------------------------------------------------------------------------------
+Bilan des tables de Laurence :
+Notation: table thèse (nb d'entrées) -> tables pas thèses (nb d'entrées pour chaque table+nb d'entrées supplémentaires au crayon à papier)
+(?) signifie que la table est totalement inconnue de la circulation
+Remarque: Il y a souvent plus d'entrées dans les tables pas thèses car plus complètes puisque version plus récente!
+
+Tables de la thèse de Laurence que l'on a scannées (dans la tdt) :
+Z5D (38) -> Z5CDN (36) + ZT5CDN (10)
+Z5P (49) -> Z5CPN (46+1) + ZT5CPN (?) : doit contenir très peu d'entrées peut-être faciles à retrouver en faisant la différence...
+Z1 (48) -> Z1C (38) + ZT1C (?) : idem (même pas dans l'index)
+ZS (91) -> ZCSY (74+1) + ZTCSY (20)
+ZP (50) -> ZCPN (36+2) + ZTCPN (15+2)
+
+Tables de la thèse de Laurence que l'on n'a pas scannées mais dont certaines tables pas thèse ont été scannées (dans la tdt) :
+ZD (179) -> ZCDN (126) + ZTCDN (63+5?) : toutes scannées -> table remplacée par les tables pas thèse
+ZM (424) -> ZMC (223+13) + ZMAC (78+5) + ZMCA (73+4) + ZMCDC (49+3) : toutes scannées -> table remplacée par les tables pas thèse
+Z (226) -> ZC (135+8) + ZAC (54+4) + ZCA (44+5) + ZCDC (29+1) + ZTC (?) + ZTAC (?) + ZTCA (?) + ZTCDC (34+4) : une seule table scannée (ZAC), les autres sont à scanner, (ZC,ZCA,ZCDC,ZTCDC), les autres sont à retrouver (ZTC,ZTAC,ZTCA)...
+
+ZT = être Prép X ayant variantes aspectuelles utilisant des vb de mvt
+-> cad que le verbe être ademet comme variante aspectuelles des verbes de mvt (Vmt) comme entrer, arriver, tomber ou que le verbe être admet comme opérateurs causatifs des causatifs de mvt (Vcmt) comme conduire, envoyer, pousser :
+N0 Vmt Prép X W
+N Vcmt N0 Prép X W
+= constante + dans la tdt
+-> ce qui n'est pas le cas des autres tables (ne commençant pas par ZT)
+= constante - dans la tdt
+
+A FAIRE: Il faudrait comparer les entrées avec celles de Maurice Gross pour voir s'il y a des doublons.
+
+Elsa(24-06-10)
+-------------------------------------------------------------------------------------
+Changement de base pour cdn (pour ne pas avoir de +):
+"N0 V Det1 C1 (à+de) Nc" -> "N0 V Det1 C1 à Nc" et "N0 V Det1 C1 de Nc" = 2 constructions de base
+
+Elsa(08-07-10)
+-------------------------------------------------------------------------------------
+Les tables suivantes sont avec sujets figés : elles doivent avoir leur verbes conjugué puisqu'il n'y a pas de variante et que l'ensemble sujet-verbe figurera en tant que verbe dans le Lefff:
+
+Table ec0:
+<ENT><être> : était -> être, sera -> être
+-> doit être toujours à l'infinitif pour être conjugué ensuite à tous les temps et toutes les personnes
+<ENT><est> : être -> est (puisque le sujet est ce), laissé lorsque être est déjà conjugué (était, sera)
+-> colonne dupliquée qui garde la conjugaison originale telle qu'elle est dans les exemples -> colonne non utilisée, n'est là qu'à titre informatif
+<ENT>ce : ce -> c' (sauf pour ceux qui comporte une négation n', laissé ce)
+
+Table e0p1:
+<ENT><être> :   était -> être (il§était§une fois un N qui V W) , sera -> être (ça§sera§un café pour Max!),  fût -> être (il§fût§un temps où P)
+va être -> laissé (ça§va est§la fête)
+Lui être -> laissé (il§Lui est§d'avis que P)
+est-ce -> laissé (qu'§est-ce§qu'il y a ?)
+<ENT>est : tous les verbes être ont été conjugués :
+- sont quand <ENT>Det0 = les, Det + nom pluriel ou <ENT>C0 = ils (+ 2 entrées : changement de la négation n' -> ne, ex: les pupilles§ne sont plus que§des fentes)
+- est quand <ENT>Det0 = le, la, Det + nom singulier ou <ENT>C0 = il, on (+ 3 entrées : changement de <ENT>C0 = que -> qu', ex: qu'§est-ce§qu'il y a ?)
+- suis/es/sommes/êtes quand <ENT>C0 = je/tu/nous/vous (déjà fait pour certaines entrées)
+- laissé lorque être a déjà été changé en : était, sera, fût, etc.
++ 2 entrées supprimées car en double :
+les jambes§sont§en coton
+les jambes§sont§en flanelle
+
+Table e01:
+idem pour la conjugaison de être
++ soit -> laissé (le ciel§soit§loué!)
+ avoir été -> laissé (la journée§a été§longue)
+ es-tu -> laissé (Esprit§es-tu§là ?)
++ A savoir que <ENT>Det0 = Det peut être un ou une + nom singulier, mais pas des + nom pluriel, mais plutôt les, ces, ses, etc.
+ex: un dépenses§sont§inconsidérées
+
+Elsa(09-07-10) et (19-08-10)
+-------------------------------------------------------------------------------------
+Table ec0:
+La construction de base est "Ce être Prép1 Det1 C1 Prép2 Det2 C2 Prép3 N3" alors que le 3ème argument n'est pas obligatoire
+-> Nouvelle construction de base : "Ce être Prép1 Det1 C1 Prép2 Det2 N2"
++ Ajout de la colonne "Ce être Prép1 Det1 C1 Prép2 Det2 C2 Prép3 N3" dans la table qui vaut + lorsqu'au moins l'une des 5 colonnes suivantes vaut + : "N3 =: Nhum, "N3 =: N-hum", "N3 =: ce Qu Pind", "N3 =: ce Qu Psubj" et "N3 =: (de) V-inf W".
+De plus la colonne "<ENT>Prép3" est mise à - (et non <E>) lorsque cette nouvelle colonne est codée - pour distinguer les cas où la préposition vaut réèllement <E> des cas où l'argument n'existe pas.
+
+Table z5p:
+La construction de base est "N0 être Prép1 Det1 C1 (E+Prép2 N2)" et "il être Prép1 Det1 C1 (E+Prép2 N2) Qu P" alors que le 2ème argument n'est pas obligatoire
+-> Nouvelles constructions de base : "N0 être Prép1 Det1 C1" et "il être Prép1 Det1 C1 Qu P"
++ Ajout des 2 colonnes (au codage identique) "N0 être Prép1 Det1 C1 Prép2 N2" et "il être Prép1 Det1 C1 Prép2 N2 Qu P" dans la table qui valent toutes les 2 + lorsque l'une des 2 colonnes "N2 =: Nhum" et "N2 =: N-hum" vaut +, ce qui correspond à quand la préposition est codée dans "<ENT>Prép2", car dans les autres cas elle vaut -.
++ Suppression de la colonne "N0 être Prép1 Det1 C1" qui à l'opposée (possible omission du N2) et qui vaut + partout sauf pour l'entrée "être à charge" qui devrait être obligatoirement suivi de "à N2hum", ce qui ne semble pas pertinent.
+Remarque: Cela ajoute la propriété "il être Prép1 Det1 C1 Qu P" qui en plus de la construction commençant par "il" code l'omission du N2, mais cela a été vérifié.
+
+Elsa(12-07-10)
+-------------------------------------------------------------------------------------
+Erreur dans la construction de base enpc :
+N0 être Det1 N1 Prépc Detc Nc -> N0 être Det1 N1 Prépc Detc Cc
+Mais 2 colonnes codées :
+"N0 être Det1 Prépc Detc Cc N1" et "N0 être Det1 N1 Prépc Detc Cc"
+donc la 2ème n'est pas prise en compte (en rouge) puisque c'est la construction de base
+Remarque: Il faut noter qu'elle est souvent codée + et que les - peuvent être poussés + en acceptant toujours les 2 ordres quand la 1ère est codée +.
+
+Elsa(13-07-10)
+-------------------------------------------------------------------------------------
+Ajout de deux entrées dans la table CADV avec codage (+ dans l'index) :
+traîner là -> car anciennement dans tables 1 des verbes et supprimée
+travailler dur -> car dans l'index des figées mais pas dans la table
+
+Elsa(04-11-10)
+-------------------------------------------------------------------------------------
+Table Z1 : Ajout de la colonne <ENT>Prép2 codée "de" pour toutes les entrées
+-> pour avoir l'entrée complète, à savoir avec la préposition figée et le faire comme cela a été fait pour la table Z5D et ZD
+
+Elsa(08-11-10)
+-------------------------------------------------------------------------------------
+Table e0p1:
+il§fût§un temps où Max venait ici -> il§fut§un temps où Max venait ici
+il§fût§un temps où P -> il§fut§un temps où P
+("fut" sans accent)
+
+Elsa(11-12-10)
+-------------------------------------------------------------------------------------
+IMPORTANT : Nouvelle notation pour la construction de base de chaque table : ++ dans la tdt
+-> permet de la distinguer des autres structures et des autres propriétés définitoires
+Seul pb: la table pv n'en a pas! -> "Prép V Prépv Detv Cv" ou "Prép Prépv Detv Cv V"
+
+Elsa(17-08-11)
+--------------------------------------------------------------------------------

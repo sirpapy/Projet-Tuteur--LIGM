@@ -1,0 +1,61 @@
+1doc_id;name;path;Language;Category;Part_of_Speech;version_id_FK;downloadable
+4;BASE-tables-adverbes.xls;/var/www/html/Projet/databasewc/1/French/free/adverb/docs/BASE-tables-adverbes.xls;French;Free;Adverb;1;0
+5;proprietes_v1.doc;/var/www/html/Projet/databasewc/1/French/free/adverb/docs/proprietes_v1.doc;French;Free;Adverb;1;1
+6;tdt-adverbes.xls;/var/www/html/Projet/databasewc/1/French/free/adverb/docs/tdt-adverbes.xls;French;Free;Adverb;1;0
+7;ANA-ANS.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/ANA-ANS.xls;French;Free;Noun;1;0
+8;AP-IMP.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/AP-IMP.xls;French;Free;Noun;1;0
+9;AP.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/AP.xls;French;Free;Noun;1;0
+10;BASE-tables-noms.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/BASE-tables-noms.xls;French;Free;Noun;1;0
+11;Exemples.txt;/var/www/html/Projet/databasewc/1/French/free/noun/docs/Exemples.txt;French;Free;Noun;1;0
+12;FD-Pivaut.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/FD-Pivaut.xls;French;Free;Noun;1;0
+13;Noms-PAS-LA.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/Noms-PAS-LA.xls;French;Free;Noun;1;0
+14;Notes-noms.txt;/var/www/html/Projet/databasewc/1/French/free/noun/docs/Notes-noms.txt;French;Free;Noun;1;0
+15;Prop+.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/Prop+.xls;French;Free;Noun;1;0
+16;"extraits these andn-ansn.xls";"/var/www/html/Projet/databasewc/1/French/free/noun/docs/extraits these andn-ansn.xls";French;Free;Noun;1;0
+17;"liste Vsup noms.txt";"/var/www/html/Projet/databasewc/1/French/free/noun/docs/liste Vsup noms.txt";French;Free;Noun;1;0
+18;liste-tables-noms.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/liste-tables-noms.xls;French;Free;Noun;1;0
+19;propNraj.doc;/var/www/html/Projet/databasewc/1/French/free/noun/docs/propNraj.doc;French;Free;Noun;1;0
+20;tdt-noms-predicatifs.xls;/var/www/html/Projet/databasewc/1/French/free/noun/docs/tdt-noms-predicatifs.xls;French;Free;Noun;1;0
+21;BASE-tables-verbes.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/BASE-tables-verbes.xls;French;Free;Verb;1;0
+22;"Codage des TILDES - fev 10.xls";"/var/www/html/Projet/databasewc/1/French/free/verb/docs/Codage des TILDES - fev 10.xls";French;Free;Verb;1;0
+23;Consignes.txt;/var/www/html/Projet/databasewc/1/French/free/verb/docs/Consignes.txt;French;Free;Verb;1;0
+24;Couleur_groupes.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/Couleur_groupes.xls;French;Free;Verb;1;0
+25;"Entrees a coder en priorite.txt";"/var/www/html/Projet/databasewc/1/French/free/verb/docs/Entrees a coder en priorite.txt";French;Free;Verb;1;0
+26;"Fiches a revoir ajoutees dans les tables - Chris.x";"/var/www/html/Projet/databasewc/1/French/free/verb/docs/Fiches a revoir ajoutees dans les tables - Chris.xls";French;Free;Verb;1;0
+27;Notes-verbes.txt;/var/www/html/Projet/databasewc/1/French/free/verb/docs/Notes-verbes.txt;French;Free;Verb;1;0
+28;"Suppressions dans l'index.xls";"/var/www/html/Projet/databasewc/1/French/free/verb/docs/Suppressions dans l'index.xls";French;Free;Verb;1;0
+29;V_1_test_Adv_Neg.lgt.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/V_1_test_Adv_Neg.lgt.xls;French;Free;Verb;1;0
+30;arbre-classement.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/arbre-classement.xls;French;Free;Verb;1;0
+31;arbre-conventions.doc;/var/www/html/Projet/databasewc/1/French/free/verb/docs/arbre-conventions.doc;French;Free;Verb;1;0
+32;documentation-features.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/documentation-features.xls;French;Free;Verb;1;0
+33;documentation-features_Problemes.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/documentation-features_Problemes.xls;French;Free;Verb;1;0
+34;formules-definitoires.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/formules-definitoires.xls;French;Free;Verb;1;0
+35;formules-definitoires_Problemes.doc;/var/www/html/Projet/databasewc/1/French/free/verb/docs/formules-definitoires_Problemes.doc;French;Free;Verb;1;0
+36;index-entries.txt;/var/www/html/Projet/databasewc/1/French/free/verb/docs/index-entries.txt;French;Free;Verb;1;0
+37;index-entries.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/index-entries.xls;French;Free;Verb;1;0
+38;index-entries_Problemes.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/index-entries_Problemes.xls;French;Free;Verb;1;0
+39;liste-tables-verbes.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/liste-tables-verbes.xls;French;Free;Verb;1;0
+40;propVdistr.doc;/var/www/html/Projet/databasewc/1/French/free/verb/docs/propVdistr.doc;French;Free;Verb;1;0
+41;regroupement-tables.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/regroupement-tables.xls;French;Free;Verb;1;0
+42;summary_tables.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/summary_tables.xls;French;Free;Verb;1;0
+43;tdt-verbes.xls;/var/www/html/Projet/databasewc/1/French/free/verb/docs/tdt-verbes.xls;French;Free;Verb;1;0
+44;Notes-adverbes-mars2011.txt;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/Notes-adverbes-mars2011.txt;French;Multiword;Adverb;1;0
+45;Notes-adverbes-octobre2011.txt;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/Notes-adverbes-octobre2011.txt;French;Multiword;Adverb;1;0
+46;Notes-adverbes.txt;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/Notes-adverbes.txt;French;Multiword;Adverb;1;0
+47;classification_adv_fr;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/classification_adv_fr;French;Multiword;Adverb;1;0
+48;generation-DELA_Adv-from-LGLex.doc;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/generation-DELA_Adv-from-LGLex.doc;French;Multiword;Adverb;1;0
+49;generation-DELA_Adv-recuperation-formes_flechies.d;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/generation-DELA_Adv-recuperation-formes_flechies.doc;French;Multiword;Adverb;1;0
+50;mail-Elsa-tables-v3.3.docx;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/mail-Elsa-tables-v3.3.docx;French;Multiword;Adverb;1;0
+51;mail_Elsa_20111017.doc;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/mail_Elsa_20111017.doc;French;Multiword;Adverb;1;0
+52;p_adv.xls;/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/p_adv.xls;French;Multiword;Adverb;1;0
+53;"tdt_ ADVfiges.xls";"/var/www/html/Projet/databasewc/1/French/multiword/adverb/docs/tdt_ ADVfiges.xls";French;Multiword;Adverb;1;0
+54;N_sym_suffixe-n_encours.lgt.xls;/var/www/html/Projet/databasewc/1/French/multiword/prepositional_phrase/docs/N_sym_suffixe-n_encours.lgt.xls;French;Multiword;"Prepositional Phrase";1;0
+55;Z.xls;/var/www/html/Projet/databasewc/1/French/multiword/prepositional_phrase/docs/Z.xls;French;Multiword;"Prepositional Phrase";1;0
+56;psy-sym.xls;/var/www/html/Projet/databasewc/1/French/multiword/prepositional_phrase/docs/psy-sym.xls;French;Multiword;"Prepositional Phrase";1;0
+57;BASE-tables-figees.xls;/var/www/html/Projet/databasewc/1/French/multiword/verb/docs/BASE-tables-figees.xls;French;Multiword;Verb;1;0
+58;"Liste CodesTOUT+1exemple.xls";"/var/www/html/Projet/databasewc/1/French/multiword/verb/docs/Liste CodesTOUT+1exemple.xls";French;Multiword;Verb;1;0
+59;Notes-figees.txt;/var/www/html/Projet/databasewc/1/French/multiword/verb/docs/Notes-figees.txt;French;Multiword;Verb;1;0
+60;"Textes sur FIGeS - RECUP Maurice.doc";"/var/www/html/Projet/databasewc/1/French/multiword/verb/docs/Textes sur FIGeS - RECUP Maurice.doc";French;Multiword;Verb;1;0
+61;_Index-FigesF-REFERENCE_.xls;/var/www/html/Projet/databasewc/1/French/multiword/verb/docs/_Index-FigesF-REFERENCE_.xls;French;Multiword;Verb;1;0
+62;liste-tables-figees.xls;/var/www/html/Projet/databasewc/1/French/multiword/verb/docs/liste-tables-figees.xls;French;Multiword;Verb;1;0
+63;tdt-figees.xls;/var/www/html/Projet/databasewc/1/French/multiword/verb/docs/tdt-figees.xls;French;Multiword;Verb;1;0
